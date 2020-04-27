@@ -2,7 +2,7 @@
 
 This repository holds all the ASPSP metadata that [bankIO Link](https://bankio.co.uk/bankio-link/) references internally. 
 
-Through this project we bring more transparency throughout the industry as well as empower developers and customers to start testing with the ASPSP PSD/OpenBanking sandboxes quickly.
+Through this project we bring more transparency throughout the industry as well as empower developers and customers to start testing with the ASPSP PSD2/OpenBanking sandboxes quickly.
 
 ## How to add a service?
 
