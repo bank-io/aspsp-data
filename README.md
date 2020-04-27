@@ -30,6 +30,6 @@ We do our best to ensure that the data we provide is complete, accurate and usef
 ## Links
 
 * [bankIO](https://bankio.co.uk/)
-* [[bankIO Link](https://bankio.co.uk/bankio-link/)
+* [bankIO Link](https://bankio.co.uk/bankio-link/)
 * [Facebook - bankIO](https://www.facebook.com/thisisbankio)
 * [LinkedIn - bankIO](https://linkedin.com/company/bankio)
