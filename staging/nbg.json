@@ -1,0 +1,74 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://my.nbg.gr/identity/connect/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "token_endpoint": "https://my.nbg.gr/identity/connect/token",
+        "scopes_supported": [
+            "openid",
+            "profile",
+            "role",
+            "sandbox-account-info-api-v2-1",
+
+            "sandbox-uk-account-info-api-v1",
+            "accounts",
+
+            "sandbox-uk-payments-api-v1",
+            "payments"
+        ],
+        "scopes": {
+            "AIS": "sandbox-uk-account-info-api-v1",
+            "PIS": "sandbox-uk-payments-api-v1"
+        },
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": [
+        ]
+    },
+    "obDirectoryConfig": {
+        "BaseApiDNSUri": null,
+        "MemberState": "GB",
+        "DeveloperPortalUri": null,
+        "RegistrationId": "12345",
+        "CustomerFriendlyDescription": "string",
+        "AutoRegistrationSupported": true,
+        "ClientRegistrationUri": null,
+        "AuthorityId": "FCA",
+        "BaseAISPApiUri": "https://apis.nbg.gr/sandbox/uk.openbanking.accountinfo/oauth2/v3.1.0",
+        "TermsOfService": "string",
+        "OBOrganisationId": "NBG",
+        "BasePISPApiUri": "https://matls.rs.aspsp.sandbox.lloydsbanking.com/open-banking/v3.1/pisp",
+        "PayloadSigningCertLocation": "string",
+        "BaseCBPIIApiUri": "https://matls.rs.aspsp.sandbox.lloydsbanking.com/open-banking/v3.1/cbpii"
+    },
+    "id": "nbg",
+    "identity": {
+        "memberState": "GR",
+        "developerPortalUri": "https://developer.nbg.gr/",
+        "openIDConfigEndPointUri": null,
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/National_Bank_of_Greece.svg",
+        "organisationCommonName": "National Bank of Greece",
+        "termsOfService": "",
+        "customerFriendlyName": "NBG",
+        "countries": [
+            "GR"
+        ],
+        "website": "https://www.nbg.gr/",
+        "weight": -6
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

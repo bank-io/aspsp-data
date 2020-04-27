@@ -1,0 +1,69 @@
+{
+    "openIdConfig": {
+        "issuer": "https://sandbox-oba.revolut.com",
+        "authorization_endpoint": "https://sandbox-oba.revolut.com/ui/index.html",
+        "token_endpoint_auth_methods_supported": [
+            "tls_client_auth"
+        ],
+        "token_endpoint": "https://sandbox-oba-auth.revolut.com/token",
+        "scopes_supported": [
+            "openid",
+            "accounts",
+            "payments"
+        ],
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "client_credentials",
+            "authorization_code"
+        ]
+    },
+    "obDirectoryConfig": {
+        "BaseAISPApiUri": "https://sandbox-oba.revolut.com",
+        "OrganisationCommonName": "Revolut Bank PLC",
+        "TermsOfService": "string",
+        "OBOrganisationId": "001580000103UAvAAM",
+        "CustomerFriendlyName": "Revolut Bank",
+        "BasePISPApiUri": "https://sandbox-oba.revolut.com",
+        "PayloadSigningCertLocation": "string",
+        "BaseCBPIIApiUri": "https://sandbox-oba.revolut.com",
+        "BaseApiDNSUri": null,
+        "MemberState": "GB",
+        "DeveloperPortalUri": null,
+        "RegistrationId": "123456",
+        "OpenIDConfigEndPointUri": "https://sandbox-oba.revolut.com/openid-configuration",
+        "CustomerFriendlyDescription": "string",
+        "AutoRegistrationSupported": true,
+        "ClientRegistrationUri": null,
+        "AuthorityId": "FCA",
+        "CustomerFriendlyLogoUri": "assets/img/banks/Revolut.svg"
+    },
+    "id": "revolut",
+    "identity": {
+        "memberState": "GB",
+        "developerPortalUri": "https://developers.revolut.com/",
+        "openIDConfigEndPointUri": "https://sandbox-oba.revolut.com/openid-configuration",
+        "customerFriendlyDescription": "string",
+        "customerFriendlyLogoUri": "assets/img/banks/Revolut.svg",
+        "organisationCommonName": "Revolut Bank PLC",
+        "termsOfService": "string",
+        "customerFriendlyName": "Revolut Bank",
+        "website": "https://www.revolut.com/",
+        "countries": [
+            "GB",
+            "RO",
+            "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IS", "IE", "IT", "LV", "LI", "LT", "LU", "MT", "NL", "NO", "PL", "PT", "SK", "SI", "ES", "SE"
+        ],
+        "weight": -5
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

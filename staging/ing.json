@@ -1,0 +1,67 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://api.sandbox.ing.com/oauth2/authorization-server-url",
+        "token_endpoint_auth_methods_supported": [
+            "http_signatures"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "token_endpoint": "https://api.sandbox.ing.com/oauth2/token",
+        "scopes_supported": [
+            "AIS",
+            "PIS"
+        ],
+        "scopes": {
+            "AIS": "payment-accounts:balances:view",
+            "PIS": "PIS:{paymentId}"
+        },
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "code_challenge_methods_supported": []
+    },
+    "psd2Config": {
+        "consentApiUri": null,
+        "accountsApiUri": "https://api.sandbox.ing.com/v3/accounts",
+        "paymentInitiationApiUri": "https://api.sandbox.ing.com/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://api.sandbox.ing.com/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://api.sandbox.ing.com/v1/{payment-service}/{payment-product}/{paymentId}/status",
+        "consentStatusApiUri": null
+    },
+    "id": "ing",
+    "identity": {
+        "memberState": "NL",
+        "developerPortalUri": "https://developer.ing.com/",
+        "openIDConfigEndPointUri": "https://api.apistorebt.ro/bt/sb/oauth/.well-known/oauth-authorization-server",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/ING_Group_NV_Logo.svg",
+        "organisationCommonName": "ING Group",
+        "termsOfService": "",
+        "customerFriendlyName": "ING Group",
+        "countries": [
+            "RO",
+            "AT",
+            "BE",
+            "CZ",
+            "DE",
+            "FR",
+            "IT",
+            "LU",
+            "NL",
+            "ES",
+            "PL"
+        ],
+        "website": "https://www.ing.com/",
+        "weight": -8
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

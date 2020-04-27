@@ -1,0 +1,57 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": null,
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "token_endpoint": null,
+        "scopes_supported": [
+            "sandboxapi",
+            "offline_access"
+        ],
+        "scopes": {
+            "AIS": "sandboxapi offline_access",
+            "PIS": "sandboxapi offline_access"
+        },
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": [
+        ]
+    },
+    "psd2Config": {
+        "consentApiUri": "https://devapi.atticabank.gr/psd2/ais/v1/consents",
+        "accountsApiUri": "https://devapi.atticabank.gr/psd2/ais/v1/accounts",
+        "paymentInitiationApiUri": "https://devapi.atticabank.gr/psd2/ais/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://devapi.atticabank.gr/psd2/ais/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://devapi.atticabank.gr/psd2/ais/v1/{payment-service}/{payment-product}/{paymentId}/status"
+    },
+    "id": "atticabank",
+    "identity": {
+        "memberState": "GR",
+        "developerPortalUri": "https://developer.atticabank.gr/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/AtticaBank.png",
+        "organisationCommonName": "Attica Bank S.A.",
+        "termsOfService": "",
+        "customerFriendlyName": "Attica Bank",
+        "countries": [
+            "GR"
+        ],
+        "website": "https://www.atticabank.gr/",
+        "weight": -6
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

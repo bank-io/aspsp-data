@@ -1,0 +1,61 @@
+{
+    "obDirectoryConfig": {
+        "BaseApiDNSUri": null,
+        "MemberState": "GB",
+        "DeveloperPortalUri": null,
+        "RegistrationId": "12345",
+        "CustomerFriendlyDescription": "string",
+        "AutoRegistrationSupported": true,
+        "ClientRegistrationUri": null,
+        "AuthorityId": "FCA",
+        "BaseAISPApiUri": "https://api-obsbox.capitalone.co.uk:4501/open-banking/v3.1/aisp",
+        "TermsOfService": "string",
+        "OBOrganisationId": "001580000103UAQAA2",
+        "BasePISPApiUri": null,
+        "PayloadSigningCertLocation": "string",
+        "BaseCBPIIApiUri": "https://api-obsbox.capitalone.co.uk:4501/open-banking/v3.1/cbpii"
+    },
+    "id": "capitalone",
+    "openIdConfig": {
+        "token_endpoint": "https://auth-obsbox.capitalone.co.uk:4201/token",
+        "scopes_supported": [
+            "openid",
+            "accounts"
+        ],
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "issuer": "https://auth-ui-obsbox.capitalone.co.uk",
+        "authorization_endpoint": "https://auth-ui-obsbox.capitalone.co.uk/auth",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "client_credentials",
+            "authorization_code"
+        ]
+    },
+    "identity": {
+        "memberState": "GB",
+        "developerPortalUri": "https://developer.capitalone.co.uk/",
+        "openIDConfigEndPointUri": "https://auth-ui-obsbox.capitalone.co.uk/.well-known/openid-configuration",
+        "customerFriendlyDescription": "string",
+        "customerFriendlyLogoUri": "assets/img/banks/logo_capitalone-blue.svg",
+        "organisationCommonName": "Capital One PLC",
+        "termsOfService": "string",
+        "customerFriendlyName": "Capital One",
+        "website": "https://www.capitalone.co.uk/",
+        "countries": [
+            "GB"
+        ],
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "cbpii"
+    ]
+}

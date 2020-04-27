@@ -1,0 +1,58 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://auth-sandbox.connect.abnamro.com/as/authorization.oauth2",
+        "token_endpoint_auth_methods_supported": [],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "token_endpoint": "https://auth-sandbox.connect.abnamro.com/as/token.oauth2",
+        "scopes_supported": [
+            "psd2:account:balance:read",
+            "psd2:account:transaction:read",
+            "psd2:account:details:read",
+            "psd2:payment:sepa:write",
+            "psd2:payment:sepa:read",
+            "psd2:payment:xborder:write",
+            "psd2:payment:recurrent:sepa:write"
+        ],
+        "scopes": {
+            "AIS": "psd2:account:balance:read psd2:account:transaction:read psd2:account:details:read",
+            "PIS": "psd2:payment:sepa:write psd2:payment:sepa:read"
+        },
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "code_challenge_methods_supported": []
+    },
+    "psd2Config": {
+        "consentApiUri": "https://api-sandbox.abnamro.com/v1/consentinfo",
+        "accountsApiUri": "https://api-sandbox.abnamro.com/v1/accounts",
+        "paymentInitiationApiUri": "https://api-sandbox.abnamro.com/v1/payments",
+        "paymentApiUri": "https://api-sandbox.abnamro.com/v1/payments/{paymentId}",
+        "consentStatusApiUri": "https://api-sandbox.abnamro.com/v1/consentinfo"
+    },
+    "id": "abnamro",
+    "identity": {
+        "memberState": "NL",
+        "developerPortalUri": "https://developer.abnamro.com/",
+        "openIDConfigEndPointUri": "https://api.apistorebt.ro/bt/sb/oauth/.well-known/oauth-authorization-server",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/logo-abn-amro-svg.svg",
+        "organisationCommonName": "ABN AMRO Bank N.V.",
+        "termsOfService": "",
+        "customerFriendlyName": "ABN AMRO Bank",
+        "countries": [
+            "NL"
+        ],
+        "website": "https://www.abnamro.com/",
+        "weight": -8
+    },
+    "roles": [
+        "aisp",
+        "pisp"
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": null,
+        "token_endpoint_auth_methods_supported": [],
+        "token_endpoint": null,
+        "scopes_supported": [
+            "AIS",
+            "PIS"
+        ],
+        "scopes": {
+            "AIS": "openid read_accounts_list read_accounts",
+            "PIS": "openid instant_sepa_credit_transfers"
+        },
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "grant_types_supported": []
+    },
+    "psd2Config": {
+        "consentApiUri": "https://xs2a.banking.co.at/xs2a-sandbox/{businessEntityID}/v1/consents",
+        "accountsApiUri": "https://xs2a.banking.co.at/xs2a-sandbox/{businessEntityID}/v1/accounts",
+        "paymentInitiationApiUri": "https://xs2a.banking.co.at/xs2a-sandbox/{businessEntityID}/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://xs2a.banking.co.at/xs2a-sandbox/{businessEntityID}/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://xs2a.banking.co.at/xs2a-sandbox/{businessEntityID}/v1/{payment-service}/{payment-product}/{paymentId}/status",
+        "consentStatusApiUri": "https://xs2a.banking.co.at/xs2a-sandbox/{businessEntityID}/v1/consents/{consentId}/status"
+    },
+    "id": "volksbank-at",
+    "availableParameters": {
+        "businessEntityID": [
+            "m044",
+            "m053",
+            "m075",
+            "m016",
+            "m007",
+            "m009",
+            "m004",
+            "m001",
+            "m093",
+            "m044"
+        ]
+    },
+    "identity": {
+        "memberState": "AT",
+        "developerPortalUri": "https://www.volksbank.at/volksbanken-verbund/psd2-fuer-zahlungsdienstleister",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/Volksbank_Austria_Logo.svg",
+        "organisationCommonName": "Association of Volksbanks",
+        "termsOfService": "",
+        "customerFriendlyName": "Volksbank Austria",
+        "website": "https://www.volksbank.at/",
+        "countries": [
+            "AT"
+        ],
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

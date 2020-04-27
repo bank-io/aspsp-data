@@ -1,0 +1,71 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://api.nordeaopenbanking.com/{businessEntityID}/v4/authorize",
+        "token_endpoint_auth_methods_supported": [
+        ],
+        "token_endpoint": "https://api.nordeaopenbanking.com/{businessEntityID}/v4/authorize/token",
+        "scopes_supported": [
+            "ACCOUNTS_BASIC","ACCOUNTS_BALANCES","ACCOUNTS_DETAILS","ACCOUNTS_TRANSACTIONS","PAYMENTS_MULTIPLE", "CARDS_INFORMATION", "CARDS_TRANSACTIONS"
+        ],
+        "scopes": {
+            "AIS": "ACCOUNTS_BASIC,ACCOUNTS_BALANCES,ACCOUNTS_DETAILS,ACCOUNTS_TRANSACTIONS, CARDS_INFORMATION, CARDS_TRANSACTIONS",
+            "PIS": "PAYMENTS_MULTIPLE"
+        },
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": [
+            
+        ]
+    },
+    "psd2Config": {
+        "accountsApiUri": "https://api.nordeaopenbanking.com/personal/v4/accounts",
+        "paymentInitiationApiUri": "https://api.nordeaopenbanking.com/personal/v4/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://api.nordeaopenbanking.com/personal/v4/{payment-service}/{payment-product}/{paymentId}",
+        "paymentConfirmationApiUri": "https://api.nordeaopenbanking.com/personal/v4/{payment-service}/{payment-product}/{paymentId}/confirm"
+    },
+    "id": "nordea",
+    "availableParameters": {
+        "businessEntityID": [
+            "personal",
+            "business",
+            "corporate"
+        ],
+        "country": [
+            "DK",
+            "FI",
+            "NO",
+            "SE"
+        ]
+    },
+    "identity": {
+        "memberState": "DK",
+        "developerPortalUri": "https://developer.nordeaopenbanking.com/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/Nordea-logo.svg",
+        "organisationCommonName": "Nordea Bank Danmark A/S",
+        "termsOfService": "",
+        "customerFriendlyName": "Nordea",
+        "countries": [
+            "DK",
+            "FI",
+            "NO",
+            "SE"
+        ],
+        "website": "https://www.nordea.com/",
+        "weight": -6
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

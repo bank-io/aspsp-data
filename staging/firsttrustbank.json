@@ -1,0 +1,63 @@
+{
+    "obDirectoryConfig": {
+        "BaseApiDNSUri": null,
+        "MemberState": "GB",
+        "DeveloperPortalUri": null,
+        "RegistrationId": "12345",
+        "CustomerFriendlyDescription": "string",
+        "AutoRegistrationSupported": true,
+        "ClientRegistrationUri": null,
+        "AuthorityId": "FCA",
+        "BaseAISPApiUri": "https://sandbox.firsttrustbank.co.uk/open-banking/v3.1/aisp",
+        "TermsOfService": "string",
+        "OBOrganisationId": "0015800000jf9VgAAI",
+        "BasePISPApiUri": "https://sandbox.firsttrustbank.co.uk/open-banking/v3.1/pisp",
+        "PayloadSigningCertLocation": "string",
+        "BaseCBPIIApiUri": "https://sandbox.firsttrustbank.co.uk/open-banking/v3.1/cbpii"
+    },
+    "id": "firsttrustbank",
+    "openIdConfig": {
+        "token_endpoint": "https://sandbox.firsttrustbank.co.uk/security/v2/oauth/token",
+        "scopes_supported": [
+            "openid",
+            "accounts",
+            "payments"
+        ],
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "issuer": "https://sandbox.firsttrustbank.co.uk",
+        "authorization_endpoint": "https://opensandbox.firsttrustbank.co.uk/security/v2/sandbox-auto-consents",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_basic"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "client_credentials",
+            "authorization_code"
+        ]
+    },
+    "identity": {
+        "memberState": "GB",
+        "developerPortalUri": "https://developer.firsttrustbank.co.uk/",
+        "openIDConfigEndPointUri": "https://opensandbox.firsttrustbank.co.uk/endpoints/v2/retail/.well-known/openid-configuration",
+        "customerFriendlyDescription": "string",
+        "customerFriendlyLogoUri": "assets/img/banks/Allied_Irish_Banks_logo.svg",
+        "organisationCommonName": "AIB Group (UK) p.l.c.",
+        "termsOfService": "string",
+        "customerFriendlyName": "AIB (NI)",
+        "website": "https://aibni.co.uk/",
+        "countries": [
+            "GB"
+        ],
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://identity.dskbank.bg/connect/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "token_endpoint": "https://api.ubb.bg/ubb-sb/psd2/oauther/oauth2/token",
+        "scopes_supported": [
+            "sandbox.consents",
+            "sandbox.PSP_AI",
+            "sandbox.PSP_PI",
+            "sandbox.PSP_IC"
+        ],
+        "scopes": {
+            "AIS": "sandbox.PSP_AI",
+            "PIS": "sandbox.PSP_PI"
+        },
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": [
+        ]
+    },
+    "psd2Config": {
+        "consentApiUri": "https://api.ubb.bg/ubb-sb/psd2/v1/consents",
+        "accountsApiUri": "https://api.ubb.bg/ubb-sb/psd2/v1/accounts",
+        "paymentInitiationApiUri": "https://api.ubb.bg/ubb-sb/psd2/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://api.ubb.bg/ubb-sb/psd2/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://api.ubb.bg/ubb-sb/psd2/v1/{payment-service}/{payment-product}/{paymentId}/status"
+    },
+    "id": "ubb",
+    "identity": {
+        "memberState": "BG",
+        "developerPortalUri": "https://developer.ubb.bg/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/ubb.svg",
+        "organisationCommonName": "United Bulgarian Bank",
+        "termsOfService": "",
+        "customerFriendlyName": "United Bulgarian Bank",
+        "countries": [
+            "BG"
+        ],
+        "website": "https://www.ubb.bg/",
+        "weight": -6
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

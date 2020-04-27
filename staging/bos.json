@@ -1,0 +1,63 @@
+{
+    "obDirectoryConfig": {
+        "BaseApiDNSUri": null,
+        "MemberState": "GB",
+        "DeveloperPortalUri": null,
+        "RegistrationId": "12345",
+        "CustomerFriendlyDescription": "string",
+        "AutoRegistrationSupported": true,
+        "ClientRegistrationUri": null,
+        "AuthorityId": "FCA",
+        "BaseAISPApiUri": "https://matls.rs.aspsp.sandbox.lloydsbanking.com/open-banking/v3.1/aisp",
+        "TermsOfService": "string",
+        "OBOrganisationId": "0015800000jfPKvAAM",
+        "BasePISPApiUri": "https://matls.rs.aspsp.sandbox.lloydsbanking.com/open-banking/v3.1/pisp",
+        "PayloadSigningCertLocation": "string",
+        "BaseCBPIIApiUri": "https://matls.rs.aspsp.sandbox.lloydsbanking.com/open-banking/v3.1/cbpii"
+    },
+    "id": "bos",
+    "openIdConfig": {
+        "token_endpoint": "https://matls.as.aspsp.sandbox.lloydsbanking.com/oauth2/access_token",
+        "scopes_supported": [
+            "openid",
+            "accounts",
+            "payments"
+        ],
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "issuer": "https://as.aspsp.sandbox.lloydsbanking.com/oauth2",
+        "authorization_endpoint": "https://as.aspsp.sandbox.lloydsbanking.com/oauth2/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_basic"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "client_credentials",
+            "authorization_code"
+        ]
+    },
+    "identity": {
+        "memberState": "GB",
+        "developerPortalUri": "https://developer.bankofscotland.co.uk/",
+        "openIDConfigEndPointUri": "https://as.aspsp.sandbox.lloydsbanking.com/oauth2/.well-known/openid-configuration",
+        "customerFriendlyDescription": "string",
+        "customerFriendlyLogoUri": "assets/img/banks/bos_logo.svg",
+        "organisationCommonName": "Bank of Scotland PLC",
+        "termsOfService": "string",
+        "customerFriendlyName": "Bank of Scotland",
+        "website": "https://www.bankofscotland.co.uk/",
+        "countries": [
+            "GB"
+        ],
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "obDirectoryConfig": {
+        "OrganisationCommonName": "RBS Bank PLC",
+        "TermsOfService": "string",
+        "OBOrganisationId": "0015800000jfwB4AAI",
+        "CustomerFriendlyName": "RBS Bank",
+        "BasePISPApiUri": "https://ob.rbs.useinfinite.io/open-banking/v3.1/pisp",
+        "PayloadSigningCertLocation": "string",
+        "BaseCBPIIApiUri": "https://ob.rbs.useinfinite.io/open-banking/v3.1/cbpii",
+        "BaseApiDNSUri": null,
+        "MemberState": "GB",
+        "DeveloperPortalUri": null,
+        "RegistrationId": "1234",
+        "OpenIDConfigEndPointUri": "http://localhost:8001/openid/config/0015800000jfwB4AAI",
+        "CustomerFriendlyDescription": "string",
+        "AutoRegistrationSupported": true,
+        "ClientRegistrationUri": null,
+        "AuthorityId": "FCA",
+        "CustomerFriendlyLogoUri": "assets/img/banks/Royal_Bank_of_Scotland_logo.svg",
+        "BaseAISPApiUri": "https://ob.rbs.useinfinite.io/open-banking/v3.1/aisp"
+    },
+    "id": "rbs",
+    "openIdConfig": {
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "issuer": "rbs.useinfinite.io",
+        "authorization_endpoint": "https://api.rbs.useinfinite.io/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "token_endpoint": "https://ob.rbs.useinfinite.io/token",
+        "scopes_supported": [
+            "openid",
+            "accounts",
+            "payments"
+        ],
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "client_credentials",
+            "authorization_code"
+        ]
+    },
+    "identity": {
+        "memberState": "GB",
+        "developerPortalUri": "https://www.bankofapis.com/",
+        "openIDConfigEndPointUri": "http://localhost:8001/openid/config/0015800000jfwB4AAI",
+        "customerFriendlyDescription": "string",
+        "customerFriendlyLogoUri": "assets/img/banks/Royal_Bank_of_Scotland_logo.svg",
+        "organisationCommonName": "RBS Bank PLC",
+        "termsOfService": "string",
+        "customerFriendlyName": "RBS Bank",
+        "website": "https://personal.rbs.co.uk/",
+        "countries": [
+            "GB"
+        ],
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

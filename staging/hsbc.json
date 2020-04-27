@@ -1,0 +1,63 @@
+{
+    "obDirectoryConfig": {
+        "BaseApiDNSUri": null,
+        "MemberState": "GB",
+        "DeveloperPortalUri": null,
+        "RegistrationId": "12345",
+        "CustomerFriendlyDescription": "string",
+        "AutoRegistrationSupported": true,
+        "ClientRegistrationUri": null,
+        "AuthorityId": "FCA",
+        "BaseAISPApiUri": "https://sandbox.hsbc.com/psd2/obie/v3.1",
+        "TermsOfService": "string",
+        "OBOrganisationId": "0015800000jeox1AAA",
+        "BasePISPApiUri": "https://sandbox.hsbc.com/psd2/obie/v3.1",
+        "PayloadSigningCertLocation": "string",
+        "BaseCBPIIApiUri": "https://sandbox.hsbc.com/psd2/obie/v3.1"
+    },
+    "id": "hsbc",
+    "openIdConfig": {
+        "token_endpoint": "https://sandbox.hsbc.com/psd2/obie/v3.1/as/token.oauth2",
+        "scopes_supported": [
+            "openid",
+            "accounts",
+            "payments"
+        ],
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "issuer": "https://sandbox.hsbc.com/psd2/obie/v3.1/as/token.oauth2",
+        "authorization_endpoint": "https://sandbox.hsbc.com/psd2/obie/v3.1/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "private_key_jwt"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "client_credentials",
+            "authorization_code"
+        ]
+    },
+    "identity": {
+        "memberState": "GB",
+        "developerPortalUri": "https://developer.hsbc.com/",
+        "openIDConfigEndPointUri": "https://developer.hsbc.com/.well-known/openid-configuration",
+        "customerFriendlyDescription": "string",
+        "customerFriendlyLogoUri": "assets/img/banks/HSBC_logo_2018.svg",
+        "organisationCommonName": "HSBC Bank plc",
+        "termsOfService": "string",
+        "customerFriendlyName": "HSBC Bank",
+        "website": "https://www.hsbc.co.uk/",
+        "countries": [
+            "GB"
+        ],
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

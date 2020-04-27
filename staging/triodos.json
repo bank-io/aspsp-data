@@ -1,0 +1,67 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://xs2a-sandbox.triodos.com/auth/{country}/v1/auth",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_basic"
+        ],
+        "token_endpoint": "https://xs2a-sandbox.triodos.com/auth/{country}/v1/token",
+        "scopes_supported": [
+            "AIS",
+            "PIS"
+        ],
+        "scopes": {
+            "AIS": "openid offline_access AIS:{consentId}",
+            "PIS": "openid offline_access PIS:{paymentId}"
+        },
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": [
+            "S256"
+        ]
+    },
+    "psd2Config": {
+        "consentApiUri": "https://xs2a-sandbox.triodos.com/xs2a-bg/{country}/v1/consents",
+        "accountsApiUri": "https://xs2a-sandbox.triodos.com/xs2a-bg/{country}/v1/accounts",
+        "paymentInitiationApiUri": "https://xs2a-sandbox.triodos.com/xs2a-bg/{country}/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://xs2a-sandbox.triodos.com/xs2a-bg/{country}/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://xs2a-sandbox.triodos.com/xs2a-bg/{country}/v1/{payment-service}/{payment-product}/{paymentId}/status",
+        "consentStatusApiUri": "https://xs2a-sandbox.triodos.com/xs2a-bg/{country}/v1/consents/{consentId}/status"
+    },
+    "id": "triodos",
+    "availableParameters": {
+        "country": [
+            "nl",
+            "be_nl",
+            "be_fr",
+            "uk"
+        ]
+    },
+    "identity": {
+        "memberState": "NL",
+        "developerPortalUri": "https://developer.triodos.com/",
+        "openIDConfigEndPointUri": "http://xs2a-sandbox.triodos.com/auth/nl/.well-known/openid-configuration",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/logo-triodos-bank.svg",
+        "organisationCommonName": "Triodos Bank N.V.",
+        "termsOfService": "",
+        "customerFriendlyName": "Triodos Bank",
+        "countries": [
+            "NL", "BE", "GB", "ES", "DE"
+        ],
+        "website": "https://www.triodos.com/",
+        "weight": -6
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

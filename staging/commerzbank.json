@@ -1,0 +1,57 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://psd2.api-sandbox.commerzbank.com/berlingroup/authorize",
+        "token_endpoint_auth_methods_supported": [],
+        "token_endpoint": "https://psd2.api-sandbox.commerzbank.com/berlingroup/v1/token",
+        "scopes_supported": [
+            "AIS",
+            "PIS"
+        ],
+        "scopes": {
+            "AIS": "AIS:{consentId}",
+            "PIS": "PIS:{paymentId}"
+        },
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": [
+            "S256"
+        ]
+    },
+    "psd2Config": {
+        "consentApiUri": "https://psd2.api-sandbox.commerzbank.com/berlingroup/v1/consents",
+        "accountsApiUri": "https://psd2.api-sandbox.commerzbank.com/berlingroup/v1/accounts",
+        "paymentInitiationApiUri": "https://psd2.api-sandbox.commerzbank.com/berlingroup/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://psd2.api-sandbox.commerzbank.com/berlingroup/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://psd2.api-sandbox.commerzbank.com/berlingroup/v1/{payment-service}/{payment-product}/{paymentId}/status",
+        "consentStatusApiUri": "https://psd2.api-sandbox.commerzbank.com/berlingroup/v1/consents/{consentId}/status"
+    },
+    "id": "commerzbank",
+    "identity": {
+        "memberState": "DE",
+        "developerPortalUri": "https://psd2.developer.commerzbank.com/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/Commerzbank_2009.svg",
+        "organisationCommonName": "Commerzbank AG",
+        "termsOfService": "",
+        "customerFriendlyName": "Commerzbank",
+        "website": "https://www.commerzbank.com/",
+        "countries": [
+            "DE"
+        ],
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

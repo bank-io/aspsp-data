@@ -1,0 +1,63 @@
+{
+    "obDirectoryConfig": {
+        "BaseApiDNSUri": null,
+        "MemberState": "GB",
+        "DeveloperPortalUri": null,
+        "RegistrationId": "12345",
+        "CustomerFriendlyDescription": "string",
+        "AutoRegistrationSupported": true,
+        "ClientRegistrationUri": "https://sandbox.tsb.co.uk/sandbox/openbanking/register",
+        "AuthorityId": "FCA",
+        "BaseAISPApiUri": "https://sandbox.tsb.co.uk/sandbox/openbanking/open-banking/v3.1/aisp",
+        "TermsOfService": "string",
+        "OBOrganisationId": "0015800001ZEZ3hAAH",
+        "BasePISPApiUri": "https://sandbox.tsb.co.uk/sandbox/openbanking/open-banking/v3.1/pisp",
+        "PayloadSigningCertLocation": "string",
+        "BaseCBPIIApiUri": "https://sandbox.tsb.co.uk/sandbox/openbanking/open-banking/v3.1/cbpii"
+    },
+    "id": "tsb",
+    "openIdConfig": {
+        "token_endpoint": "https://sandbox.tsb.co.uk/sandbox/openbanking/oidcapi/oauth2/token",
+        "scopes_supported": [
+            "openid",
+            "accounts",
+            "payments"
+        ],
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "issuer": "https://sandbox.tsb.co.uk",
+        "authorization_endpoint": "https://sandbox.tsb.co.uk/sandbox/openbanking/oidcapi/oauth2/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_basic"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "client_credentials",
+            "authorization_code"
+        ]
+    },
+    "identity": {
+        "memberState": "GB",
+        "developerPortalUri": "https://developer.tsb.co.uk/",
+        "openIDConfigEndPointUri": "https://sandboxauth.tsb.co.uk/sandbox/openbanking/.well-known/openid-configuration",
+        "customerFriendlyDescription": "string",
+        "customerFriendlyLogoUri": "assets/img/banks/TSB_logo_2013.svg",
+        "organisationCommonName": "TSB BANK PLC",
+        "termsOfService": "string",
+        "customerFriendlyName": "TSB BANK",
+        "website": "https://www.tsb.co.uk/",
+        "countries": [
+            "GB"
+        ],
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

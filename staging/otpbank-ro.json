@@ -1,0 +1,59 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://apistorebt.ro/mga/sps/oauth/oauth20/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "token_endpoint": "https://api.apistorebt.ro/bt/sb/oauth/token",
+        "scopes_supported": [
+            "AIS",
+            "PIS"
+        ],
+        "scopes": {
+            "AIS": "AIS:{consentId}",
+            "PIS": "PIS:{paymentId}"
+        },
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "code_challenge_methods_supported": [
+            "S256"
+        ]
+    },
+    "psd2Config": {
+        "consentApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/consents",
+        "accountsApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/accounts",
+        "paymentInitiationApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/{payment-service}/{paymentId}",
+        "paymentStatusApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/{payment-service}/{paymentId}/status",
+        "consentStatusApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/consents/{consentId}/status"
+    },
+    "id": "otpbank-ro",
+    "identity": {
+        "memberState": "RO",
+        "developerPortalUri": "https://psd2dev.otpbank.ro/prod-devch/developer-portal/",
+        "openIDConfigEndPointUri": null,
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/otpbank.svg",
+        "organisationCommonName": "OTP Bank Romania",
+        "termsOfService": "",
+        "customerFriendlyName": "OTP Bank Romania",
+        "countries": [
+            "RO"
+        ],
+        "website": "https://www.otpbank.ro/",
+        "weight": -8
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

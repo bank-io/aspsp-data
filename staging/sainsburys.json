@@ -1,0 +1,61 @@
+{
+    "obDirectoryConfig": {
+        "BaseApiDNSUri": null,
+        "MemberState": "GB",
+        "DeveloperPortalUri": null,
+        "RegistrationId": "12345",
+        "CustomerFriendlyDescription": "string",
+        "AutoRegistrationSupported": true,
+        "ClientRegistrationUri": null,
+        "AuthorityId": "FCA",
+        "BaseAISPApiUri": "https://tsob.sainsburysbank.co.uk/open-banking/v3.1/aisp",
+        "TermsOfService": "string",
+        "OBOrganisationId": "0015800001ZEc2JAAT",
+        "BasePISPApiUri": null,
+        "PayloadSigningCertLocation": "string",
+        "BaseCBPIIApiUri": null
+    },
+    "id": "sainsburys",
+    "openIdConfig": {
+        "token_endpoint": "https://tsob.sainsburysbank.co.uk:443/sso/oauth2/realms/root/realms/general/access_token",
+        "scopes_supported": [
+            "openid",
+            "accounts"
+        ],
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "issuer": "https://tsob.sainsburysbank.co.uk:443/sso/oauth2/realms/root/realms/general/access_token",
+        "authorization_endpoint": "https://tsob.sainsburysbank.co.uk:443/sso/oauth2/realms/root/realms/general/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "private_key_jwt"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "client_credentials",
+            "authorization_code"
+        ]
+    },
+    "identity": {
+        "memberState": "GB",
+        "developerPortalUri": "https://developer.sainsburysbank.co.uk/",
+        "openIDConfigEndPointUri": "https://tsob.sainsburysbank.co.uk/sso/oauth2/realms/root/realms/general/.well-known/openid-configuration",
+        "customerFriendlyDescription": "string",
+        "customerFriendlyLogoUri": "assets/img/banks/sainsburys-bank.svg",
+        "organisationCommonName": "Sainsbury's Bank PLC",
+        "termsOfService": "string",
+        "customerFriendlyName": "Sainsbury's Bank",
+        "website": "https://www.sainsburysbank.co.uk/",
+        "countries": [
+            "GB"
+        ],
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "cbpii"
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "obDirectoryConfig": {
+        "BaseApiDNSUri": null,
+        "MemberState": "GB",
+        "DeveloperPortalUri": null,
+        "RegistrationId": "12345",
+        "CustomerFriendlyDescription": "string",
+        "AutoRegistrationSupported": true,
+        "ClientRegistrationUri": null,
+        "AuthorityId": "FCA",
+        "BaseAISPApiUri": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/open-banking/v1.1",
+        "TermsOfService": "string",
+        "OBOrganisationId": "00158000016i445AAA",
+        "BasePISPApiUri": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/open-banking/v1.0.5",
+        "PayloadSigningCertLocation": "string",
+        "BaseCBPIIApiUri": null
+    },
+    "id": "ibm-ob",
+    "openIdConfig": {
+        "token_endpoint": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/psuoauth2security/v1.0.5/oauth2/token",
+        "scopes_supported": [
+            "openid",
+            "accounts",
+            "payments"
+        ],
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "issuer": "https://api.eu.apiconnect.ibmcloud.com",
+        "authorization_endpoint": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/psuoauth2security/v1.0.5/oauth2/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "grant_types_supported": [
+            "authorization_code",
+            "refresh_token"
+        ]
+    },
+    "tppOpenIdConfig": {
+        "token_endpoint": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/tppoauth2security/oauth2/token",
+        "scopes_supported": [
+            "openid",
+            "accounts",
+            "payments"
+        ],
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "issuer": "https://api.eu.apiconnect.ibmcloud.com",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "grant_types_supported": [
+            "client_credentials"
+        ]
+    },
+    "identity": {
+        "memberState": "GB",
+        "developerPortalUri": "https://open-banking-sandbox.developer.eu.apiconnect.ibmcloud.com/",
+        "openIDConfigEndPointUri": "https://sandbox-obp-api.danskebank.com/sandbox-open-banking/{channel}/.well-known/openid-configuration",
+        "customerFriendlyDescription": "string",
+        "customerFriendlyLogoUri": "assets/img/banks/IBM_logo.svg",
+        "organisationCommonName": "IBM UK Ltd",
+        "termsOfService": "string",
+        "customerFriendlyName": "IBM UK Open Banking Sandbox",
+        "website": "https://open-banking-sandbox.developer.eu.apiconnect.ibmcloud.com/",
+        "countries": [
+            "GB"
+        ],
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp"
+    ]
+}

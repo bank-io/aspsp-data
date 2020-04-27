@@ -1,0 +1,69 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://openbanking-sandbox.santander.co.uk/sanuk/external-sandbox/open-banking/openid-connect-provider/v1/oauth2/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "issuer": "https://openbanking-ma-sandbox.santander.co.uk",
+        "token_endpoint": "https://openbanking-ma-sandbox.santander.co.uk/sanuk/external-sandbox/open-banking/openid-connect-provider/v1/oauth2/token",
+        "scopes_supported": [
+            "AIS",
+            "PIS"
+        ],
+        "scopes": {
+            "AIS": "Accounts",
+            "PIS": "PIS"
+        },
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "client_credentials",
+            "authorization_code"
+        ]
+    },
+    "obDirectoryConfig": {
+        "BaseAISPApiUri": "https://openbanking-ma-sandbox.santander.co.uk/sanuk/external-sandbox/open-banking/v3.1/aisp",
+        "OrganisationCommonName": "Santander UK PLC",
+        "TermsOfService": "string",
+        "OBOrganisationId": "0015800000jfFGuAAM",
+        "CustomerFriendlyName": "Santander UK PLC",
+        "BasePISPApiUri": "https://openbanking-ma-sandbox.santander.co.uk/sanuk/external-sandbox/open-banking/v3.1/pisp",
+        "PayloadSigningCertLocation": "string",
+        "BaseCBPIIApiUri": "https://openbanking-ma-sandbox.santander.co.uk/sanuk/external-sandbox/open-banking/v3.1/cbpii",
+        "BaseApiDNSUri": null,
+        "MemberState": "GB",
+        "DeveloperPortalUri": null,
+        "RegistrationId": "1234567",
+        "OpenIDConfigEndPointUri": "https://openbanking-sandbox.santander.co.uk/sanuk/external-sandbox/open-banking/openid-connect-provider/v1/.well-known/openid-configuration",
+        "CustomerFriendlyDescription": "string",
+        "AutoRegistrationSupported": true,
+        "ClientRegistrationUri": null,
+        "AuthorityId": "FCA"
+    },
+    "id": "santander",
+    "identity": {
+        "memberState": "GB",
+        "developerPortalUri": "https://sandbox-developer.santander.co.uk/sanuk/external-sandbox",
+        "openIDConfigEndPointUri": "https://openbanking-sandbox.santander.co.uk/sanuk/external-sandbox/open-banking/openid-connect-provider/v1/.well-known/openid-configuration",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/Banco_Santander_Logotipo.svg",
+        "organisationCommonName": "Santander UK PLC",
+        "termsOfService": "",
+        "customerFriendlyName": "Santander UK PLC",
+        "website": "https://www.santander.co.uk/",
+        "countries": [
+            "GB"
+        ],
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

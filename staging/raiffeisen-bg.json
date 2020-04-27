@@ -1,0 +1,59 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://api-sandbox.rbb.bg/psd2-rbbg-oauth2-api/oauth2/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "token_endpoint": "https://api-sandbox.rbb.bg/psd2-rbbg-oauth2-api/oauth2/token",
+        "scopes_supported": [
+            "AIS",
+            "PIS"
+        ],
+        "scopes": {
+            "AIS": "AISP",
+            "PIS": "PIS:{consentId}"
+        },
+        "id_token_signing_alg_values_supported": [
+            "none"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "none"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ]
+    },
+    "psd2Config": {
+        "consentApiUri": "https://apim-sandbox.rbb.bg/v1/psd2-bgs-consent-api/v1/consents",
+        "accountsApiUri": "https://apim-sandbox.rbb.bg/psd2-accounts-api-1.3.2/v1/accounts",
+        "paymentInitiationApiUri": "https://apim-sandbox.rbb.bg/v1/payments-api/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://apim-sandbox.rbb.bg/v1/payments-api/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://apim-sandbox.rbb.bg/v1/payments-api/{payment-service}/{payment-product}/{paymentId}/status",
+        "consentStatusApiUri": "https://apim-sandbox.rbb.bg/v1/psd2-bgs-consent-api/v1/consents/{consentId}/status",
+        "paymentAuthorisationsApiUri": "https://apim-sandbox.rbb.bg/v1/payments-api/{payment-service}/{payment-product}/{paymentId}/authorisations",
+        "postPaymentAuthorisationsApiUri": "https://apim-sandbox.rbb.bg/v1/payments-api/{payment-service}/{payment-product}/{paymentId}/authorisations",
+        "paymentAuthorisationApiUri": "https://apim-sandbox.rbb.bg/v1/payments-api/{payment-service}/{payment-product}/{paymentId}/authorisations/{paymentAuthorisationId}"
+    },
+    "id": "raiffeisen-bg",
+    "identity": {
+        "memberState": "BG",
+        "developerPortalUri": "https://sandbox.rbb.bg/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/Raiffeisen.svg",
+        "organisationCommonName": "Raiffeisen Bank Bulgaria",
+        "termsOfService": "",
+        "customerFriendlyName": "Raiffeisen Bank Bulgaria",
+        "website": "https://www.rbb.bg/",
+        "countries": [
+            "BG"
+        ],
+        "weight": -7
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}
