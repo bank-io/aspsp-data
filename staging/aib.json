@@ -15,7 +15,7 @@
         "PayloadSigningCertLocation": "string",
         "BaseCBPIIApiUri": "https://sandbox.aib.ie/open-banking/v3.1/cbpii"
     },
-    "id": "aibgb",
+    "id": "aib",
     "openIdConfig": {
         "token_endpoint": "https://sandbox.aib.ie/security/v2/oauth/token",
         "scopes_supported": [
