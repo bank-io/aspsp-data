@@ -11,7 +11,7 @@
         "MemberState": "GB",
         "DeveloperPortalUri": null,
         "RegistrationId": "1234",
-        "OpenIDConfigEndPointUri": "http://localhost:8001/openid/config/0015800000jfwB4AAI",
+        "OpenIDConfigEndPointUri": null,
         "CustomerFriendlyDescription": "string",
         "AutoRegistrationSupported": true,
         "ClientRegistrationUri": null,
@@ -47,7 +47,7 @@
     "identity": {
         "memberState": "GB",
         "developerPortalUri": "https://www.bankofapis.com/",
-        "openIDConfigEndPointUri": "http://localhost:8001/openid/config/0015800000jfwB4AAI",
+        "openIDConfigEndPointUri": null,
         "customerFriendlyDescription": "string",
         "customerFriendlyLogoUri": "assets/img/banks/Royal_Bank_of_Scotland_logo.svg",
         "organisationCommonName": "RBS Bank PLC",

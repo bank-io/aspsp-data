@@ -60,7 +60,7 @@
     "identity": {
         "memberState": "GB",
         "developerPortalUri": "https://open-banking-sandbox.developer.eu.apiconnect.ibmcloud.com/",
-        "openIDConfigEndPointUri": "https://sandbox-obp-api.danskebank.com/sandbox-open-banking/{channel}/.well-known/openid-configuration",
+        "openIDConfigEndPointUri": null,
         "customerFriendlyDescription": "string",
         "customerFriendlyLogoUri": "assets/img/banks/IBM_logo.svg",
         "organisationCommonName": "IBM UK Ltd",

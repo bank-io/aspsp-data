@@ -39,7 +39,7 @@
     "identity": {
         "memberState": "NL",
         "developerPortalUri": "https://developer.abnamro.com/",
-        "openIDConfigEndPointUri": "https://api.apistorebt.ro/bt/sb/oauth/.well-known/oauth-authorization-server",
+        "openIDConfigEndPointUri": null,
         "customerFriendlyDescription": "",
         "customerFriendlyLogoUri": "assets/img/banks/logo-abn-amro-svg.svg",
         "organisationCommonName": "ABN AMRO Bank N.V.",

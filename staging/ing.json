@@ -37,7 +37,7 @@
     "identity": {
         "memberState": "NL",
         "developerPortalUri": "https://developer.ing.com/",
-        "openIDConfigEndPointUri": "https://api.apistorebt.ro/bt/sb/oauth/.well-known/oauth-authorization-server",
+        "openIDConfigEndPointUri": null,
         "customerFriendlyDescription": "",
         "customerFriendlyLogoUri": "assets/img/banks/ING_Group_NV_Logo.svg",
         "organisationCommonName": "ING Group",

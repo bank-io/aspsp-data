@@ -4,7 +4,7 @@
         "MemberState": "GB",
         "DeveloperPortalUri": null,
         "RegistrationId": "12345",
-        "OpenIDConfigEndPointUri": "http://localhost:8001/openid/config/0015800000jfwB4AAI",
+        "OpenIDConfigEndPointUri": null,
         "CustomerFriendlyDescription": "string",
         "AutoRegistrationSupported": true,
         "ClientRegistrationUri": null,
@@ -47,7 +47,7 @@
     "identity": {
         "memberState": "GB",
         "developerPortalUri": "https://developer.barclays.com/",
-        "openIDConfigEndPointUri": "http://localhost:8001/openid/config/0015800000jfwB4AAI",
+        "openIDConfigEndPointUri": null,
         "customerFriendlyDescription": "string",
         "customerFriendlyLogoUri": "assets/img/banks/Barclays_logo.svg",
         "organisationCommonName": "Barclays Bank PLC",

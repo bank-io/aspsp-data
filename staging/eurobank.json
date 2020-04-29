@@ -40,7 +40,7 @@
     "identity": {
         "memberState": "GR",
         "developerPortalUri": "https://developer.eurobank.gr/",
-        "openIDConfigEndPointUri": "http://xs2a-sandbox.eurobank.com/auth/nl/.well-known/openid-configuration",
+        "openIDConfigEndPointUri": null,
         "customerFriendlyDescription": "",
         "customerFriendlyLogoUri": "assets/img/banks/eurobank.svg",
         "organisationCommonName": "Eurobank Ergasias",
