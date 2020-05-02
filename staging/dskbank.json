@@ -41,9 +41,9 @@
         "openIDConfigEndPointUri": "",
         "customerFriendlyDescription": "",
         "customerFriendlyLogoUri": "assets/img/banks/dskbank.png",
-        "organisationCommonName": "Eurobank Bulgaria AD",
+        "organisationCommonName": "DSK Bank",
         "termsOfService": "",
-        "customerFriendlyName": "Bulgarian Postbank",
+        "customerFriendlyName": "DSK Bank",
         "countries": [
             "BG"
         ],
