@@ -50,7 +50,7 @@
             "RO"
         ],
         "website": "https://www.librabank.ro/",
-        "weight": -6
+        "weight": 6
     },
     "roles": [
         "aisp",

@@ -49,7 +49,7 @@
             "RO"
         ],
         "website": "https://www.patriabank.ro/",
-        "weight": -6
+        "weight": 6
     },
     "roles": [
         "aisp",

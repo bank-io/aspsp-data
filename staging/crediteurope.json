@@ -47,7 +47,7 @@
             "RO"
         ],
         "website": "https://www.crediteurope.ro/",
-        "weight": -8
+        "weight": 0
     },
     "roles": [
         "aisp",

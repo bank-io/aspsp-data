@@ -52,7 +52,7 @@
             "RO"
         ],
         "website": "https://www.bcr.ro/",
-        "weight": 0
+        "weight": -3
     },
     "roles": [
         "aisp",
