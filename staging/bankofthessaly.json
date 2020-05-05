@@ -47,7 +47,7 @@
             "GR"
         ],
         "website": "http://www.bankofthessaly.gr/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

@@ -55,7 +55,7 @@
             "GB"
         ],
         "website": "https://www.ubs.com/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

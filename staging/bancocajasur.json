@@ -51,7 +51,7 @@
             "ES"
         ],
         "website": "https://portal.cajasur.es/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

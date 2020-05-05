@@ -50,7 +50,7 @@
             "RO"
         ],
         "website": "https://www.garantibbva.ro/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

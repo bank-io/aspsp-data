@@ -52,7 +52,7 @@
             "SK"
         ],
         "website": "https://www.raiffeisen.sk/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

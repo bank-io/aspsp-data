@@ -51,7 +51,7 @@
             "ES"
         ],
         "website": "https://www.bancamarch.es/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

@@ -51,7 +51,7 @@
             "ES"
         ],
         "website": "https://www.bankia.es/",
-        "weight": -6
+        "weight": -5
     },
     "roles": [
         "aisp",

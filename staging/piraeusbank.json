@@ -47,7 +47,7 @@
             "GR"
         ],
         "website": "https://www.piraeusbank.gr/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

@@ -57,7 +57,7 @@
             "NL", "BE", "GB", "ES", "DE"
         ],
         "website": "https://www.triodos.com/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

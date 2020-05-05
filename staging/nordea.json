@@ -61,7 +61,7 @@
             "SE"
         ],
         "website": "https://www.nordea.com/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

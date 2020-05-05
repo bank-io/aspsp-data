@@ -49,7 +49,7 @@
             "BG"
         ],
         "website": "https://www.fibank.bg/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

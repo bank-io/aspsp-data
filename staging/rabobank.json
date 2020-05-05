@@ -49,7 +49,7 @@
             "NL"
         ],
         "website": "https://www.rabobank.nl/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

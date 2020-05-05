@@ -49,7 +49,7 @@
             "HU"
         ],
         "website": "https://www.cib.hu/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

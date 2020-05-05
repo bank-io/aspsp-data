@@ -48,7 +48,7 @@
             "BG"
         ],
         "website": "https://www.postbank.bg/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

@@ -51,7 +51,7 @@
             "ES", "IT"
         ],
         "website": "https://www.bmedonline.it/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

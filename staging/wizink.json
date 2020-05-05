@@ -51,7 +51,7 @@
             "ES", "PT"
         ],
         "website": "https://www.wizink.es/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",

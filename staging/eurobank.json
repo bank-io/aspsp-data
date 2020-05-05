@@ -50,7 +50,7 @@
             "GR"
         ],
         "website": "https://www.eurobank.gr/",
-        "weight": -6
+        "weight": 0
     },
     "roles": [
         "aisp",
