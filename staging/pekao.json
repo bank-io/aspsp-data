@@ -2,7 +2,7 @@
     "openIdConfig": {
         "authorization_endpoint": "https://api.sandbox.pekao.com.pl/v2_1_1.1/auth/v2_1_1.1/authorize",
         "token_endpoint_auth_methods_supported": [
-            "client_secret_post"
+            "tls_client_auth"
         ],
         "grant_types_supported": [
             "refresh_token",
