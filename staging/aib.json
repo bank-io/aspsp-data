@@ -8,12 +8,12 @@
         "AutoRegistrationSupported": true,
         "ClientRegistrationUri": null,
         "AuthorityId": "FCA",
-        "BaseAISPApiUri": "https://sandbox.aib.ie/open-banking/v3.1/aisp",
+        "BaseAISPApiUri": "https://sandbox.aib.ie/v2/sandbox/open-banking/v3.1/aisp",
         "TermsOfService": "string",
         "OBOrganisationId": "0015800000jf9VgAAI",
-        "BasePISPApiUri": "https://sandbox.aib.ie/open-banking/v3.1/pisp",
+        "BasePISPApiUri": "https://sandbox.aib.ie/v2/sandbox/open-banking/v3.1/pisp",
         "PayloadSigningCertLocation": "string",
-        "BaseCBPIIApiUri": "https://sandbox.aib.ie/open-banking/v3.1/cbpii"
+        "BaseCBPIIApiUri": "https://sandbox.aib.ie/v2/sandbox/open-banking/v3.1/cbpii"
     },
     "id": "aib",
     "openIdConfig": {
