@@ -25,6 +25,7 @@
         ]
     },
     "psd2Config": {
+        "AISPConsentInputType": ["psuID", "ibanAccountList"],
         "consentApiUri": "https://api-test.raiffeisen.ro/v1/psd2-bgs-consent-api/v1/consents",
         "accountsApiUri": "https://api-test.raiffeisen.ro/v1/psd2-accounts-api-1.3.2/accounts",
         "paymentInitiationApiUri": "https://api-test.raiffeisen.ro/v1/payments-api/{payment-service}/{payment-product}",
