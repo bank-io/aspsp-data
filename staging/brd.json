@@ -26,9 +26,12 @@
         ]
     },
     "psd2Config": {
-        "consentApiUri": null,
+        "consentApiUri": "https://api.devbrd.ro/brd-api-connect-prod-organization/apicatalog/brd-psd2-aisp/v1/consents",
         "accountsApiUri": "https://api.devbrd.ro/brd-api-connect-prod-organization/apicatalog/brd-psd2-aisp/v1/accounts",
-        "consentStatusApiUri": "null/{consentId}/status"
+        "paymentInitiationApiUri": "https://api.devbrd.ro/brd-api-connect-prod-organization/apicatalog/brd-psd2-pisp/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://api.devbrd.ro/brd-api-connect-prod-organization/apicatalog/brd-psd2-pisp/v1/{payment-service}/{paymentId}",
+        "paymentStatusApiUri": "https://api.devbrd.ro/brd-api-connect-prod-organization/apicatalog/brd-psd2-pisp/v1/{payment-service}/{paymentId}/status",
+        "consentStatusApiUri": "https://api.devbrd.ro/brd-api-connect-prod-organization/apicatalog/brd-psd2-aisp/v1/consents/{consentId}/status"
     },
     "id": "brd",
     "identity": {
