@@ -10,12 +10,13 @@
         ],
         "token_endpoint": "https://api.sandbox.ing.com/oauth2/token",
         "scopes_supported": [
-            "AIS",
-            "PIS"
+            "payment-accounts:balances:view",
+            "payment-accounts:transactions:view",
+            "payment-accounts:orders:create"
         ],
         "scopes": {
-            "AIS": "payment-accounts:balances:view",
-            "PIS": "PIS:{paymentId}"
+            "AIS": "payment-accounts:balances:view payment-accounts:transactions:view",
+            "PIS": "payment-accounts:orders:create"
         },
         "id_token_signing_alg_values_supported": [
             "none"
