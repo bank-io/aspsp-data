@@ -22,10 +22,10 @@
     "id": "monzo",
     "openIdConfig": {
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "issuer": "https://api.s101.nonprod-ffs.io/open-banking/",
         "authorization_endpoint": "https://verify-s101.monzo.com/open-banking/authorize",

@@ -18,10 +18,10 @@
             "PIS": "pisp"
         },
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "code_challenge_methods_supported": []
     },

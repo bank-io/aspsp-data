@@ -24,10 +24,10 @@
             "payments"
         ],
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "issuer": "https://api.eu.apiconnect.ibmcloud.com",
         "authorization_endpoint": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/psuoauth2security/v1.0.5/oauth2/authorize",
@@ -47,10 +47,10 @@
             "payments"
         ],
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "issuer": "https://api.eu.apiconnect.ibmcloud.com",
         "token_endpoint_auth_methods_supported": [

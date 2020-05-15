@@ -19,10 +19,10 @@
     "id": "tide",
     "openIdConfig": {
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "issuer": "https://ob-issuer2.sandbox.tide.co",
         "authorization_endpoint": "https://ob-app2.sandbox.tide.co/auth",

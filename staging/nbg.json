@@ -22,10 +22,10 @@
             "PIS": "sandbox-uk-payments-api-v1"
         },
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "grant_types_supported": [
             "refresh_token",

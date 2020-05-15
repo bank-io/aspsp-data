@@ -24,10 +24,10 @@
             "payments"
         ],
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "issuer": "https://sandbox.tsb.co.uk",
         "authorization_endpoint": "https://sandbox.tsb.co.uk/sandbox/openbanking/oidcapi/oauth2/authorize",

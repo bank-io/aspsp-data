@@ -24,10 +24,10 @@
             "payments"
         ],
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "issuer": "https://sandbox.aib.ie",
         "authorization_endpoint": "https://opensandbox.aib.ie/security/v2/sandbox-auto-consents",

@@ -24,10 +24,10 @@
             "payments"
         ],
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "issuer": "https://as.aspsp.sandbox.lloydsbanking.com/oauth2",
         "authorization_endpoint": "https://as.aspsp.sandbox.lloydsbanking.com/oauth2/authorize",

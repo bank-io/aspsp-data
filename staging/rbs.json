@@ -22,7 +22,7 @@
     "id": "rbs",
     "openIdConfig": {
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "issuer": "rbs.useinfinite.io",
         "authorization_endpoint": "https://api.rbs.useinfinite.io/authorize",
@@ -36,7 +36,7 @@
             "payments"
         ],
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "grant_types_supported": [
             "refresh_token",

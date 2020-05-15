@@ -21,10 +21,10 @@
     "id": "bankofireland",
     "openIdConfig": {
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "issuer": "https://auth-sandbox.bankofireland.com",
         "authorization_endpoint": "https://auth-sandbox.bankofireland.com/oauth/as/b365/authorization.oauth2",

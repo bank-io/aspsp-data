@@ -24,10 +24,10 @@
             "payments"
         ],
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "issuer": "https://identity.developer.tescobank.com",
         "authorization_endpoint": "https://identity.developer.tescobank.com/open-banking/as/authorization.oauth2",

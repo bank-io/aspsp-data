@@ -12,10 +12,10 @@
             "PIS": "apic-sbx-psd2"
         },
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "grant_types_supported": [
             "client_credentials"

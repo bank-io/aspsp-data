@@ -23,10 +23,10 @@
             "accounts"
         ],
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "issuer": "https://tsob.sainsburysbank.co.uk:443/sso/oauth2/realms/root/realms/general/access_token",
         "authorization_endpoint": "https://tsob.sainsburysbank.co.uk:443/sso/oauth2/realms/root/realms/general/authorize",

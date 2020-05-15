@@ -21,10 +21,10 @@
             "PIS": "psd2:payment:sepa:write psd2:payment:sepa:read"
         },
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "code_challenge_methods_supported": []
     },

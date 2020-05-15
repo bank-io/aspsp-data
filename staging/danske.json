@@ -24,10 +24,10 @@
             "payments"
         ],
         "id_token_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "request_object_signing_alg_values_supported": [
-            "none"
+            "PS256"
         ],
         "issuer": "https://sandbox-obp-api.danskebank.com",
         "authorization_endpoint": "https://sandbox-obp-auth.danskebank.com/sandbox-open-banking/{channel}/oauth2/authorize",
