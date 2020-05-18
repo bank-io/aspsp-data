@@ -78,5 +78,9 @@
     "roles": [
         "aisp",
         "pisp"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret"
     ]
 }

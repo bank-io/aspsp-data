@@ -25,8 +25,7 @@
             "refresh_token",
             "authorization_code"
         ],
-        "code_challenge_methods_supported": [
-        ]
+        "code_challenge_methods_supported": []
     },
     "psd2Config": {
         "consentApiUri": "https://api.bbr.bg/bbr-sb/psd2/v1/consents",
@@ -55,5 +54,10 @@
         "aisp",
         "pisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret",
+        "signingKid"
     ]
 }

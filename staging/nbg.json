@@ -10,10 +10,8 @@
             "profile",
             "role",
             "sandbox-account-info-api-v2-1",
-
             "sandbox-uk-account-info-api-v1",
             "accounts",
-
             "sandbox-uk-payments-api-v1",
             "payments"
         ],
@@ -31,8 +29,7 @@
             "refresh_token",
             "authorization_code"
         ],
-        "code_challenge_methods_supported": [
-        ]
+        "code_challenge_methods_supported": []
     },
     "obDirectoryConfig": {
         "BaseApiDNSUri": null,
@@ -70,5 +67,9 @@
         "aisp",
         "pisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret"
     ]
 }

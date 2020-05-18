@@ -57,5 +57,9 @@
     "roles": [
         "aisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret"
     ]
 }

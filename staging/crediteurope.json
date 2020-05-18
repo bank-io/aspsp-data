@@ -22,8 +22,7 @@
         "request_object_signing_alg_values_supported": [
             "PS256"
         ],
-        "code_challenge_methods_supported": [
-        ]
+        "code_challenge_methods_supported": []
     },
     "psd2Config": {
         "consentApiUri": "https://dev-public-api.medirect.psd2enabler.asseco.rs/eval/api-gw/v1/consents",
@@ -53,5 +52,9 @@
         "aisp",
         "pisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret"
     ]
 }

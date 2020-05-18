@@ -20,7 +20,9 @@
         "grant_types_supported": []
     },
     "psd2Config": {
-        "AISPConsentInputType": ["ibanAccountList"],
+        "AISPConsentInputType": [
+            "ibanAccountList"
+        ],
         "consentApiUri": "https://api-sandbox.unicredit.ro/hydrogen/v1/consents",
         "accountsApiUri": "https://api-sandbox.unicredit.ro/hydrogen/v1/accounts",
         "paymentInitiationApiUri": "https://api-sandbox.unicredit.ro/hydrogen/v1/{payment-service}/{payment-product}",

@@ -54,7 +54,8 @@
         "customerFriendlyName": "Bank of Ireland",
         "website": "https://www.bankofireland.com/",
         "countries": [
-            "GB", "IE"
+            "GB",
+            "IE"
         ],
         "weight": 0
     },
@@ -62,5 +63,8 @@
         "aisp",
         "pisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId"
     ]
 }

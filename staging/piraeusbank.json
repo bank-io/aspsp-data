@@ -23,8 +23,7 @@
             "refresh_token",
             "authorization_code"
         ],
-        "code_challenge_methods_supported": [
-        ]
+        "code_challenge_methods_supported": []
     },
     "psd2Config": {
         "consentApiUri": "https://api.rapidlink.piraeusbank.gr/piraeusbank/production/psd2/v3/consents",
@@ -53,5 +52,9 @@
         "aisp",
         "pisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret"
     ]
 }

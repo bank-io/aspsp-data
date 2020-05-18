@@ -45,7 +45,12 @@
         "termsOfService": "",
         "customerFriendlyName": "Erste Group",
         "countries": [
-            "AT", "RO", "CZ", "HR", "HU", "SK"
+            "AT",
+            "RO",
+            "CZ",
+            "HR",
+            "HU",
+            "SK"
         ],
         "website": "https://www.erstegroup.com/",
         "weight": 0
@@ -54,5 +59,10 @@
         "aisp",
         "pisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret",
+        "apiKey"
     ]
 }

@@ -1,11 +1,16 @@
 {
     "openIdConfig": {
         "authorization_endpoint": "https://api.nordeaopenbanking.com/{businessEntityID}/v4/authorize",
-        "token_endpoint_auth_methods_supported": [
-        ],
+        "token_endpoint_auth_methods_supported": [],
         "token_endpoint": "https://api.nordeaopenbanking.com/{businessEntityID}/v4/authorize/token",
         "scopes_supported": [
-            "ACCOUNTS_BASIC","ACCOUNTS_BALANCES","ACCOUNTS_DETAILS","ACCOUNTS_TRANSACTIONS","PAYMENTS_MULTIPLE", "CARDS_INFORMATION", "CARDS_TRANSACTIONS"
+            "ACCOUNTS_BASIC",
+            "ACCOUNTS_BALANCES",
+            "ACCOUNTS_DETAILS",
+            "ACCOUNTS_TRANSACTIONS",
+            "PAYMENTS_MULTIPLE",
+            "CARDS_INFORMATION",
+            "CARDS_TRANSACTIONS"
         ],
         "scopes": {
             "AIS": "ACCOUNTS_BASIC,ACCOUNTS_BALANCES,ACCOUNTS_DETAILS,ACCOUNTS_TRANSACTIONS, CARDS_INFORMATION, CARDS_TRANSACTIONS",
@@ -21,9 +26,7 @@
             "refresh_token",
             "authorization_code"
         ],
-        "code_challenge_methods_supported": [
-            
-        ]
+        "code_challenge_methods_supported": []
     },
     "psd2Config": {
         "accountsApiUri": "https://api.nordeaopenbanking.com/personal/v4/accounts",
@@ -67,5 +70,10 @@
         "aisp",
         "pisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret",
+        "signingKid"
     ]
 }

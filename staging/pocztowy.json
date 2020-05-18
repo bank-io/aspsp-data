@@ -56,5 +56,8 @@
         "aisp",
         "pisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "signingKid"
     ]
 }

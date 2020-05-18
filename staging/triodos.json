@@ -54,7 +54,11 @@
         "termsOfService": "",
         "customerFriendlyName": "Triodos Bank",
         "countries": [
-            "NL", "BE", "GB", "ES", "DE"
+            "NL",
+            "BE",
+            "GB",
+            "ES",
+            "DE"
         ],
         "website": "https://www.triodos.com/",
         "weight": 0
@@ -63,5 +67,10 @@
         "aisp",
         "pisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret",
+        "signingKid"
     ]
 }

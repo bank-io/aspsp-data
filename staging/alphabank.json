@@ -48,7 +48,9 @@
         "customerFriendlyName": "Alpha Bank",
         "website": "https://www.alphabank.ro/",
         "countries": [
-            "RO", "GR", "CY"
+            "RO",
+            "GR",
+            "CY"
         ],
         "weight": 0
     },
@@ -56,5 +58,10 @@
         "aisp",
         "pisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret",
+        "apiKey"
     ]
 }

@@ -24,8 +24,7 @@
             "refresh_token",
             "authorization_code"
         ],
-        "code_challenge_methods_supported": [
-        ]
+        "code_challenge_methods_supported": []
     },
     "psd2Config": {
         "accountsApiUri": "https://api.kb.cz/sandbox/aisp/v1/my/accounts",
@@ -56,5 +55,9 @@
         "aisp",
         "pisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret"
     ]
 }
