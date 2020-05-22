@@ -1,0 +1,65 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://identity.dskbank.bg/connect/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "token_endpoint": "https://psd2api.fibank.bg/fibank-sb/psd2/oauther/oauth2/token",
+        "scopes_supported": [
+            "sandbox.consents",
+            "sandbox.PSP_AI",
+            "sandbox.PSP_PI",
+            "sandbox.PSP_IC"
+        ],
+        "scopes": {
+            "AIS": "sandbox.PSP_AI",
+            "PIS": "sandbox.PSP_PI"
+        },
+        "id_token_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": []
+    },
+    "psd2Config": {
+        "consentApiUri": "https://psd2api.fibank.bg/fibank-sb/psd2/v1/consents",
+        "accountsApiUri": "https://psd2api.fibank.bg/fibank-sb/psd2/v1/accounts",
+        "paymentInitiationApiUri": "https://psd2api.fibank.bg/fibank-sb/psd2/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://psd2api.fibank.bg/fibank-sb/psd2/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://psd2api.fibank.bg/fibank-sb/psd2/v1/{payment-service}/{payment-product}/{paymentId}/status"
+    },
+    "id": "fibank-sandbox",
+    "aspspId": "fibank",
+    "identity": {
+        "memberState": "BG",
+        "developerPortalUri": "https://psd2dev.fibank.bg/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/fibank-logo.svg",
+        "organisationCommonName": "First Investment Bank",
+        "termsOfService": "",
+        "customerFriendlyName": "Fibank (sandbox)",
+        "name": "Fibank",
+        "countries": [
+            "BG"
+        ],
+        "website": "https://www.fibank.bg/",
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret",
+        "signingKid"
+    ]
+}

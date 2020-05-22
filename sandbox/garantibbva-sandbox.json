@@ -1,0 +1,68 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": null,
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "token_endpoint": "https://apis.garantibbva.ro/auth/oauth/v2/token",
+        "scopes_supported": [
+            "AIS",
+            "PIS"
+        ],
+        "scopes": {
+            "AIS": "AIS",
+            "PIS": "PIS"
+        },
+        "id_token_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": [
+            "S256"
+        ]
+    },
+    "psd2Config": {
+        "intentApiUri": "https://apis.garantibbva.ro/intent/v1",
+        "consentApiUri": "https://apis.garantibbva.ro/consents/v1",
+        "accountsApiUri": "https://apis.garantibbva.ro/accounts/v1",
+        "paymentInitiationApiUri": "https://apis.garantibbva.ro/{payment-service}/v1/{payment-product}",
+        "paymentApiUri": "https://apis.garantibbva.ro/{payment-service}/v1/{paymentId}",
+        "paymentStatusApiUri": "https://apis.garantibbva.ro/{payment-service}/v1/{paymentId}/status",
+        "consentStatusApiUri": "https://apis.garantibbva.ro/consents/v1/{consentId}/status"
+    },
+    "id": "garantibbva-sandbox",
+    "aspspId": "garantibbva",
+    "identity": {
+        "memberState": "RO",
+        "developerPortalUri": "https://developers.garantibbva.ro/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/Garanti_BBVA_Logo.svg",
+        "organisationCommonName": "Garanti BBVA",
+        "termsOfService": "",
+        "customerFriendlyName": "Garanti BBVA (sandbox)",
+        "name": "Garanti BBVA",
+        "countries": [
+            "RO"
+        ],
+        "website": "https://www.garantibbva.ro/",
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret",
+        "apiKey",
+        "apiKeySecret"
+    ]
+}

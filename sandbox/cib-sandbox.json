@@ -1,0 +1,61 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": null,
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "token_endpoint": "https://api-test.cib.hu/oauth2/token",
+        "scopes_supported": [
+            "sandbox.consents",
+            "sandbox.PSP_AI",
+            "sandbox.PSP_PI",
+            "sandbox.PSP_IC"
+        ],
+        "scopes": {
+            "AIS": "sandbox.PSP_AI",
+            "PIS": "sandbox.PSP_PI"
+        },
+        "id_token_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": [
+        ]
+    },
+    "psd2Config": {
+        "consentApiUri": "https://api-test.cib.hu/v1/consents",
+        "accountsApiUri": "https://api-test.cib.hu/v1/accounts",
+        "paymentInitiationApiUri": "https://api-test.cib.hu/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://api-test.cib.hu/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://api-test.cib.hu/v1/{payment-service}/{payment-product}/{paymentId}/status"
+    },
+    "id": "cib-sandbox",
+    "aspspId": "cib",
+    "identity": {
+        "memberState": "HU",
+        "developerPortalUri": "https://www.cib.hu/en/Maganszemelyek/psd2_api.html",
+        "openIDConfigEndPointUri": "https://api-test.cib.hu/psd2/.well-known/oauth-authorization-server",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/cib.svg",
+        "organisationCommonName": "CIB Bank",
+        "termsOfService": "",
+        "customerFriendlyName": "CIB Bank (sandbox)",
+        "name": "CIB Bank",
+        "countries": [
+            "HU"
+        ],
+        "website": "https://www.cib.hu/",
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

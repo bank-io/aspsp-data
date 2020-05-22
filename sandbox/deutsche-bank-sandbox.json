@@ -1,0 +1,59 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": null,
+        "token_endpoint_auth_methods_supported": [],
+        "token_endpoint": null,
+        "scopes_supported": [
+            "AIS",
+            "PIS"
+        ],
+        "scopes": {
+            "AIS": "openid read_accounts_list read_accounts",
+            "PIS": "openid instant_sepa_credit_transfers"
+        },
+        "id_token_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "grant_types_supported": []
+    },
+    "psd2Config": {
+        "consentApiUri": "https://simulator-xs2a.db.com/ais/{country}/{businessEntityID}/v1/consents",
+        "accountsApiUri": "https://simulator-xs2a.db.com/ais/{country}/{businessEntityID}/v1/accounts",
+        "paymentInitiationApiUri": "https://simulator-xs2a.db.com/pis/{country}/{businessEntityID}/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://simulator-xs2a.db.com/pis/{country}/{businessEntityID}/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://simulator-xs2a.db.com/pis/{country}/{businessEntityID}/v1/{payment-service}/{payment-product}/{paymentId}/status",
+        "consentStatusApiUri": "https://simulator-xs2a.db.com/ais/{country}/{businessEntityID}/v1/consents/{consentId}/status"
+    },
+    "id": "deutsche-bank-sandbox",
+    "aspspId": "deutsche-bank",
+    "identity": {
+        "memberState": "DE",
+        "developerPortalUri": "https://developer.db.com/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/Deutsche_Bank-Logo.svg",
+        "organisationCommonName": "Deutsche Bank",
+        "termsOfService": "",
+        "customerFriendlyName": "Deutsche Bank (sandbox)",
+        "name": "Deutsche Bank",
+        "website": "https://www.db.com/",
+        "countries": [
+            "DE",
+            "IT",
+            "ES",
+            "BE"
+        ],
+        "weight": -1
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId"
+    ]
+}

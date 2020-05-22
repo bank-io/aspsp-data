@@ -1,0 +1,62 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://api.rapidlink.piraeusbank.gr/piraeusbank/production/v3/oauth/oauth2/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "token_endpoint": "https://api.rapidlink.piraeusbank.gr/piraeusbank/production/v3/oauth/oauth2/token",
+        "scopes_supported": [
+            "sandboxapi",
+            "offline_access"
+        ],
+        "scopes": {
+            "AIS": "sandboxapi offline_access",
+            "PIS": "sandboxapi offline_access"
+        },
+        "id_token_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": []
+    },
+    "psd2Config": {
+        "consentApiUri": "https://api.rapidlink.piraeusbank.gr/piraeusbank/production/psd2/v3/consents",
+        "accountsApiUri": "https://api.rapidlink.piraeusbank.gr/piraeusbank/production/psd2/v3/accounts",
+        "paymentInitiationApiUri": "https://api.rapidlink.piraeusbank.gr/piraeusbank/production/psd2/pis/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://api.rapidlink.piraeusbank.gr/piraeusbank/production/psd2/pis/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://api.rapidlink.piraeusbank.gr/piraeusbank/production/psd2/pis/v1/{payment-service}/{payment-product}/{paymentId}/status"
+    },
+    "id": "piraeusbank-sandbox",
+    "aspspId": "piraeusbank",
+    "identity": {
+        "memberState": "GR",
+        "developerPortalUri": "https://rapidlink.piraeusbank.gr/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/piraeusbank.svg",
+        "organisationCommonName": "Piraeus Bank A.E.",
+        "termsOfService": "",
+        "customerFriendlyName": "Piraeus Bank (sandbox)",
+        "name": "Piraeus Bank",
+        "countries": [
+            "GR"
+        ],
+        "website": "https://www.piraeusbank.gr/",
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret"
+    ]
+}

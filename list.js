@@ -1,6 +1,6 @@
 const path = require("path");
 
-const list = require('fs').readdirSync(path.join(__dirname, 'staging')).map(p => require(path.join(__dirname, 'staging', p)));
+const list = require('fs').readdirSync(path.join(__dirname, 'sandbox')).map(p => require(path.join(__dirname, 'sandbox', p)));
 
 let result = list.reduce((acc, cur) => {
     return {

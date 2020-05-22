@@ -1,0 +1,61 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": null,
+        "token_endpoint_auth_methods_supported": [
+            "tls_client_auth"
+        ],
+        "token_endpoint": null,
+        "scopes_supported": [
+            "AIS",
+            "PIS"
+        ],
+        "scopes": {
+            "AIS": "AIS",
+            "PIS": "PIS"
+        },
+        "id_token_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": [
+            "S256"
+        ]
+    },
+    "psd2Config": {
+        "consentApiUri": "https://sandbox.eximbank.ro/psd2api/1.0.0/v1/consents",
+        "accountsApiUri": "https://sandbox.eximbank.ro/psd2api/1.0.0/v1/accounts",
+        "paymentInitiationApiUri": "https://sandbox.eximbank.ro/psd2api/1.0.0/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://sandbox.eximbank.ro/psd2api/1.0.0/v1/{payment-service}/{paymentId}",
+        "paymentStatusApiUri": "https://sandbox.eximbank.ro/psd2api/1.0.0/v1/{payment-service}/{paymentId}/status",
+        "consentStatusApiUri": "https://sandbox.eximbank.ro/psd2api/1.0.0/v1/consents/{consentId}/status"
+    },
+    "id": "eximbank-sandbox",
+    "aspspId": "eximbank",
+    "identity": {
+        "memberState": "RO",
+        "developerPortalUri": "https://sandbox.eximbank.ro/store/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/EximBank.svg",
+        "organisationCommonName": "EximBank",
+        "termsOfService": "",
+        "customerFriendlyName": "EximBank (sandbox)",
+        "name": "EximBank",
+        "countries": [
+            "RO"
+        ],
+        "website": "https://www.eximbank.ro/",
+        "weight": 6
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

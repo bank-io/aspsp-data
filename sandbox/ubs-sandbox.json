@@ -1,0 +1,67 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://xs2a-sandbox.ubs.com/xs2a/api/v1/psd2/resourceAuthorization",
+        "token_endpoint_auth_methods_supported": [
+            "tls_client_auth"
+        ],
+        "token_endpoint": "https://api-test.cec.ro/cec/tpp/oauthais/oauth2/token",
+        "scopes_supported": [
+            "AIS",
+            "PIS"
+        ],
+        "scopes": {
+            "AIS": "AIS",
+            "PIS": "PIS"
+        },
+        "id_token_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": [
+            
+        ]
+    },
+    "psd2Config": {
+        "consentApiUri": "https://xs2a-sandbox.ubs.com/xs2a/api/v1/psd2/consents",
+        "accountsApiUri": "https://xs2a-sandbox.ubs.com/xs2a/api/v1/psd2/accounts",
+        "paymentInitiationApiUri": "https://xs2a-sandbox.ubs.com/xs2a/api/v1/psd2/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://xs2a-sandbox.ubs.com/xs2a/api/v1/psd2/{payment-service}/{paymentId}",
+        "paymentStatusApiUri": "https://xs2a-sandbox.ubs.com/xs2a/api/v1/psd2/{payment-service}/{paymentId}/status",
+        "consentStatusApiUri": "https://xs2a-sandbox.ubs.com/xs2a/api/v1/psd2/consents/{consentId}/status"
+    },
+    "id": "ubs-sandbox",
+    "aspspId": "ubs",
+    "identity": {
+        "memberState": "CH",
+        "developerPortalUri": "https://xs2a-devportal.ubs.com/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/UBS_Logo_Semibold.svg",
+        "organisationCommonName": "UBS Group AG",
+        "termsOfService": "",
+        "customerFriendlyName": "UBS (sandbox)",
+        "name": "UBS",
+        "countries": [
+            "AT",
+            "DE",
+            "ES",
+            "FR",
+            "IT",
+            "LU",
+            "GB"
+        ],
+        "website": "https://www.ubs.com/",
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

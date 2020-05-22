@@ -1,0 +1,60 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://api-test.cec.ro/cec/tpp/oauthais/oauth2/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "tls_client_auth"
+        ],
+        "token_endpoint": "https://api-test.cec.ro/cec/tpp/oauthais/oauth2/token",
+        "scopes_supported": [
+            "AIS",
+            "PIS"
+        ],
+        "scopes": {
+            "AIS": "AIS",
+            "PIS": "PIS"
+        },
+        "id_token_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": []
+    },
+    "psd2Config": {
+        "consentApiUri": "https://sandboxapi.psd.dnb.no/v1/consents",
+        "accountsApiUri": "https://sandboxapi.psd.dnb.no/v1/accounts",
+        "paymentInitiationApiUri": "https://sandboxapi.psd.dnb.no/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://sandboxapi.psd.dnb.no/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://sandboxapi.psd.dnb.no/v1/{payment-service}/{payment-product}/{paymentId}/status",
+        "consentStatusApiUri": "https://sandboxapi.psd.dnb.no/v1/consents/{consentId}/status"
+    },
+    "id": "dnb-sandbox",
+    "aspspId": "dnb",
+    "identity": {
+        "memberState": "NO",
+        "developerPortalUri": "https://developer.dnb.no/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/DNB_ASA_logo.svg",
+        "organisationCommonName": "DNB ASA",
+        "termsOfService": "",
+        "customerFriendlyName": "DNB (sandbox)",
+        "name": "DNB",
+        "countries": [
+            "NO",
+            "SE"
+        ],
+        "website": "https://www.dnb.no/",
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

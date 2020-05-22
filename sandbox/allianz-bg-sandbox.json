@@ -1,0 +1,65 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": null,
+        "token_endpoint_auth_methods_supported": [
+            "client_secret_post"
+        ],
+        "token_endpoint": "https://api.bank.allianz.bg/allianz-sb/psd2/oauther/oauth2/token",
+        "scopes_supported": [
+            "sandbox.consents",
+            "sandbox.PSP_AI",
+            "sandbox.PSP_PI",
+            "sandbox.PSP_IC"
+        ],
+        "scopes": {
+            "AIS": "sandbox.PSP_AI",
+            "PIS": "sandbox.PSP_PI"
+        },
+        "id_token_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": []
+    },
+    "psd2Config": {
+        "consentApiUri": "https://api.bank.allianz.bg/allianz-sb/psd2/v1/consents",
+        "accountsApiUri": "https://api.bank.allianz.bg/allianz-sb/psd2/v1/accounts",
+        "paymentInitiationApiUri": "https://api.bank.allianz.bg/allianz-sb/psd2/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://api.bank.allianz.bg/allianz-sb/psd2/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://api.bank.allianz.bg/allianz-sb/psd2/v1/{payment-service}/{payment-product}/{paymentId}/status"
+    },
+    "id": "allianz-bg-sandbox",
+    "aspspId": "allianz-bg",
+    "identity": {
+        "memberState": "BG",
+        "developerPortalUri": "https://dev.bank.allianz.bg/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/allianz.svg",
+        "organisationCommonName": "Allianz Bank Bulgaria AD",
+        "termsOfService": "",
+        "customerFriendlyName": "Allianz Bank Bulgaria (sandbox)",
+        "name": "Allianz Bank Bulgaria",
+        "countries": [
+            "BG"
+        ],
+        "website": "https://www.allianz.bg/",
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret",
+        "signingKid"
+    ]
+}

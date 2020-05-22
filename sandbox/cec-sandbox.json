@@ -1,0 +1,65 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": "https://api-test.cec.ro/cec/tpp/oauthais/oauth2/authorize",
+        "token_endpoint_auth_methods_supported": [
+            "tls_client_auth"
+        ],
+        "token_endpoint": "https://api-test.cec.ro/cec/tpp/oauthais/oauth2/token",
+        "scopes_supported": [
+            "AIS",
+            "PIS"
+        ],
+        "scopes": {
+            "AIS": "AIS",
+            "PIS": "PIS"
+        },
+        "id_token_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "grant_types_supported": [
+            "refresh_token",
+            "authorization_code"
+        ],
+        "code_challenge_methods_supported": [
+            "S256"
+        ]
+    },
+    "psd2Config": {
+        "consentApiUri": "https://api-test.cec.ro/cec/tpp/psd29/v1/consents",
+        "accountsApiUri": "https://api-test.cec.ro/cec/tpp/psd29/v1/accounts",
+        "paymentInitiationApiUri": "https://api-test.cec.ro/cec/tpp/psd29/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://api-test.cec.ro/cec/tpp/psd29/v1/{payment-service}/{paymentId}",
+        "paymentStatusApiUri": "https://api-test.cec.ro/cec/tpp/psd29/v1/{payment-service}/{paymentId}/status",
+        "consentStatusApiUri": "https://api-test.cec.ro/cec/tpp/psd29/v1/consents/{consentId}/status"
+    },
+    "id": "cec-sandbox",
+    "aspspId": "cec",
+    "identity": {
+        "memberState": "RO",
+        "developerPortalUri": "https://apiportal-test.cec.ro/cec/tpp/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/CEC_Bank.svg",
+        "organisationCommonName": "CEC Bank",
+        "termsOfService": "",
+        "customerFriendlyName": "CEC Bank (sandbox)",
+        "name": "CEC Bank",
+        "countries": [
+            "RO"
+        ],
+        "website": "https://www.cec.ro/",
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret"
+    ]
+}

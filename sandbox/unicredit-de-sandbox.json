@@ -1,0 +1,53 @@
+{
+    "openIdConfig": {
+        "authorization_endpoint": null,
+        "token_endpoint_auth_methods_supported": [],
+        "token_endpoint": null,
+        "scopes_supported": [
+            "AIS",
+            "PIS"
+        ],
+        "scopes": {
+            "AIS": "openid read_accounts_list read_accounts",
+            "PIS": "openid instant_sepa_credit_transfers"
+        },
+        "id_token_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "request_object_signing_alg_values_supported": [
+            "PS256"
+        ],
+        "grant_types_supported": []
+    },
+    "psd2Config": {
+        "consentApiUri": "https://api-sandbox.unicredit.de/hydrogen/v1/consents",
+        "accountsApiUri": "https://api-sandbox.unicredit.de/hydrogen/v1/accounts",
+        "paymentInitiationApiUri": "https://api-sandbox.unicredit.de/hydrogen/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://api-sandbox.unicredit.de/hydrogen/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://api-sandbox.unicredit.de/hydrogen/v1/{payment-service}/{payment-product}/{paymentId}/status",
+        "consentStatusApiUri": "https://api-sandbox.unicredit.de/hydrogen/v1/consents/{consentId}/status"
+    },
+    "id": "unicredit-de-sandbox",
+    "aspspId": "unicredit-de",
+    "identity": {
+        "memberState": "DE",
+        "developerPortalUri": "https://developer.unicredit.eu/",
+        "openIDConfigEndPointUri": "",
+        "customerFriendlyDescription": "",
+        "customerFriendlyLogoUri": "assets/img/banks/unicredit-de.svg",
+        "organisationCommonName": "UniCredit Bank AG (\"HypoVereinsbank\")",
+        "termsOfService": "",
+        "customerFriendlyName": "UniCredit Bank AG (\"HypoVereinsbank\") (sandbox)",
+        "name": "UniCredit Bank AG (\"HypoVereinsbank\")",
+        "website": "https://www.hypovereinsbank.de/",
+        "countries": [
+            "DE"
+        ],
+        "weight": 0
+    },
+    "roles": [
+        "aisp",
+        "pisp",
+        "cbpii"
+    ]
+}

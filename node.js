@@ -1,14 +1,14 @@
 const path = require("path");
 
-function getStagingAspsp(aspspId) {
-    return require(`./staging/${aspspId}.json`);
+function getSandboxAspsp(aspspId) {
+    return require(`./sandbox/${aspspId}.json`);
 }
 
-function getStagingAspsps() {
-    const list = require('fs').readdirSync(path.join(__dirname, 'staging')).filter(p => p.endsWith('.json')).map(p => require(path.join(__dirname, 'staging', p)));
+function getSandboxAspsps() {
+    const list = require('fs').readdirSync(path.join(__dirname, 'sandbox')).filter(p => p.endsWith('.json')).map(p => require(path.join(__dirname, 'sandbox', p)));
 
     return list;
 }
 
-exports.getStagingAspsp = getStagingAspsp;
-exports.getStagingAspsps = getStagingAspsps;
+exports.getSandboxAspsp = getSandboxAspsp;
+exports.getSandboxAspsps = getSandboxAspsps;

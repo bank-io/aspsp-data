@@ -1,15 +1,15 @@
-const stagingAspsps = require.context(
-    `./staging/`, // Don’t make this a variable
+const sandboxAspsps = require.context(
+    `./sandbox/`, // Don’t make this a variable
     true, // Whether or not to check subdirectories
     /^.*\.(json)$/ // Rough regex for extensions, maybe change this for your use case?
   );
 
-export function getStagingAspsp(aspspId) {
-    return stagingAspsps(`./${aspspId}.json`);
+export function getSandboxAspsp(aspspId) {
+    return sandboxAspsps(`./${aspspId}.json`);
 }
 
-export function getStagingAspsps() {
-    return stagingAspsps.keys().map(stagingAspsps).map(p => ({
+export function getSandboxAspsps() {
+    return sandboxAspsps.keys().map(sandboxAspsps).map(p => ({
         ...p,
         authorisationServerId: p.id,
     }))
