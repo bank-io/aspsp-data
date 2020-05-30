@@ -40,7 +40,7 @@
         "developerPortalUri": "https://developer.sb.societegenerale.fr/",
         "openIDConfigEndPointUri": "https://particuliers.sg-signin.sb.societegenerale.fr/.well-known/openid-configuration",
         "customerFriendlyDescription": "",
-        "customerFriendlyLogoUri": "assets/img/banks/Société_Générale.svg",
+        "customerFriendlyLogoUri": "assets/img/banks/Societe_Generale.svg",
         "organisationCommonName": "Société Générale",
         "termsOfService": "",
         "customerFriendlyName": "Société Générale (sandbox)",
