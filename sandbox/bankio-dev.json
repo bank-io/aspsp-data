@@ -10,12 +10,13 @@
         ],
         "token_endpoint": "https://localhost:8443/api/auth/token",
         "scopes_supported": [
-            "AIS",
-            "PIS"
+            "aisp",
+            "pisp",
+            "offline_access"
         ],
         "scopes": {
-            "AIS": "AIS",
-            "PIS": "PIS"
+            "AIS": "aisp offline_access",
+            "PIS": "pisp offline_access"
         },
         "id_token_signing_alg_values_supported": [
             "PS256"
@@ -28,12 +29,12 @@
         ]
     },
     "psd2Config": {
-        "consentApiUri": "https://localhost:8443/api/v1/consents",
-        "accountsApiUri": "https://localhost:8443/api/v1/accounts",
-        "paymentInitiationApiUri": "https://localhost:8443/api/v1/{payment-service}/{payment-product}",
-        "paymentApiUri": "https://localhost:8443/api/v1/{payment-service}/{paymentId}",
-        "paymentStatusApiUri": "https://localhost:8443/api/v1/{payment-service}/{paymentId}/status",
-        "consentStatusApiUri": "https://localhost:8443/api/v1/consents/{consentId}/status"
+        "consentApiUri": "https://localhost:8443/api/bankio/v1/consents",
+        "accountsApiUri": "https://localhost:8443/api/bankio/v1/accounts",
+        "paymentInitiationApiUri": "https://localhost:8443/api/bankio/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://localhost:8443/api/bankio/v1/{payment-service}/{paymentId}",
+        "paymentStatusApiUri": "https://localhost:8443/api/bankio/v1/{payment-service}/{paymentId}/status",
+        "consentStatusApiUri": "https://localhost:8443/api/bankio/v1/consents/{consentId}/status"
     },
     "id": "bankio-dev",
     "aspspId": "bankio",
