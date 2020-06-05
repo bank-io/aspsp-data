@@ -8,9 +8,11 @@ export function getSandboxAspsp(aspspId) {
     return sandboxAspsps(`./${aspspId}.json`);
 }
 
-export function getSandboxAspsps() {
-    return sandboxAspsps.keys().map(sandboxAspsps).map(p => ({
+const sandboxAspspsValues = sandboxAspsps.keys().map(sandboxAspsps).map(p => ({
         ...p,
         authorisationServerId: p.id,
-    }))
+    }));
+
+export function getSandboxAspsps() {
+    return sandboxAspspsValues;
 }
