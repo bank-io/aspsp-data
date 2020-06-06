@@ -29,6 +29,7 @@
     "psd2Config": {
         "consentApiUri": null,
         "accountsApiUri": "https://api.sandbox.ing.com/v3/accounts",
+        "transactionsApiUri": "https://api.sandbox.ing.com/v2/accounts/{accountId}/transactions",
         "paymentInitiationApiUri": "https://api.sandbox.ing.com/v1/{payment-service}/{payment-product}",
         "paymentApiUri": "https://api.sandbox.ing.com/v1/{payment-service}/{payment-product}/{paymentId}",
         "paymentStatusApiUri": "https://api.sandbox.ing.com/v1/{payment-service}/{payment-product}/{paymentId}/status",
