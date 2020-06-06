@@ -6,7 +6,8 @@
         ],
         "grant_types_supported": [
             "refresh_token",
-            "authorization_code"
+            "authorization_code",
+            "client_credentials"
         ],
         "token_endpoint": "https://api.sandbox.ing.com/oauth2/token",
         "scopes_supported": [
@@ -27,6 +28,9 @@
         "code_challenge_methods_supported": []
     },
     "psd2Config": {
+        "capabilities": {
+            "AISPConsentNotRequired": true
+        },
         "consentApiUri": null,
         "accountsApiUri": "https://api.sandbox.ing.com/v3/accounts",
         "transactionsApiUri": "https://api.sandbox.ing.com/v2/accounts/{accountId}/transactions",
