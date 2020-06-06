@@ -1,82 +1,64 @@
 {
-    "obDirectoryConfig": {
-        "BaseApiDNSUri": null,
-        "MemberState": "GB",
-        "DeveloperPortalUri": null,
-        "RegistrationId": "12345",
-        "CustomerFriendlyDescription": "string",
-        "AutoRegistrationSupported": true,
-        "ClientRegistrationUri": null,
-        "AuthorityId": "FCA",
-        "BaseAISPApiUri": "https://sandbox-obp-api.danskebank.com/sandbox-open-banking/v3.1/aisp",
-        "TermsOfService": "string",
-        "OBOrganisationId": "0015800000jf7AeAAI",
-        "BasePISPApiUri": "https://sandbox-obp-api.danskebank.com/sandbox-open-banking/v3.1/pisp",
-        "PayloadSigningCertLocation": "string",
-        "BaseCBPIIApiUri": "https://sandbox-obp-api.danskebank.com/sandbox-open-banking/v3.1/cbpii"
+  "obDirectoryConfig": {
+    "BaseApiDNSUri": null,
+    "MemberState": "GB",
+    "DeveloperPortalUri": null,
+    "RegistrationId": "12345",
+    "CustomerFriendlyDescription": "string",
+    "AutoRegistrationSupported": true,
+    "ClientRegistrationUri": null,
+    "AuthorityId": "FCA",
+    "BaseAISPApiUri": "https://sandbox-obp-api.danskebank.com/sandbox-open-banking/v3.1/aisp",
+    "TermsOfService": "string",
+    "OBOrganisationId": "0015800000jf7AeAAI",
+    "BasePISPApiUri": "https://sandbox-obp-api.danskebank.com/sandbox-open-banking/v3.1/pisp",
+    "PayloadSigningCertLocation": "string",
+    "BaseCBPIIApiUri": "https://sandbox-obp-api.danskebank.com/sandbox-open-banking/v3.1/cbpii"
+  },
+  "id": "danske-sandbox",
+  "aspspId": "danske",
+  "openIdConfig": {
+    "token_endpoint": "https://sandbox-obp-api.danskebank.com/sandbox-open-banking/{channel}/oauth2/token",
+    "scopes_supported": ["openid", "accounts", "payments"],
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "issuer": "https://sandbox-obp-api.danskebank.com",
+    "authorization_endpoint": "https://sandbox-obp-auth.danskebank.com/sandbox-open-banking/{channel}/oauth2/authorize",
+    "token_endpoint_auth_methods_supported": ["client_secret_post"],
+    "grant_types_supported": ["authorization_code", "client_credentials"]
+  },
+  "availableParameters": {
+    "channel": ["private", "business"]
+  },
+  "businessEntities": {
+    "private": {
+      "customerFriendlyName": "private",
+      "parameters": {
+        "channel": "private"
+      }
     },
-    "id": "danske-sandbox",
-    "aspspId": "danske",
-    "openIdConfig": {
-        "token_endpoint": "https://sandbox-obp-api.danskebank.com/sandbox-open-banking/{channel}/oauth2/token",
-        "scopes_supported": [
-            "openid",
-            "accounts",
-            "payments"
-        ],
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "issuer": "https://sandbox-obp-api.danskebank.com",
-        "authorization_endpoint": "https://sandbox-obp-auth.danskebank.com/sandbox-open-banking/{channel}/oauth2/authorize",
-        "token_endpoint_auth_methods_supported": [
-            "client_secret_post"
-        ],
-        "grant_types_supported": [
-            "authorization_code",
-            "client_credentials"
-        ]
-    },
-    "availableParameters": {
-        "channel": [
-            "private",
-            "business"
-        ]
-    },
-    "identity": {
-        "memberState": "DK",
-        "developerPortalUri": "https://developers.danskebank.com/",
-        "openIDConfigEndPointUri": "https://sandbox-obp-api.danskebank.com/sandbox-open-banking/{channel}/.well-known/openid-configuration",
-        "customerFriendlyDescription": "string",
-        "customerFriendlyLogoUri": "assets/img/banks/Danske_Bank_logo.svg",
-        "organisationCommonName": "Danske Bank A/S",
-        "termsOfService": "string",
-        "customerFriendlyName": "Danske Bank (sandbox)",
-        "name": "Danske Bank",
-        "website": "https://danskebank.com/",
-        "countries": [
-            "DE",
-            "DK",
-            "FI",
-            "GB",
-            "IE",
-            "LU",
-            "NO",
-            "PL",
-            "SE"
-        ],
-        "weight": 0
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "clientSecret"
-    ]
+    "business": {
+      "customerFriendlyName": "business",
+      "parameters": {
+        "channel": "business"
+      }
+    }
+  },
+  "identity": {
+    "memberState": "DK",
+    "developerPortalUri": "https://developers.danskebank.com/",
+    "openIDConfigEndPointUri": "https://sandbox-obp-api.danskebank.com/sandbox-open-banking/{channel}/.well-known/openid-configuration",
+    "customerFriendlyDescription": "string",
+    "customerFriendlyLogoUri": "assets/img/banks/Danske_Bank_logo.svg",
+    "organisationCommonName": "Danske Bank A/S",
+    "termsOfService": "string",
+    "customerFriendlyName": "Danske Bank (sandbox)",
+    "customerFriendlyNameTemplate": "Danske Bank {businessEntity} (sandbox)",
+    "name": "Danske Bank",
+    "website": "https://danskebank.com/",
+    "countries": ["DE", "DK", "FI", "GB", "IE", "LU", "NO", "PL", "SE"],
+    "weight": 0
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret"]
 }
