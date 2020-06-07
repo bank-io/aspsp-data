@@ -6,19 +6,19 @@
         "RegistrationId": "12345",
         "CustomerFriendlyDescription": "string",
         "AutoRegistrationSupported": true,
-        "ClientRegistrationUri": "https://api-prd-internal.obtpp.notprod.thenbs.io/open-banking/register",
+        "ClientRegistrationUri": "https://api.obtpp.nationwideinterfaces.io/open-banking/register",
         "AuthorityId": "FCA",
-        "BaseAISPApiUri": "https://api-prd-internal.obtpp.notprod.thenbs.io/open-banking/v3.1/aisp",
+        "BaseAISPApiUri": "https://api.obtpp.nationwideinterfaces.io/open-banking/v3.1/aisp",
         "TermsOfService": "string",
         "OBOrganisationId": "0015800000jf8aKAAQ",
-        "BasePISPApiUri": "https://api-prd-internal.obtpp.notprod.thenbs.io/open-banking/v3.1/pisp",
+        "BasePISPApiUri": "https://api.obtpp.nationwideinterfaces.io/open-banking/v3.1/pisp",
         "PayloadSigningCertLocation": "string",
-        "BaseCBPIIApiUri": "https://api-prd-internal.obtpp.notprod.thenbs.io/open-banking/v3.1/cbpii"
+        "BaseCBPIIApiUri": "https://api.obtpp.nationwideinterfaces.io/open-banking/v3.1/cbpii"
     },
     "id": "nationwide-sandbox",
     "aspspId": "nationwide",
     "openIdConfig": {
-        "token_endpoint": "https://api-prd-internal.obtpp.notprod.thenbs.io/open-banking/oauth/token",
+        "token_endpoint": "https://api.obtpp.nationwideinterfaces.io/open-banking/oauth/token",
         "scopes_supported": [
             "openid",
             "accounts",
@@ -31,9 +31,9 @@
             "PS256"
         ],
         "issuer": "https://api.nationwide.co.uk/open-banking",
-        "authorization_endpoint": "https://api-prd-internal.obtpp.notprod.thenbs.io/open-banking/oauth/authorize",
+        "authorization_endpoint": "https://api.obtpp.nationwideinterfaces.io/open-banking/oauth/authorize",
         "token_endpoint_auth_methods_supported": [
-            "client_secret_basic"
+            "tls_client_auth"
         ],
         "grant_types_supported": [
             "refresh_token",
