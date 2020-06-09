@@ -30,6 +30,8 @@
         ]
     },
     "psd2Config": {
+        "AISPCreateConsentAfterAuthentication": true,
+        "AISPSCARequiredAfterCreateConsent": true,
         "AISPConsentInputType": [
             "ibanAccountList"
         ],
