@@ -55,7 +55,8 @@
         "customerFriendlyName": "WiZink (sandbox)",
         "name": "WiZink",
         "countries": [
-            "ES", "PT"
+            "ES",
+            "PT"
         ],
         "website": "https://www.wizink.es/",
         "weight": 0
@@ -64,5 +65,11 @@
         "aisp",
         "pisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret",
+        "organisationId",
+        "signingKid"
     ]
 }

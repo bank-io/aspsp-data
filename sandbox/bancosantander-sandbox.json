@@ -67,6 +67,8 @@
     ],
     "clientCredentialsFields": [
         "clientId",
-        "clientSecret"
+        "clientSecret",
+        "organisationId",
+        "signingKid"
     ]
 }

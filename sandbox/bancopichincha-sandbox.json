@@ -64,5 +64,11 @@
         "aisp",
         "pisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret",
+        "organisationId",
+        "signingKid"
     ]
 }
