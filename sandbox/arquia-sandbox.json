@@ -30,6 +30,11 @@
         ]
     },
     "psd2Config": {
+        "AISPCreateConsentAfterAuthentication": true,
+        "AISPSCARequiredAfterCreateConsent": true,
+        "AISPConsentInputType": [
+            "ibanAccountList"
+        ],
         "consentApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/ARQUIA/v1/consents",
         "accountsApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/ARQUIA/v1/accounts",
         "paymentInitiationApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/ARQUIA/v1/{payment-service}/{payment-product}",

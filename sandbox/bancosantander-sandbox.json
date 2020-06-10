@@ -30,6 +30,11 @@
         ]
     },
     "psd2Config": {
+        "AISPCreateConsentAfterAuthentication": true,
+        "AISPSCARequiredAfterCreateConsent": true,
+        "AISPConsentInputType": [
+            "ibanAccountList"
+        ],
         "consentApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/BBVA/v1/consents",
         "accountsApiUri": "https://apis-sandbox.bancosantander.es/canales-digitales/sb/v2/accounts",
         "paymentInitiationApiUri": "https://apis-sandbox.bancosantander.es/canales-digitales/sb/v2/payment-initiation",
