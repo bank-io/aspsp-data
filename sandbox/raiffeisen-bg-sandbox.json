@@ -25,6 +25,10 @@
         ]
     },
     "psd2Config": {
+        "AISPConsentInputType": [
+            "psuID",
+            "ibanAccountList"
+        ],
         "consentApiUri": "https://apim-sandbox.rbb.bg/v1/psd2-bgs-consent-api/v1/consents",
         "accountsApiUri": "https://apim-sandbox.rbb.bg/psd2-accounts-api-1.3.2/v1/accounts",
         "paymentInitiationApiUri": "https://apim-sandbox.rbb.bg/v1/payments-api/{payment-service}/{payment-product}",
