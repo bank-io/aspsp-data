@@ -24,6 +24,10 @@
             "psuID",
             "ibanAccountList"
         ],
+        "PISPInitiationInputType": [
+            "psuID",
+            "debtorAccountIBAN"
+        ],
         "consentApiUri": "https://simulator-xs2a.db.com/ais/{country}/{businessEntityID}/v1/consents",
         "accountsApiUri": "https://simulator-xs2a.db.com/ais/{country}/{businessEntityID}/v1/accounts",
         "paymentInitiationApiUri": "https://simulator-xs2a.db.com/pis/{country}/{businessEntityID}/v1/{payment-service}/{payment-product}",
