@@ -25,6 +25,9 @@
         "AISPConsentInputType": [
             "ibanAccountList"
         ],
+        "PISPInitiationInputType": [
+            "debtorAccountIBAN"
+        ],
         "consentApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/consents",
         "accountsApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/accounts",
         "paymentInitiationApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/{payment-service}/{payment-product}",
