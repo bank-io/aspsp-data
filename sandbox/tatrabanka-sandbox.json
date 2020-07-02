@@ -22,7 +22,8 @@
         ],
         "grant_types_supported": [
             "refresh_token",
-            "authorization_code"
+            "authorization_code",
+            "client_credentials"
         ],
         "code_challenge_methods_supported": [
             "S256"
