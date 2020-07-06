@@ -39,7 +39,7 @@
     "aspspId": "otpbank-ro",
     "identity": {
         "memberState": "RO",
-        "developerPortalUri": "https://psd2dev.otpbank.ro/prod-devch/developer-portal/",
+        "developerPortalUri": "https://devch.otpdirekt.ro/prod-devch/developer-portal/",
         "openIDConfigEndPointUri": null,
         "customerFriendlyDescription": "",
         "customerFriendlyLogoUri": "assets/img/banks/otpbank.svg",
@@ -57,5 +57,10 @@
         "aisp",
         "pisp",
         "cbpii"
+    ],
+    "clientCredentialsFields": [
+        "clientId",
+        "clientSecret",
+        "organisationId"
     ]
 }
