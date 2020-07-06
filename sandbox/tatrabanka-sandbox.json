@@ -30,9 +30,7 @@
         ]
     },
     "psd2Config": {
-        "capabilities": {
-            "AISPConsentNotRequired": true
-        },
+        "AISPConsentNotRequired": true,
         "accountsApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/accounts",
         "accountApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/accounts/information",
         "balancesApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/accounts/information",

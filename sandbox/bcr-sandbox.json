@@ -25,10 +25,12 @@
         ]
     },
     "psd2Config": {
-        "capabilities": {
-            "AISPConsentNotRequired": true,
-            "PISPCreateConsentPSUAuthorisationRequired": true
-        },
+        "AISPConsentNotRequired": true,
+        "PISPCreateConsentAfterAuthentication": true,
+        "PISPSCARequiredAfterCreateConsent": true,
+        "PISPInitiationInputType": [
+            "debtorAccountIBAN"
+        ],
         "consentApiUri": "https://webapi.developers.erstegroup.com/api/bcr/sandbox/v1/psd2-consent-api",
         "walletApiUri": "https://webapi.developers.erstegroup.com/api/bcr/sandbox/v1/sandbox-idp/wallets",
         "signingApiUri": "https://webapi.developers.erstegroup.com/api/bcr/sandbox/v1/sandbox-idp/signing",

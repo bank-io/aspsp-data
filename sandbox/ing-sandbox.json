@@ -28,9 +28,7 @@
         "code_challenge_methods_supported": []
     },
     "psd2Config": {
-        "capabilities": {
-            "AISPConsentNotRequired": true
-        },
+        "AISPConsentNotRequired": true,
         "consentApiUri": null,
         "accountsApiUri": "https://api.sandbox.ing.com/v3/accounts",
         "transactionsApiUri": "https://api.sandbox.ing.com/v2/accounts/{accountId}/transactions",
