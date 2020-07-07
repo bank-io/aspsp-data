@@ -33,7 +33,7 @@
         "paymentInitiationApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/{payment-service}/{payment-product}",
         "paymentApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/{payment-service}/{paymentId}",
         "paymentStatusApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/{payment-service}/{paymentId}/status",
-        "consentStatusApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/consents/{consentId}/status"
+        "consentStatusApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/consent/{consentId}/status"
     },
     "id": "otpbank-ro-sandbox",
     "aspspId": "otpbank-ro",
@@ -61,6 +61,7 @@
     "clientCredentialsFields": [
         "clientId",
         "clientSecret",
-        "organisationId"
+        "organisationId",
+        "authorizationBearer"
     ]
 }
