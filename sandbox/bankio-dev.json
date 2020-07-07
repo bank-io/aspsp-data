@@ -32,8 +32,8 @@
         "consentApiUri": "https://localhost:8443/api/bankio/v1/consents",
         "accountsApiUri": "https://localhost:8443/api/bankio/v1/accounts",
         "paymentInitiationApiUri": "https://localhost:8443/api/bankio/v1/{payment-service}/{payment-product}",
-        "paymentApiUri": "https://localhost:8443/api/bankio/v1/{payment-service}/{paymentId}",
-        "paymentStatusApiUri": "https://localhost:8443/api/bankio/v1/{payment-service}/{paymentId}/status",
+        "paymentApiUri": "https://localhost:8443/api/bankio/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://localhost:8443/api/bankio/v1/{payment-service}/{payment-product}/{paymentId}/status",
         "consentStatusApiUri": "https://localhost:8443/api/bankio/v1/consents/{consentId}/status"
     },
     "id": "bankio-dev",
