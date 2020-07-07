@@ -61,7 +61,6 @@
     "clientCredentialsFields": [
         "clientId",
         "clientSecret",
-        "organisationId",
-        "authorizationBearer"
+        "organisationId"
     ]
 }
