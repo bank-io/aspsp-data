@@ -1,21 +1,18 @@
 {
     "openIdConfig": {
-        "authorization_endpoint": "https://apistorebt.ro/mga/sps/oauth/oauth20/authorize",
+        "authorization_endpoint": null,
         "token_endpoint_auth_methods_supported": [
-            "client_secret_post"
         ],
         "grant_types_supported": [
-            "refresh_token",
-            "authorization_code"
         ],
-        "token_endpoint": "https://api.apistorebt.ro/bt/sb/oauth/token",
+        "token_endpoint": null,
         "scopes_supported": [
             "AIS",
             "PIS"
         ],
         "scopes": {
-            "AIS": "AIS:{consentId}",
-            "PIS": "PIS:{paymentId}"
+            "AIS": "AIS",
+            "PIS": "PIS"
         },
         "id_token_signing_alg_values_supported": [
             "PS256"
@@ -30,9 +27,9 @@
     "psd2Config": {
         "consentApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/consents",
         "accountsApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/accounts",
-        "paymentInitiationApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/{payment-service}/{payment-product}",
-        "paymentApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/{payment-service}/{paymentId}",
-        "paymentStatusApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/{payment-service}/{paymentId}/status",
+        "paymentInitiationApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/{payment-service}/{payment-product}",
+        "paymentApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/{payment-service}/{payment-product}/{paymentId}",
+        "paymentStatusApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/{payment-service}/{payment-product}/{paymentId}/status",
         "consentStatusApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/consent/{consentId}/status"
     },
     "id": "otpbank-ro-sandbox",
