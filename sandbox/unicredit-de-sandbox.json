@@ -35,6 +35,10 @@
         "openIDConfigEndPointUri": "",
         "customerFriendlyDescription": "",
         "customerFriendlyLogoUri": "assets/img/banks/unicredit-de.svg",
+        "thumbprint": {
+            "backgroundColor": "#fff",
+            "borderColor": "#e11925"
+        },
         "organisationCommonName": "UniCredit Bank AG (\"HypoVereinsbank\")",
         "termsOfService": "",
         "customerFriendlyName": "UniCredit Bank AG (\"HypoVereinsbank\") (sandbox)",

@@ -35,6 +35,10 @@
         "openIDConfigEndPointUri": "",
         "customerFriendlyDescription": "",
         "customerFriendlyLogoUri": "assets/img/banks/unicredit-bg.svg",
+        "thumbprint": {
+            "backgroundColor": "#fff",
+            "borderColor": "#e11925"
+        },
         "organisationCommonName": "UniCredit Bulbank",
         "termsOfService": "",
         "customerFriendlyName": "UniCredit Bulbank (sandbox)",

@@ -46,6 +46,10 @@
         "openIDConfigEndPointUri": "",
         "customerFriendlyDescription": "",
         "customerFriendlyLogoUri": "assets/img/banks/Raiffeisen.svg",
+        "thumbprint": {
+          "backgroundColor": "#fff500",
+          "borderColor": null
+        },
         "organisationCommonName": "Raiffeisen Bank Austria",
         "termsOfService": "",
         "customerFriendlyName": "Raiffeisen Bank Austria (sandbox)",

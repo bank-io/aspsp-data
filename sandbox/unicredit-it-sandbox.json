@@ -35,6 +35,10 @@
         "openIDConfigEndPointUri": "",
         "customerFriendlyDescription": "",
         "customerFriendlyLogoUri": "assets/img/banks/UniCredit.svg",
+        "thumbprint": {
+            "backgroundColor": "#fff",
+            "borderColor": "#e11925"
+        },
         "organisationCommonName": "UniCredit SpA",
         "termsOfService": "",
         "customerFriendlyName": "UniCredit SpA (sandbox)",

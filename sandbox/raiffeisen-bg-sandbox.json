@@ -51,6 +51,10 @@
         "openIDConfigEndPointUri": "",
         "customerFriendlyDescription": "",
         "customerFriendlyLogoUri": "assets/img/banks/Raiffeisen.svg",
+        "thumbprint": {
+          "backgroundColor": "#fff500",
+          "borderColor": null
+        },
         "organisationCommonName": "Raiffeisen Bank Bulgaria",
         "termsOfService": "",
         "customerFriendlyName": "Raiffeisen Bank Bulgaria (sandbox)",

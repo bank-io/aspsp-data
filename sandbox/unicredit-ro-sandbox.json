@@ -38,6 +38,10 @@
         "openIDConfigEndPointUri": "",
         "customerFriendlyDescription": "",
         "customerFriendlyLogoUri": "assets/img/banks/unicredit-bank.svg",
+        "thumbprint": {
+            "backgroundColor": "#fff",
+            "borderColor": "#e11925"
+        },
         "organisationCommonName": "UniCredit Bank S.A.",
         "termsOfService": "",
         "customerFriendlyName": "UniCredit Bank Romania (sandbox)",

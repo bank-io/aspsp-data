@@ -43,7 +43,11 @@
         "openIDConfigEndPointUri": "https://api.apistorebt.ro/bt/sb/oauth/.well-known/oauth-authorization-server",
         "customerFriendlyDescription": "",
         "customerFriendlyLogoUri": "assets/img/banks/Banca_Transilvania_2016.svg",
-        "thumbprintLogoUri": "assets/img/banks/square/Banca_Transilvania_2016.svg",
+        "thumbprint": {
+            "logoUri": "assets/img/banks/square/Banca_Transilvania_2016.svg",
+            "backgroundColor": "#FAFAFA",
+            "borderColor": "#BEBEBE"
+        },
         "organisationCommonName": "Banca Transilvania",
         "termsOfService": "",
         "customerFriendlyName": "Banca Transilvania (sandbox)",

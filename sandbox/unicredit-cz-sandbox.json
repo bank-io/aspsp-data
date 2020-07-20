@@ -44,6 +44,10 @@
         "openIDConfigEndPointUri": "",
         "customerFriendlyDescription": "",
         "customerFriendlyLogoUri": "assets/img/banks/unicredit-bank.svg",
+        "thumbprint": {
+            "backgroundColor": "#fff",
+            "borderColor": "#e11925"
+        },
         "organisationCommonName": "UniCredit Bank Czech Republic and Slovakia a.s.",
         "termsOfService": "",
         "customerFriendlyName": "UniCredit Bank Czech Republic (sandbox)",
