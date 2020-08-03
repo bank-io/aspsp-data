@@ -28,6 +28,10 @@
         "code_challenge_methods_supported": []
     },
     "psd2Config": {
+        "PISPCreateConsentAfterAuthentication": true,
+        "AISPCreateConsentAfterAuthentication": true,
+        "AISPConsentInputType": ["ibanAccountList"],
+        "PISPInitiationInputType": ["debtorAccountIBAN"],
         "accountsApiUri": "https://api.sandbox.pekao.com.pl/v2_1_1.1/accounts/v2_1_1.1/getAccounts",
         "transactionsApiUri": "https://api.sandbox.pekao.com.pl/v2_1_1.1/accounts/v2_1_1.1/getTransactionsDone",
         "accountApiUri": "https://api.sandbox.pekao.com.pl/v2_1_1.1/accounts/v2_1_1.1/getAccount",
