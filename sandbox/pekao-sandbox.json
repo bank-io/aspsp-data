@@ -29,7 +29,7 @@
     },
     "psd2Config": {
         "PISPCreateConsentAfterAuthentication": true,
-        "AISPCreateConsentAfterAuthentication": true,
+        "AISPCreateConsentNotRequired": true,
         "AISPConsentInputType": ["ibanAccountList"],
         "PISPInitiationInputType": ["debtorAccountIBAN"],
         "accountsApiUri": "https://api.sandbox.pekao.com.pl/v2_1_1.1/accounts/v2_1_1.1/getAccounts",

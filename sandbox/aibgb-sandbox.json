@@ -8,12 +8,12 @@
         "AutoRegistrationSupported": true,
         "ClientRegistrationUri": null,
         "AuthorityId": "FCA",
-        "BaseAISPApiUri": "https://sandbox.aibgb.co.uk/open-banking/v3.1/aisp",
+        "BaseAISPApiUri": "https://sandbox.aibgb.co.uk/v2/sandbox/open-banking/v3.1/aisp",
         "TermsOfService": "string",
         "OBOrganisationId": "0015800000jf9VgAAI",
-        "BasePISPApiUri": "https://sandbox.aibgb.co.uk/open-banking/v3.1/pisp",
+        "BasePISPApiUri": "https://sandbox.aibgb.co.uk/v2/sandbox/open-banking/v3.1/pisp",
         "PayloadSigningCertLocation": "string",
-        "BaseCBPIIApiUri": "https://sandbox.aibgb.co.uk/open-banking/v3.1/cbpii"
+        "BaseCBPIIApiUri": "https://sandbox.aibgb.co.uk/v2/sandbox/open-banking/v3.1/cbpii"
     },
     "id": "aibgb-sandbox",
     "aspspId": "aibgb",
