@@ -1,65 +1,41 @@
 {
-    "openIdConfig": {
-        "authorization_endpoint": null,
-        "token_endpoint_auth_methods_supported": [
-            "client_secret_post"
-        ],
-        "token_endpoint": "https://api.bbr.bg/bbr-sb/psd2/oauther/oauth2/token",
-        "scopes_supported": [
-            "sandbox.consents",
-            "sandbox.PSP_AI",
-            "sandbox.PSP_PI",
-            "sandbox.PSP_IC"
-        ],
-        "scopes": {
-            "AIS": "sandbox.PSP_AI",
-            "PIS": "sandbox.PSP_PI"
-        },
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "grant_types_supported": [
-            "refresh_token",
-            "authorization_code"
-        ],
-        "code_challenge_methods_supported": []
+  "openIdConfig": {
+    "authorization_endpoint": null,
+    "token_endpoint_auth_methods_supported": ["client_secret_post"],
+    "token_endpoint": "https://api.bbr.bg/bbr-sb/psd2/oauther/oauth2/token",
+    "scopes_supported": ["sandbox.consents", "sandbox.PSP_AI", "sandbox.PSP_PI", "sandbox.PSP_IC"],
+    "scopes": {
+      "AIS": "sandbox.PSP_AI",
+      "PIS": "sandbox.PSP_PI"
     },
-    "psd2Config": {
-        "consentApiUri": "https://api.bbr.bg/bbr-sb/psd2/v1/consents",
-        "accountsApiUri": "https://api.bbr.bg/bbr-sb/psd2/v1/accounts",
-        "paymentInitiationApiUri": "https://api.bbr.bg/bbr-sb/psd2/v1/{payment-service}/{payment-product}",
-        "paymentApiUri": "https://api.bbr.bg/bbr-sb/psd2/v1/{payment-service}/{payment-product}/{paymentId}",
-        "paymentStatusApiUri": "https://api.bbr.bg/bbr-sb/psd2/v1/{payment-service}/{payment-product}/{paymentId}/status"
-    },
-    "id": "bbr-sandbox",
-    "aspspId": "bbr",
-    "identity": {
-        "memberState": "BG",
-        "developerPortalUri": "https://developer.bbr.bg/",
-        "openIDConfigEndPointUri": "",
-        "customerFriendlyDescription": "",
-        "customerFriendlyLogoUri": "assets/img/banks/bbr.svg",
-        "organisationCommonName": "Bulgarian Development Bank",
-        "termsOfService": "",
-        "customerFriendlyName": "Bulgarian Development Bank (sandbox)",
-        "name": "Bulgarian Development Bank",
-        "countries": [
-            "BG"
-        ],
-        "website": "https://bbr.bg/",
-        "weight": 0
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "clientSecret",
-        "signingKid"
-    ]
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "grant_types_supported": ["refresh_token", "authorization_code"],
+    "code_challenge_methods_supported": []
+  },
+  "psd2Config": {
+    "consentApiUri": "https://api.bbr.bg/bbr-sb/psd2/v1/consents",
+    "accountsApiUri": "https://api.bbr.bg/bbr-sb/psd2/v1/accounts",
+    "paymentInitiationApiUri": "https://api.bbr.bg/bbr-sb/psd2/v1/{payment-service}/{payment-product}",
+    "paymentApiUri": "https://api.bbr.bg/bbr-sb/psd2/v1/{payment-service}/{payment-product}/{paymentId}",
+    "paymentStatusApiUri": "https://api.bbr.bg/bbr-sb/psd2/v1/{payment-service}/{payment-product}/{paymentId}/status"
+  },
+  "id": "bbr-sandbox",
+  "aspspId": "bbr",
+  "identity": {
+    "memberState": "BG",
+    "developerPortalUri": "https://developer.bbr.bg/",
+    "openIDConfigEndPointUri": "",
+    "customerFriendlyDescription": "",
+    "customerFriendlyLogoUri": "assets/img/banks/bbr.svg",
+    "organisationCommonName": "Bulgarian Development Bank",
+    "termsOfService": "",
+    "customerFriendlyName": "Bulgarian Development Bank (sandbox)",
+    "name": "Bulgarian Development Bank",
+    "countries": ["BG"],
+    "website": "https://bbr.bg/",
+    "weight": 0
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret", "signingKid"]
 }

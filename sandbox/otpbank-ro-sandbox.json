@@ -1,63 +1,42 @@
 {
-    "openIdConfig": {
-        "authorization_endpoint": null,
-        "token_endpoint_auth_methods_supported": [
-        ],
-        "grant_types_supported": [
-        ],
-        "token_endpoint": null,
-        "scopes_supported": [
-            "AIS",
-            "PIS"
-        ],
-        "scopes": {
-            "AIS": "AIS",
-            "PIS": "PIS"
-        },
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "code_challenge_methods_supported": [
-            "S256"
-        ]
+  "openIdConfig": {
+    "authorization_endpoint": null,
+    "token_endpoint_auth_methods_supported": [],
+    "grant_types_supported": [],
+    "token_endpoint": null,
+    "scopes_supported": ["AIS", "PIS"],
+    "scopes": {
+      "AIS": "AIS",
+      "PIS": "PIS"
     },
-    "psd2Config": {
-        "consentApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/consents",
-        "accountsApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/accounts",
-        "paymentInitiationApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/{payment-service}/{payment-product}",
-        "paymentApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/{payment-service}/{payment-product}/{paymentId}",
-        "paymentStatusApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/{payment-service}/{payment-product}/{paymentId}/status",
-        "consentStatusApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/consent/{consentId}/status"
-    },
-    "id": "otpbank-ro-sandbox",
-    "aspspId": "otpbank-ro",
-    "identity": {
-        "memberState": "RO",
-        "developerPortalUri": "https://devch.otpdirekt.ro/prod-devch/developer-portal/",
-        "openIDConfigEndPointUri": null,
-        "customerFriendlyDescription": "",
-        "customerFriendlyLogoUri": "assets/img/banks/otpbank.svg",
-        "organisationCommonName": "OTP Bank Romania",
-        "termsOfService": "",
-        "customerFriendlyName": "OTP Bank Romania (sandbox)",
-        "name": "OTP Bank Romania",
-        "countries": [
-            "RO"
-        ],
-        "website": "https://www.otpbank.ro/",
-        "weight": 1
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "clientSecret",
-        "organisationId"
-    ]
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "code_challenge_methods_supported": ["S256"]
+  },
+  "psd2Config": {
+    "consentApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/consents",
+    "accountsApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/accounts",
+    "paymentInitiationApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/{payment-service}/{payment-product}",
+    "paymentApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/{payment-service}/{payment-product}/{paymentId}",
+    "paymentStatusApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/{payment-service}/{payment-product}/{paymentId}/status",
+    "consentStatusApiUri": "https://devch.otpdirekt.ro/prod-devch/nano-api-gateway/v1/consent/{consentId}/status"
+  },
+  "id": "otpbank-ro-sandbox",
+  "aspspId": "otpbank-ro",
+  "identity": {
+    "memberState": "RO",
+    "developerPortalUri": "https://devch.otpdirekt.ro/prod-devch/developer-portal/",
+    "openIDConfigEndPointUri": null,
+    "customerFriendlyDescription": "",
+    "customerFriendlyLogoUri": "assets/img/banks/otpbank.svg",
+    "organisationCommonName": "OTP Bank Romania",
+    "termsOfService": "",
+    "customerFriendlyName": "OTP Bank Romania (sandbox)",
+    "name": "OTP Bank Romania",
+    "countries": ["RO"],
+    "website": "https://www.otpbank.ro/",
+    "weight": 1
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret", "organisationId"]
 }

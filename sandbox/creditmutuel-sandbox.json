@@ -1,74 +1,45 @@
 {
-    "openIdConfig": {
-        "authorization_endpoint": "https://www.creditmutuel.fr/oauth2/{lang}/sandbox/signin.html",
-        "token_endpoint_auth_methods_supported": [
-            "tls_client_auth"
-        ],
-        "grant_types_supported": [
-            "refresh_token",
-            "authorization_code"
-        ],
-        "token_endpoint": "https://oauth2-apisi.e-i.com/sandbox/cm/oauth2/token",
-        "scopes_supported": [
-            "aisp",
-            "pisp",
-            "cbpii"
-        ],
-        "scopes": {
-            "AIS": "aisp",
-            "PIS": "pisp"
-        },
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "code_challenge_methods_supported": [
-            "S256"
-        ]
+  "openIdConfig": {
+    "authorization_endpoint": "https://www.creditmutuel.fr/oauth2/{lang}/sandbox/signin.html",
+    "token_endpoint_auth_methods_supported": ["tls_client_auth"],
+    "grant_types_supported": ["refresh_token", "authorization_code"],
+    "token_endpoint": "https://oauth2-apisi.e-i.com/sandbox/cm/oauth2/token",
+    "scopes_supported": ["aisp", "pisp", "cbpii"],
+    "scopes": {
+      "AIS": "aisp",
+      "PIS": "pisp"
     },
-    "availableParameters": {
-        "lang": [
-            "de",
-            "en",
-            "es",
-            "fr"
-        ]
-    },
-    "psd2Config": {
-        "accountsApiUri": "https://oauth2-apisi.e-i.com/sandbox/cm/stet-psd2-api/v1.1/accounts",
-        "paymentInitiationApiUri": "https://oauth2-apisi.e-i.com/sandbox/cm/stet-psd2-api/v1.1/payment-requests",
-        "paymentApiUri": "https://oauth2-apisi.e-i.com/sandbox/cm/stet-psd2-api/v1.1/payment-requests/{paymentId}",
-        "paymentConfirmationApiUri": "https://oauth2-apisi.e-i.com/sandbox/cm/stet-psd2-api/v1.1/payment-requests/{paymentId}/confirmation",
-        "userIdentityApiUri": "https://oauth2-apisi.e-i.com/sandbox/cm/stet-psd2-api/v1.1/end-user-identity",
-        "trustedBeneficiariesApiUri": "https://oauth2-apisi.e-i.com/sandbox/cm/stet-psd2-api/v1.1/trusted-beneficiaries"
-    },
-    "id": "creditmutuel-sandbox",
-    "aspspId": "creditmutuel",
-    "identity": {
-        "memberState": "FR",
-        "developerPortalUri": "https://www.creditmutuel.fr/oauth2/en/devportal/",
-        "openIDConfigEndPointUri": null,
-        "customerFriendlyDescription": "",
-        "customerFriendlyLogoUri": "assets/img/banks/Logo_Credit_Mutuel.svg",
-        "organisationCommonName": "Crédit Mutuel",
-        "termsOfService": "",
-        "customerFriendlyName": "Crédit Mutuel (sandbox)",
-        "name": "Crédit Mutuel",
-        "countries": [
-            "FR"
-        ],
-        "website": "https://www.creditmutuel.fr/",
-        "weight": -8
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "signingKid"
-    ]
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "code_challenge_methods_supported": ["S256"]
+  },
+  "availableParameters": {
+    "lang": ["de", "en", "es", "fr"]
+  },
+  "psd2Config": {
+    "accountsApiUri": "https://oauth2-apisi.e-i.com/sandbox/cm/stet-psd2-api/v1.1/accounts",
+    "paymentInitiationApiUri": "https://oauth2-apisi.e-i.com/sandbox/cm/stet-psd2-api/v1.1/payment-requests",
+    "paymentApiUri": "https://oauth2-apisi.e-i.com/sandbox/cm/stet-psd2-api/v1.1/payment-requests/{paymentId}",
+    "paymentConfirmationApiUri": "https://oauth2-apisi.e-i.com/sandbox/cm/stet-psd2-api/v1.1/payment-requests/{paymentId}/confirmation",
+    "userIdentityApiUri": "https://oauth2-apisi.e-i.com/sandbox/cm/stet-psd2-api/v1.1/end-user-identity",
+    "trustedBeneficiariesApiUri": "https://oauth2-apisi.e-i.com/sandbox/cm/stet-psd2-api/v1.1/trusted-beneficiaries"
+  },
+  "id": "creditmutuel-sandbox",
+  "aspspId": "creditmutuel",
+  "identity": {
+    "memberState": "FR",
+    "developerPortalUri": "https://www.creditmutuel.fr/oauth2/en/devportal/",
+    "openIDConfigEndPointUri": null,
+    "customerFriendlyDescription": "",
+    "customerFriendlyLogoUri": "assets/img/banks/Logo_Credit_Mutuel.svg",
+    "organisationCommonName": "Crédit Mutuel",
+    "termsOfService": "",
+    "customerFriendlyName": "Crédit Mutuel (sandbox)",
+    "name": "Crédit Mutuel",
+    "countries": ["FR"],
+    "website": "https://www.creditmutuel.fr/",
+    "weight": -8
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "signingKid"]
 }

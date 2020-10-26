@@ -1,62 +1,42 @@
 {
-    "openIdConfig": {
-        "authorization_endpoint": "https://dev-public.medirect.psd2enabler.asseco.rs/eval/iam/connect/authorize",
-        "token_endpoint_auth_methods_supported": [
-            "client_secret_post"
-        ],
-        "grant_types_supported": [
-            "refresh_token",
-            "authorization_code"
-        ],
-        "token_endpoint": null,
-        "scopes_supported": [
-            "AssecoSEE.PSD2"
-        ],
-        "scopes": {
-            "AIS": "AssecoSEE.PSD2",
-            "PIS": "AssecoSEE.PSD2"
-        },
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "code_challenge_methods_supported": []
+  "openIdConfig": {
+    "authorization_endpoint": "https://dev-public.medirect.psd2enabler.asseco.rs/eval/iam/connect/authorize",
+    "token_endpoint_auth_methods_supported": ["client_secret_post"],
+    "grant_types_supported": ["refresh_token", "authorization_code"],
+    "token_endpoint": null,
+    "scopes_supported": ["AssecoSEE.PSD2"],
+    "scopes": {
+      "AIS": "AssecoSEE.PSD2",
+      "PIS": "AssecoSEE.PSD2"
     },
-    "psd2Config": {
-        "consentApiUri": "https://dev-public-api.medirect.psd2enabler.asseco.rs/eval/api-gw/v1/consents",
-        "accountsApiUri": "https://dev-public-api.medirect.psd2enabler.asseco.rs/eval/api-gw/v1/accounts",
-        "paymentInitiationApiUri": "https://dev-public-api.medirect.psd2enabler.asseco.rs/eval/api-gw/v1/{payment-service}/{payment-product}",
-        "paymentApiUri": "https://dev-public-api.medirect.psd2enabler.asseco.rs/eval/api-gw/v1/{payment-service}/{paymentId}",
-        "paymentStatusApiUri": "https://dev-public-api.medirect.psd2enabler.asseco.rs/eval/api-gw/v1/{payment-service}/{paymentId}/status",
-        "consentStatusApiUri": "https://dev-public-api.medirect.psd2enabler.asseco.rs/eval/api-gw/v1/consents/{consentId}/status"
-    },
-    "id": "crediteurope-sandbox",
-    "aspspId": "crediteurope",
-    "identity": {
-        "memberState": "RO",
-        "developerPortalUri": "https://developer.sandbox.crediteurope.ro/",
-        "openIDConfigEndPointUri": null,
-        "customerFriendlyDescription": "",
-        "customerFriendlyLogoUri": "assets/img/banks/Credit_Europe_Bank_Romania.svg",
-        "organisationCommonName": "Credit Europe Bank",
-        "termsOfService": "",
-        "customerFriendlyName": "Credit Europe Bank (sandbox)",
-        "name": "Credit Europe Bank",
-        "countries": [
-            "RO"
-        ],
-        "website": "https://www.crediteurope.ro/",
-        "weight": 0
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "clientSecret"
-    ]
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "code_challenge_methods_supported": []
+  },
+  "psd2Config": {
+    "consentApiUri": "https://dev-public-api.medirect.psd2enabler.asseco.rs/eval/api-gw/v1/consents",
+    "accountsApiUri": "https://dev-public-api.medirect.psd2enabler.asseco.rs/eval/api-gw/v1/accounts",
+    "paymentInitiationApiUri": "https://dev-public-api.medirect.psd2enabler.asseco.rs/eval/api-gw/v1/{payment-service}/{payment-product}",
+    "paymentApiUri": "https://dev-public-api.medirect.psd2enabler.asseco.rs/eval/api-gw/v1/{payment-service}/{paymentId}",
+    "paymentStatusApiUri": "https://dev-public-api.medirect.psd2enabler.asseco.rs/eval/api-gw/v1/{payment-service}/{paymentId}/status",
+    "consentStatusApiUri": "https://dev-public-api.medirect.psd2enabler.asseco.rs/eval/api-gw/v1/consents/{consentId}/status"
+  },
+  "id": "crediteurope-sandbox",
+  "aspspId": "crediteurope",
+  "identity": {
+    "memberState": "RO",
+    "developerPortalUri": "https://developer.sandbox.crediteurope.ro/",
+    "openIDConfigEndPointUri": null,
+    "customerFriendlyDescription": "",
+    "customerFriendlyLogoUri": "assets/img/banks/Credit_Europe_Bank_Romania.svg",
+    "organisationCommonName": "Credit Europe Bank",
+    "termsOfService": "",
+    "customerFriendlyName": "Credit Europe Bank (sandbox)",
+    "name": "Credit Europe Bank",
+    "countries": ["RO"],
+    "website": "https://www.crediteurope.ro/",
+    "weight": 0
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret"]
 }

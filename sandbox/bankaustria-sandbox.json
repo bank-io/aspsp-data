@@ -1,53 +1,40 @@
 {
-    "openIdConfig": {
-        "authorization_endpoint": null,
-        "token_endpoint_auth_methods_supported": [],
-        "token_endpoint": null,
-        "scopes_supported": [
-            "AIS",
-            "PIS"
-        ],
-        "scopes": {
-            "AIS": "openid read_accounts_list read_accounts",
-            "PIS": "openid instant_sepa_credit_transfers"
-        },
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "grant_types_supported": []
+  "openIdConfig": {
+    "authorization_endpoint": null,
+    "token_endpoint_auth_methods_supported": [],
+    "token_endpoint": null,
+    "scopes_supported": ["AIS", "PIS"],
+    "scopes": {
+      "AIS": "openid read_accounts_list read_accounts",
+      "PIS": "openid instant_sepa_credit_transfers"
     },
-    "psd2Config": {
-        "consentApiUri": "https://api-sandbox.bankaustria.at/hydrogen/v1/consents",
-        "accountsApiUri": "https://api-sandbox.bankaustria.at/hydrogen/v1/accounts",
-        "paymentInitiationApiUri": "https://api-sandbox.bankaustria.at/hydrogen/v1/{payment-service}/{payment-product}",
-        "paymentApiUri": "https://api-sandbox.bankaustria.at/hydrogen/v1/{payment-service}/{payment-product}/{paymentId}",
-        "paymentStatusApiUri": "https://api-sandbox.bankaustria.at/hydrogen/v1/{payment-service}/{payment-product}/{paymentId}/status",
-        "consentStatusApiUri": "https://api-sandbox.bankaustria.at/hydrogen/v1/consents/{consentId}/status"
-    },
-    "id": "bankaustria-sandbox",
-    "aspspId": "bankaustria",
-    "identity": {
-        "memberState": "AT",
-        "developerPortalUri": "https://developer.unicredit.eu/",
-        "openIDConfigEndPointUri": "",
-        "customerFriendlyDescription": "",
-        "customerFriendlyLogoUri": "assets/img/banks/BAMofUC-logo-flat.svg",
-        "organisationCommonName": "Bank Austria",
-        "termsOfService": "",
-        "customerFriendlyName": "Bank Austria (sandbox)",
-        "name": "Bank Austria",
-        "website": "https://www.bankaustria.at/",
-        "countries": [
-            "AT"
-        ],
-        "weight": 0
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ]
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "grant_types_supported": []
+  },
+  "psd2Config": {
+    "consentApiUri": "https://api-sandbox.bankaustria.at/hydrogen/v1/consents",
+    "accountsApiUri": "https://api-sandbox.bankaustria.at/hydrogen/v1/accounts",
+    "paymentInitiationApiUri": "https://api-sandbox.bankaustria.at/hydrogen/v1/{payment-service}/{payment-product}",
+    "paymentApiUri": "https://api-sandbox.bankaustria.at/hydrogen/v1/{payment-service}/{payment-product}/{paymentId}",
+    "paymentStatusApiUri": "https://api-sandbox.bankaustria.at/hydrogen/v1/{payment-service}/{payment-product}/{paymentId}/status",
+    "consentStatusApiUri": "https://api-sandbox.bankaustria.at/hydrogen/v1/consents/{consentId}/status"
+  },
+  "id": "bankaustria-sandbox",
+  "aspspId": "bankaustria",
+  "identity": {
+    "memberState": "AT",
+    "developerPortalUri": "https://developer.unicredit.eu/",
+    "openIDConfigEndPointUri": "",
+    "customerFriendlyDescription": "",
+    "customerFriendlyLogoUri": "assets/img/banks/BAMofUC-logo-flat.svg",
+    "organisationCommonName": "Bank Austria",
+    "termsOfService": "",
+    "customerFriendlyName": "Bank Austria (sandbox)",
+    "name": "Bank Austria",
+    "website": "https://www.bankaustria.at/",
+    "countries": ["AT"],
+    "weight": 0
+  },
+  "roles": ["aisp", "pisp", "cbpii"]
 }

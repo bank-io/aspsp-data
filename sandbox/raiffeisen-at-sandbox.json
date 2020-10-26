@@ -1,72 +1,49 @@
 {
-    "openIdConfig": {
-        "token_endpoint_auth_methods_supported": [
-            "client_secret_basic"
-        ],
-        "token_endpoint": "https://sso.raiffeisen.at/as/token.oauth2",
-        "scopes_supported": [
-            "apic-sbx-psd2"
-        ],
-        "scopes": {
-            "AIS": "apic-sbx-psd2",
-            "PIS": "apic-sbx-psd2"
-        },
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "grant_types_supported": [
-            "client_credentials"
-        ]
+  "openIdConfig": {
+    "token_endpoint_auth_methods_supported": ["client_secret_basic"],
+    "token_endpoint": "https://sso.raiffeisen.at/as/token.oauth2",
+    "scopes_supported": ["apic-sbx-psd2"],
+    "scopes": {
+      "AIS": "apic-sbx-psd2",
+      "PIS": "apic-sbx-psd2"
     },
-    "psd2Config": {
-        "AISPConsentInputType": [
-            "ibanAccountList"
-        ],
-        "PISPInitiationInputType": [
-            "debtorAccountIBAN"
-        ],
-        "consentApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/consents",
-        "accountsApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/accounts",
-        "paymentInitiationApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/{payment-service}/{payment-product}",
-        "paymentApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/{payment-service}/{payment-product}/{paymentId}",
-        "paymentStatusApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/{payment-service}/{payment-product}/{paymentId}/status",
-        "consentStatusApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/consents/{consentId}/status",
-        "paymentAuthorisationsApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/{payment-service}/{payment-product}/{paymentId}/authorisations",
-        "postPaymentAuthorisationsApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/{payment-service}/{payment-product}/{paymentId}/authorisations",
-        "paymentAuthorisationApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/{payment-service}/{payment-product}/{paymentId}/authorisations/{paymentAuthorisationId}"
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "grant_types_supported": ["client_credentials"]
+  },
+  "psd2Config": {
+    "AISPConsentInputType": ["ibanAccountList"],
+    "PISPInitiationInputType": ["debtorAccountIBAN"],
+    "consentApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/consents",
+    "accountsApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/accounts",
+    "paymentInitiationApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/{payment-service}/{payment-product}",
+    "paymentApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/{payment-service}/{payment-product}/{paymentId}",
+    "paymentStatusApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/{payment-service}/{payment-product}/{paymentId}/status",
+    "consentStatusApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/consents/{consentId}/status",
+    "paymentAuthorisationsApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/{payment-service}/{payment-product}/{paymentId}/authorisations",
+    "postPaymentAuthorisationsApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/{payment-service}/{payment-product}/{paymentId}/authorisations",
+    "paymentAuthorisationApiUri": "https://sandbox.raiffeisen.at/api/psd2-xs2a/rest/v1/{payment-service}/{payment-product}/{paymentId}/authorisations/{paymentAuthorisationId}"
+  },
+  "id": "raiffeisen-at-sandbox",
+  "aspspId": "raiffeisen-at",
+  "identity": {
+    "memberState": "AT",
+    "developerPortalUri": "https://api-dashboard.raiffeisen.at/",
+    "openIDConfigEndPointUri": "",
+    "customerFriendlyDescription": "",
+    "customerFriendlyLogoUri": "assets/img/banks/Raiffeisen.svg",
+    "thumbprint": {
+      "backgroundColor": "#fff500",
+      "borderColor": null
     },
-    "id": "raiffeisen-at-sandbox",
-    "aspspId": "raiffeisen-at",
-    "identity": {
-        "memberState": "AT",
-        "developerPortalUri": "https://api-dashboard.raiffeisen.at/",
-        "openIDConfigEndPointUri": "",
-        "customerFriendlyDescription": "",
-        "customerFriendlyLogoUri": "assets/img/banks/Raiffeisen.svg",
-        "thumbprint": {
-          "backgroundColor": "#fff500",
-          "borderColor": null
-        },
-        "organisationCommonName": "Raiffeisen Bank Austria",
-        "termsOfService": "",
-        "customerFriendlyName": "Raiffeisen Bank Austria (sandbox)",
-        "name": "Raiffeisen Bank Austria",
-        "website": "https://www.raiffeisen.at/",
-        "countries": [
-            "AT"
-        ],
-        "weight": -7
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "clientSecret"
-    ]
+    "organisationCommonName": "Raiffeisen Bank Austria",
+    "termsOfService": "",
+    "customerFriendlyName": "Raiffeisen Bank Austria (sandbox)",
+    "name": "Raiffeisen Bank Austria",
+    "website": "https://www.raiffeisen.at/",
+    "countries": ["AT"],
+    "weight": -7
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret"]
 }

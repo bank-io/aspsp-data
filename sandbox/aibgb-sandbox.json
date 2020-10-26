@@ -1,69 +1,46 @@
 {
-    "obDirectoryConfig": {
-        "BaseApiDNSUri": null,
-        "MemberState": "GB",
-        "DeveloperPortalUri": null,
-        "RegistrationId": "12345",
-        "CustomerFriendlyDescription": "string",
-        "AutoRegistrationSupported": true,
-        "ClientRegistrationUri": null,
-        "AuthorityId": "FCA",
-        "BaseAISPApiUri": "https://sandbox.aibgb.co.uk/v2/sandbox/open-banking/v3.1/aisp",
-        "TermsOfService": "string",
-        "OBOrganisationId": "0015800000jf9VgAAI",
-        "BasePISPApiUri": "https://sandbox.aibgb.co.uk/v2/sandbox/open-banking/v3.1/pisp",
-        "PayloadSigningCertLocation": "string",
-        "BaseCBPIIApiUri": "https://sandbox.aibgb.co.uk/v2/sandbox/open-banking/v3.1/cbpii"
-    },
-    "id": "aibgb-sandbox",
-    "aspspId": "aibgb",
-    "openIdConfig": {
-        "token_endpoint": "https://sandbox.aibgb.co.uk/security/v2/oauth/token",
-        "scopes_supported": [
-            "openid",
-            "accounts",
-            "payments"
-        ],
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "issuer": "https://sandbox.aibgb.co.uk",
-        "authorization_endpoint": "https://opensandbox.aibgb.co.uk/security/v2/sandbox-auto-consents",
-        "token_endpoint_auth_methods_supported": [
-            "client_secret_basic"
-        ],
-        "grant_types_supported": [
-            "refresh_token",
-            "client_credentials",
-            "authorization_code"
-        ]
-    },
-    "identity": {
-        "memberState": "GB",
-        "developerPortalUri": "https://developer.aibgb.co.uk/",
-        "openIDConfigEndPointUri": "https://opensandbox.aibgb.co.uk/endpoints/v2/retail/.well-known/openid-configuration",
-        "customerFriendlyDescription": "string",
-        "customerFriendlyLogoUri": "assets/img/banks/Allied_Irish_Banks_logo.svg",
-        "organisationCommonName": "AIB Group (UK) p.l.c.",
-        "termsOfService": "string",
-        "customerFriendlyName": "Allied Irish Bank (GB) (sandbox)",
-        "name": "Allied Irish Bank (GB)",
-        "website": "https://aibgb.co.uk/",
-        "countries": [
-            "GB"
-        ],
-        "weight": 0
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "clientSecret"
-    ]
+  "obDirectoryConfig": {
+    "BaseApiDNSUri": null,
+    "MemberState": "GB",
+    "DeveloperPortalUri": null,
+    "RegistrationId": "12345",
+    "CustomerFriendlyDescription": "string",
+    "AutoRegistrationSupported": true,
+    "ClientRegistrationUri": null,
+    "AuthorityId": "FCA",
+    "BaseAISPApiUri": "https://sandbox.aibgb.co.uk/v2/sandbox/open-banking/v3.1/aisp",
+    "TermsOfService": "string",
+    "OBOrganisationId": "0015800000jf9VgAAI",
+    "BasePISPApiUri": "https://sandbox.aibgb.co.uk/v2/sandbox/open-banking/v3.1/pisp",
+    "PayloadSigningCertLocation": "string",
+    "BaseCBPIIApiUri": "https://sandbox.aibgb.co.uk/v2/sandbox/open-banking/v3.1/cbpii"
+  },
+  "id": "aibgb-sandbox",
+  "aspspId": "aibgb",
+  "openIdConfig": {
+    "token_endpoint": "https://sandbox.aibgb.co.uk/security/v2/oauth/token",
+    "scopes_supported": ["openid", "accounts", "payments"],
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "issuer": "https://sandbox.aibgb.co.uk",
+    "authorization_endpoint": "https://opensandbox.aibgb.co.uk/security/v2/sandbox-auto-consents",
+    "token_endpoint_auth_methods_supported": ["client_secret_basic"],
+    "grant_types_supported": ["refresh_token", "client_credentials", "authorization_code"]
+  },
+  "identity": {
+    "memberState": "GB",
+    "developerPortalUri": "https://developer.aibgb.co.uk/",
+    "openIDConfigEndPointUri": "https://opensandbox.aibgb.co.uk/endpoints/v2/retail/.well-known/openid-configuration",
+    "customerFriendlyDescription": "string",
+    "customerFriendlyLogoUri": "assets/img/banks/Allied_Irish_Banks_logo.svg",
+    "organisationCommonName": "AIB Group (UK) p.l.c.",
+    "termsOfService": "string",
+    "customerFriendlyName": "Allied Irish Bank (GB) (sandbox)",
+    "name": "Allied Irish Bank (GB)",
+    "website": "https://aibgb.co.uk/",
+    "countries": ["GB"],
+    "weight": 0
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret"]
 }

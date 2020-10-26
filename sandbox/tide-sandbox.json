@@ -1,71 +1,48 @@
 {
-    "obDirectoryConfig": {
-        "ClientRegistrationUri": null,
-        "AuthorityId": "FCA",
-        "BaseAISPApiUri": "https://ob-api2.sandbox.tide.co:4502/v1.0/open-banking/v3.1/aisp",
-        "TermsOfService": "string",
-        "OBOrganisationId": "0015800001ZEc3hAAD",
-        "customerFriendlyName": "Monzo Bank (sandbox)",
-        "name": "Monzo Bank",
-        "BasePISPApiUri": "https://ob-api2.sandbox.tide.co:4502/v1.0/open-banking/v3.1/pisp",
-        "PayloadSigningCertLocation": "string",
-        "BaseCBPIIApiUri": "https://ob-api2.sandbox.tide.co:4502/v1.0/open-banking/v3.1/cbpii",
-        "BaseApiDNSUri": null,
-        "MemberState": "GB",
-        "DeveloperPortalUri": null,
-        "RegistrationId": "123456",
-        "CustomerFriendlyDescription": "string",
-        "AutoRegistrationSupported": true
-    },
-    "id": "tide-sandbox",
-    "aspspId": "tide",
-    "openIdConfig": {
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "issuer": "https://ob-issuer2.sandbox.tide.co",
-        "authorization_endpoint": "https://ob-app2.sandbox.tide.co/auth",
-        "token_endpoint_auth_methods_supported": [
-            "tls_client_auth"
-        ],
-        "token_endpoint": "https://ob-auth2.sandbox.tide.co:4202/token",
-        "scopes_supported": [
-            "openid",
-            "accounts",
-            "payments"
-        ],
-        "grant_types_supported": [
-            "refresh_token",
-            "client_credentials",
-            "authorization_code"
-        ]
-    },
-    "identity": {
-        "memberState": "GB",
-        "developerPortalUri": "https://bitbucket.org/tideaccount/developer-portal/src/master/README.md",
-        "openIDConfigEndPointUri": "https://ob-issuer2.sandbox.tide.co/.well-known/openid-configuration",
-        "customerFriendlyDescription": "string",
-        "customerFriendlyLogoUri": "assets/img/banks/tide-logo-blue.svg",
-        "organisationCommonName": "Tide Platform Limited",
-        "termsOfService": "string",
-        "customerFriendlyName": "Tide (sandbox)",
-        "name": "Tide",
-        "website": "https://www.tide.co/",
-        "countries": [
-            "GB"
-        ],
-        "weight": 0
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "clientSecret"
-    ]
+  "obDirectoryConfig": {
+    "ClientRegistrationUri": null,
+    "AuthorityId": "FCA",
+    "BaseAISPApiUri": "https://ob-api2.sandbox.tide.co:4502/v1.0/open-banking/v3.1/aisp",
+    "TermsOfService": "string",
+    "OBOrganisationId": "0015800001ZEc3hAAD",
+    "customerFriendlyName": "Monzo Bank (sandbox)",
+    "name": "Monzo Bank",
+    "BasePISPApiUri": "https://ob-api2.sandbox.tide.co:4502/v1.0/open-banking/v3.1/pisp",
+    "PayloadSigningCertLocation": "string",
+    "BaseCBPIIApiUri": "https://ob-api2.sandbox.tide.co:4502/v1.0/open-banking/v3.1/cbpii",
+    "BaseApiDNSUri": null,
+    "MemberState": "GB",
+    "DeveloperPortalUri": null,
+    "RegistrationId": "123456",
+    "CustomerFriendlyDescription": "string",
+    "AutoRegistrationSupported": true
+  },
+  "id": "tide-sandbox",
+  "aspspId": "tide",
+  "openIdConfig": {
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "issuer": "https://ob-issuer2.sandbox.tide.co",
+    "authorization_endpoint": "https://ob-app2.sandbox.tide.co/auth",
+    "token_endpoint_auth_methods_supported": ["tls_client_auth"],
+    "token_endpoint": "https://ob-auth2.sandbox.tide.co:4202/token",
+    "scopes_supported": ["openid", "accounts", "payments"],
+    "grant_types_supported": ["refresh_token", "client_credentials", "authorization_code"]
+  },
+  "identity": {
+    "memberState": "GB",
+    "developerPortalUri": "https://bitbucket.org/tideaccount/developer-portal/src/master/README.md",
+    "openIDConfigEndPointUri": "https://ob-issuer2.sandbox.tide.co/.well-known/openid-configuration",
+    "customerFriendlyDescription": "string",
+    "customerFriendlyLogoUri": "assets/img/banks/tide-logo-blue.svg",
+    "organisationCommonName": "Tide Platform Limited",
+    "termsOfService": "string",
+    "customerFriendlyName": "Tide (sandbox)",
+    "name": "Tide",
+    "website": "https://www.tide.co/",
+    "countries": ["GB"],
+    "weight": 0
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret"]
 }

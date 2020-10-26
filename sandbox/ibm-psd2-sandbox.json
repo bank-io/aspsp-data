@@ -1,85 +1,52 @@
 {
-    "psd2Config": {
-        "consentApiUri": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/xs2a/v1/consents",
-        "accountsApiUri": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/xs2a/v1/accounts",
-        "paymentInitiationApiUri": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/xs2a/v1/{payment-service}/{payment-product}",
-        "paymentApiUri": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/xs2a/v1/{payment-service}/{paymentId}",
-        "paymentStatusApiUri": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/xs2a/v1/{payment-service}/{paymentId}/status",
-        "consentStatusApiUri": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/xs2a/v1/consents/{consentId}/status"
+  "psd2Config": {
+    "consentApiUri": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/xs2a/v1/consents",
+    "accountsApiUri": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/xs2a/v1/accounts",
+    "paymentInitiationApiUri": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/xs2a/v1/{payment-service}/{payment-product}",
+    "paymentApiUri": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/xs2a/v1/{payment-service}/{paymentId}",
+    "paymentStatusApiUri": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/xs2a/v1/{payment-service}/{paymentId}/status",
+    "consentStatusApiUri": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/xs2a/v1/consents/{consentId}/status"
+  },
+  "id": "ibm-psd2-sandbox",
+  "aspspId": "ibm-psd2",
+  "openIdConfig": {
+    "token_endpoint": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/psuoauth2security/v1.0.5/oauth2/token",
+    "scopes_supported": ["aisp", "pisp", "cbpi"],
+    "scopes": {
+      "AIS": "aisp",
+      "PIS": "pisp",
+      "cbpii": "cbpi"
     },
-    "id": "ibm-psd2-sandbox",
-    "aspspId": "ibm-psd2",
-    "openIdConfig": {
-        "token_endpoint": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/psuoauth2security/v1.0.5/oauth2/token",
-        "scopes_supported": [
-            "aisp",
-            "pisp",
-            "cbpi"
-        ],
-        "scopes": {
-            "AIS": "aisp",
-            "PIS": "pisp",
-            "cbpii": "cbpi"
-        },
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "issuer": "https://api.eu.apiconnect.ibmcloud.com",
-        "authorization_endpoint": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/psuoauth2security/v1.0.5/oauth2/authorize",
-        "token_endpoint_auth_methods_supported": [
-            "client_secret_post"
-        ],
-        "grant_types_supported": [
-            "authorization_code",
-            "refresh_token"
-        ]
-    },
-    "tppOpenIdConfig": {
-        "token_endpoint": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/tppoauth2security/oauth2/token",
-        "scopes_supported": [
-            "openid",
-            "accounts",
-            "payments"
-        ],
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "issuer": "https://api.eu.apiconnect.ibmcloud.com",
-        "token_endpoint_auth_methods_supported": [
-            "client_secret_post"
-        ],
-        "grant_types_supported": [
-            "client_credentials"
-        ]
-    },
-    "identity": {
-        "memberState": "GB",
-        "developerPortalUri": "https://open-banking-sandbox.developer.eu.apiconnect.ibmcloud.com/",
-        "openIDConfigEndPointUri": null,
-        "customerFriendlyDescription": "string",
-        "customerFriendlyLogoUri": "assets/img/banks/IBM_logo.svg",
-        "organisationCommonName": "IBM UK Ltd",
-        "termsOfService": "string",
-        "customerFriendlyName": "IBM UK PSD2 Sandbox (sandbox)",
-        "name": "IBM UK PSD2 Sandbox",
-        "website": "https://open-banking-sandbox.developer.eu.apiconnect.ibmcloud.com/",
-        "countries": [
-            "GB"
-        ],
-        "weight": 0
-    },
-    "roles": [
-        "aisp",
-        "pisp"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "clientSecret"
-    ]
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "issuer": "https://api.eu.apiconnect.ibmcloud.com",
+    "authorization_endpoint": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/psuoauth2security/v1.0.5/oauth2/authorize",
+    "token_endpoint_auth_methods_supported": ["client_secret_post"],
+    "grant_types_supported": ["authorization_code", "refresh_token"]
+  },
+  "tppOpenIdConfig": {
+    "token_endpoint": "https://api.eu.apiconnect.ibmcloud.com/cmarcoliukibmcom-open-banking-aggregator/rw-sandbox-production/tppoauth2security/oauth2/token",
+    "scopes_supported": ["openid", "accounts", "payments"],
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "issuer": "https://api.eu.apiconnect.ibmcloud.com",
+    "token_endpoint_auth_methods_supported": ["client_secret_post"],
+    "grant_types_supported": ["client_credentials"]
+  },
+  "identity": {
+    "memberState": "GB",
+    "developerPortalUri": "https://open-banking-sandbox.developer.eu.apiconnect.ibmcloud.com/",
+    "openIDConfigEndPointUri": null,
+    "customerFriendlyDescription": "string",
+    "customerFriendlyLogoUri": "assets/img/banks/IBM_logo.svg",
+    "organisationCommonName": "IBM UK Ltd",
+    "termsOfService": "string",
+    "customerFriendlyName": "IBM UK PSD2 Sandbox (sandbox)",
+    "name": "IBM UK PSD2 Sandbox",
+    "website": "https://open-banking-sandbox.developer.eu.apiconnect.ibmcloud.com/",
+    "countries": ["GB"],
+    "weight": 0
+  },
+  "roles": ["aisp", "pisp"],
+  "clientCredentialsFields": ["clientId", "clientSecret"]
 }

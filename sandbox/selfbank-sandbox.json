@@ -1,74 +1,46 @@
 {
-    "openIdConfig": {
-        "authorization_endpoint": "https://apis-i.redsys.es:20443/psd2/xs2a/api-oauth-xs2a/services/rest/selfbank/authorize",
-        "token_endpoint_auth_methods_supported": [
-            "client_secret_post"
-        ],
-        "token_endpoint": "https://apis-i.redsys.es:20443/psd2/xs2a/api-oauth-xs2a/services/rest/selfbank/token",
-        "scopes_supported": [
-            "AIS",
-            "PIS",
-            "SVA"
-        ],
-        "scopes": {
-            "AIS": "AIS",
-            "PIS": "PIS",
-            "SVA": "SVA"
-        },
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "grant_types_supported": [
-            "refresh_token",
-            "authorization_code"
-        ],
-        "code_challenge_methods_supported": [
-            "S256"
-        ]
+  "openIdConfig": {
+    "authorization_endpoint": "https://apis-i.redsys.es:20443/psd2/xs2a/api-oauth-xs2a/services/rest/selfbank/authorize",
+    "token_endpoint_auth_methods_supported": ["client_secret_post"],
+    "token_endpoint": "https://apis-i.redsys.es:20443/psd2/xs2a/api-oauth-xs2a/services/rest/selfbank/token",
+    "scopes_supported": ["AIS", "PIS", "SVA"],
+    "scopes": {
+      "AIS": "AIS",
+      "PIS": "PIS",
+      "SVA": "SVA"
     },
-    "psd2Config": {
-        "AISPCreateConsentAfterAuthentication": true,
-        "AISPSCARequiredAfterCreateConsent": true,
-        "AISPConsentInputType": [
-            "ibanAccountList"
-        ],
-        "consentApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/selfbank/v1/consents",
-        "accountsApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/selfbank/v1/accounts",
-        "paymentInitiationApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/selfbank/v1/{payment-service}/{payment-product}",
-        "paymentApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/selfbank/v1/{payment-service}/{payment-product}/{paymentId}",
-        "paymentStatusApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/selfbank/v1/{payment-service}/{payment-product}/{paymentId}/status",
-        "consentStatusApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/selfbank/v1/consents/{consentId}/status"
-    },
-    "id": "selfbank-sandbox",
-    "aspspId": "selfbank",
-    "identity": {
-        "memberState": "ES",
-        "developerPortalUri": "https://market.apis-i.redsys.es/psd2/xs2a/nodos/selfbank",
-        "openIDConfigEndPointUri": "",
-        "customerFriendlyDescription": "",
-        "customerFriendlyLogoUri": "assets/img/banks/Self_Bank_by_Singular_Bank.svg",
-        "organisationCommonName": "Self Trade Bank, S.A.U.",
-        "termsOfService": "",
-        "customerFriendlyName": "Self Bank (sandbox)",
-        "name": "Self Bank",
-        "countries": [
-            "ES"
-        ],
-        "website": "https://www.selfbank.es/",
-        "weight": 0
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "clientSecret",
-        "organisationId",
-        "signingKid"
-    ]
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "grant_types_supported": ["refresh_token", "authorization_code"],
+    "code_challenge_methods_supported": ["S256"]
+  },
+  "psd2Config": {
+    "AISPCreateConsentAfterAuthentication": true,
+    "AISPSCARequiredAfterCreateConsent": true,
+    "AISPConsentInputType": ["ibanAccountList"],
+    "consentApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/selfbank/v1/consents",
+    "accountsApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/selfbank/v1/accounts",
+    "paymentInitiationApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/selfbank/v1/{payment-service}/{payment-product}",
+    "paymentApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/selfbank/v1/{payment-service}/{payment-product}/{paymentId}",
+    "paymentStatusApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/selfbank/v1/{payment-service}/{payment-product}/{paymentId}/status",
+    "consentStatusApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/selfbank/v1/consents/{consentId}/status"
+  },
+  "id": "selfbank-sandbox",
+  "aspspId": "selfbank",
+  "identity": {
+    "memberState": "ES",
+    "developerPortalUri": "https://market.apis-i.redsys.es/psd2/xs2a/nodos/selfbank",
+    "openIDConfigEndPointUri": "",
+    "customerFriendlyDescription": "",
+    "customerFriendlyLogoUri": "assets/img/banks/Self_Bank_by_Singular_Bank.svg",
+    "organisationCommonName": "Self Trade Bank, S.A.U.",
+    "termsOfService": "",
+    "customerFriendlyName": "Self Bank (sandbox)",
+    "name": "Self Bank",
+    "countries": ["ES"],
+    "website": "https://www.selfbank.es/",
+    "weight": 0
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret", "organisationId", "signingKid"]
 }

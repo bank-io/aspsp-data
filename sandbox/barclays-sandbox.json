@@ -1,74 +1,51 @@
 {
-    "obDirectoryConfig": {
-        "BaseApiDNSUri": null,
-        "MemberState": "GB",
-        "DeveloperPortalUri": null,
-        "RegistrationId": "12345",
-        "OpenIDConfigEndPointUri": null,
-        "CustomerFriendlyDescription": "string",
-        "AutoRegistrationSupported": true,
-        "ClientRegistrationUri": null,
-        "AuthorityId": "FCA",
-        "CustomerFriendlyLogoUri": "assets/img/banks/Barclays_logo.svg",
-        "BaseAISPApiUri": "https://sandbox.api.barclays:443/open-banking/v3.1/sandbox/aisp",
-        "OrganisationCommonName": "Barclays Bank PLC",
-        "TermsOfService": "string",
-        "OBOrganisationId": "0015800000jfAW1AAM",
-        "customerFriendlyName": "Barclays Bank (sandbox)",
-        "name": "Barclays Bank",
-        "BasePISPApiUri": "https://sandbox.api.barclays:443/open-banking/v3.1/sandbox/pisp",
-        "PayloadSigningCertLocation": "string",
-        "BaseCBPIIApiUri": "https://sandbox.api.barclays:443/open-banking/v3.1/sandbox/cbpii"
-    },
-    "id": "barclays-sandbox",
-    "aspspId": "barclays",
-    "openIdConfig": {
-        "token_endpoint": "https://token.sandbox.barclays.com/oauth/oauth20/token",
-        "scopes_supported": [
-            "openid",
-            "accounts",
-            "payments"
-        ],
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "issuer": "https://token.sandbox.barclays.com",
-        "authorization_endpoint": "https://token.sandbox.barclays.com/oauth/auz/authorize",
-        "token_endpoint_auth_methods_supported": [
-            "client_secret_post"
-        ],
-        "grant_types_supported": [
-            "refresh_token",
-            "client_credentials",
-            "authorization_code"
-        ]
-    },
-    "identity": {
-        "memberState": "GB",
-        "developerPortalUri": "https://developer.barclays.com/",
-        "openIDConfigEndPointUri": null,
-        "customerFriendlyDescription": "string",
-        "customerFriendlyLogoUri": "assets/img/banks/Barclays_logo.svg",
-        "organisationCommonName": "Barclays Bank PLC",
-        "termsOfService": "string",
-        "customerFriendlyName": "Barclays Bank (sandbox)",
-        "name": "Barclays Bank",
-        "website": "https://www.barclays.co.uk/",
-        "countries": [
-            "GB"
-        ],
-        "weight": -4
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "clientSecret"
-    ]
+  "obDirectoryConfig": {
+    "BaseApiDNSUri": null,
+    "MemberState": "GB",
+    "DeveloperPortalUri": null,
+    "RegistrationId": "12345",
+    "OpenIDConfigEndPointUri": null,
+    "CustomerFriendlyDescription": "string",
+    "AutoRegistrationSupported": true,
+    "ClientRegistrationUri": null,
+    "AuthorityId": "FCA",
+    "CustomerFriendlyLogoUri": "assets/img/banks/Barclays_logo.svg",
+    "BaseAISPApiUri": "https://sandbox.api.barclays:443/open-banking/v3.1/sandbox/aisp",
+    "OrganisationCommonName": "Barclays Bank PLC",
+    "TermsOfService": "string",
+    "OBOrganisationId": "0015800000jfAW1AAM",
+    "customerFriendlyName": "Barclays Bank (sandbox)",
+    "name": "Barclays Bank",
+    "BasePISPApiUri": "https://sandbox.api.barclays:443/open-banking/v3.1/sandbox/pisp",
+    "PayloadSigningCertLocation": "string",
+    "BaseCBPIIApiUri": "https://sandbox.api.barclays:443/open-banking/v3.1/sandbox/cbpii"
+  },
+  "id": "barclays-sandbox",
+  "aspspId": "barclays",
+  "openIdConfig": {
+    "token_endpoint": "https://token.sandbox.barclays.com/oauth/oauth20/token",
+    "scopes_supported": ["openid", "accounts", "payments"],
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "issuer": "https://token.sandbox.barclays.com",
+    "authorization_endpoint": "https://token.sandbox.barclays.com/oauth/auz/authorize",
+    "token_endpoint_auth_methods_supported": ["client_secret_post"],
+    "grant_types_supported": ["refresh_token", "client_credentials", "authorization_code"]
+  },
+  "identity": {
+    "memberState": "GB",
+    "developerPortalUri": "https://developer.barclays.com/",
+    "openIDConfigEndPointUri": null,
+    "customerFriendlyDescription": "string",
+    "customerFriendlyLogoUri": "assets/img/banks/Barclays_logo.svg",
+    "organisationCommonName": "Barclays Bank PLC",
+    "termsOfService": "string",
+    "customerFriendlyName": "Barclays Bank (sandbox)",
+    "name": "Barclays Bank",
+    "website": "https://www.barclays.co.uk/",
+    "countries": ["GB"],
+    "weight": -4
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret"]
 }

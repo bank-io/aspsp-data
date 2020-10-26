@@ -1,64 +1,41 @@
 {
-    "openIdConfig": {
-        "authorization_endpoint": "https://sandbox.auth.bnpparibasfortis.com/authorize",
-        "pis_authorization_endpoint": "https://sandbox.auth.bnpparibasfortis.com/payment-requests/{paymentId}/consent",
-        "token_endpoint_auth_methods_supported": [
-            "client_secret_post"
-        ],
-        "grant_types_supported": [
-            "refresh_token",
-            "authorization_code"
-        ],
-        "token_endpoint": "https://sandbox.auth.bnpparibasfortis.com/token",
-        "scopes_supported": [
-            "aisp",
-            "pisp",
-            "cbpi"
-        ],
-        "scopes": {
-            "AIS": "aisp",
-            "PIS": "pisp",
-            "cbpii": "cbpi"
-        },
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "code_challenge_methods_supported": []
+  "openIdConfig": {
+    "authorization_endpoint": "https://sandbox.auth.bnpparibasfortis.com/authorize",
+    "pis_authorization_endpoint": "https://sandbox.auth.bnpparibasfortis.com/payment-requests/{paymentId}/consent",
+    "token_endpoint_auth_methods_supported": ["client_secret_post"],
+    "grant_types_supported": ["refresh_token", "authorization_code"],
+    "token_endpoint": "https://sandbox.auth.bnpparibasfortis.com/token",
+    "scopes_supported": ["aisp", "pisp", "cbpi"],
+    "scopes": {
+      "AIS": "aisp",
+      "PIS": "pisp",
+      "cbpii": "cbpi"
     },
-    "psd2Config": {
-        "accountsApiUri": "https://sandbox.api.bnpparibasfortis.com/v1/accounts",
-        "paymentInitiationApiUri": "https://sandbox.api.bnpparibasfortis.com/v1/payment-requests",
-        "paymentApiUri": "https://sandbox.api.bnpparibasfortis.com/v1/payment-requests/{paymentId}"
-    },
-    "id": "bnpparibasfortis-sandbox",
-    "aspspId": "bnpparibasfortis",
-    "identity": {
-        "memberState": "BE",
-        "developerPortalUri": "https://developer.bnpparibasfortis.com/",
-        "openIDConfigEndPointUri": null,
-        "customerFriendlyDescription": "",
-        "customerFriendlyLogoUri": "assets/img/banks/bnpf-logo.svg",
-        "organisationCommonName": "BNP Paribas Fortis",
-        "termsOfService": "",
-        "customerFriendlyName": "BNP Paribas Fortis (sandbox)",
-        "name": "BNP Paribas Fortis",
-        "countries": [
-            "BE"
-        ],
-        "website": "https://www.bnpparibasfortis.com/",
-        "weight": -8
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "clientSecret",
-        "organisationId"
-    ]
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "code_challenge_methods_supported": []
+  },
+  "psd2Config": {
+    "accountsApiUri": "https://sandbox.api.bnpparibasfortis.com/v1/accounts",
+    "paymentInitiationApiUri": "https://sandbox.api.bnpparibasfortis.com/v1/payment-requests",
+    "paymentApiUri": "https://sandbox.api.bnpparibasfortis.com/v1/payment-requests/{paymentId}"
+  },
+  "id": "bnpparibasfortis-sandbox",
+  "aspspId": "bnpparibasfortis",
+  "identity": {
+    "memberState": "BE",
+    "developerPortalUri": "https://developer.bnpparibasfortis.com/",
+    "openIDConfigEndPointUri": null,
+    "customerFriendlyDescription": "",
+    "customerFriendlyLogoUri": "assets/img/banks/bnpf-logo.svg",
+    "organisationCommonName": "BNP Paribas Fortis",
+    "termsOfService": "",
+    "customerFriendlyName": "BNP Paribas Fortis (sandbox)",
+    "name": "BNP Paribas Fortis",
+    "countries": ["BE"],
+    "website": "https://www.bnpparibasfortis.com/",
+    "weight": -8
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret", "organisationId"]
 }

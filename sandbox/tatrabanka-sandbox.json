@@ -1,70 +1,45 @@
 {
-    "openIdConfig": {
-        "authorization_endpoint": "https://api.tatrabanka.sk/sandbox/auth/oauth/v2/authorize",
-        "token_endpoint_auth_methods_supported": [
-            "client_secret_basic"
-        ],
-        "token_endpoint": "https://api.tatrabanka.sk/sandbox/auth/oauth/v2/token",
-        "scopes_supported": [
-            "AISP",
-            "PISP",
-            "payments"
-        ],
-        "scopes": {
-            "AIS": "AISP",
-            "PIS": "payments"
-        },
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "grant_types_supported": [
-            "refresh_token",
-            "authorization_code",
-            "client_credentials"
-        ],
-        "code_challenge_methods_supported": [
-            "S256"
-        ]
+  "openIdConfig": {
+    "authorization_endpoint": "https://api.tatrabanka.sk/sandbox/auth/oauth/v2/authorize",
+    "token_endpoint_auth_methods_supported": ["client_secret_basic"],
+    "token_endpoint": "https://api.tatrabanka.sk/sandbox/auth/oauth/v2/token",
+    "scopes_supported": ["AISP", "PISP", "payments"],
+    "scopes": {
+      "AIS": "AISP",
+      "PIS": "payments"
     },
-    "psd2Config": {
-        "AISPConsentNotRequired": true,
-        "accountsApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/accounts",
-        "accountApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/accounts/information",
-        "balancesApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/accounts/information",
-        "transactionsApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/accounts/transactions",
-        "paymentInitiationApiUri": "https://api.tatrabanka.sk/sandbox/api/v2/{payment-service}/{payment-product}/sba",
-        "paymentConfirmationApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/payments/submission",
-        "paymentStatusApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/{payment-service}/{paymentId}/status",
-        "paymentCancellationApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/{payment-service}/{paymentId}/rcp"
-    },
-    "id": "tatrabanka-sandbox",
-    "aspspId": "tatrabanka",
-    "identity": {
-        "memberState": "SK",
-        "developerPortalUri": "https://developer.tatrabanka.sk/",
-        "openIDConfigEndPointUri": "",
-        "customerFriendlyDescription": "",
-        "customerFriendlyLogoUri": "assets/img/banks/tatrabanka.svg",
-        "organisationCommonName": "Tatra banka",
-        "termsOfService": "",
-        "customerFriendlyName": "Tatra banka (sandbox)",
-        "name": "Tatra banka",
-        "countries": [
-            "SK"
-        ],
-        "website": "https://www.tatrabanka.sk/",
-        "weight": 0
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "clientSecret"
-    ]
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "grant_types_supported": ["refresh_token", "authorization_code", "client_credentials"],
+    "code_challenge_methods_supported": ["S256"]
+  },
+  "psd2Config": {
+    "AISPConsentNotRequired": true,
+    "accountsApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/accounts",
+    "accountApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/accounts/information",
+    "balancesApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/accounts/information",
+    "transactionsApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/accounts/transactions",
+    "paymentInitiationApiUri": "https://api.tatrabanka.sk/sandbox/api/v2/{payment-service}/{payment-product}/sba",
+    "paymentConfirmationApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/payments/submission",
+    "paymentStatusApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/{payment-service}/{paymentId}/status",
+    "paymentCancellationApiUri": "https://api.tatrabanka.sk/sandbox/api/v1/{payment-service}/{paymentId}/rcp"
+  },
+  "id": "tatrabanka-sandbox",
+  "aspspId": "tatrabanka",
+  "identity": {
+    "memberState": "SK",
+    "developerPortalUri": "https://developer.tatrabanka.sk/",
+    "openIDConfigEndPointUri": "",
+    "customerFriendlyDescription": "",
+    "customerFriendlyLogoUri": "assets/img/banks/tatrabanka.svg",
+    "organisationCommonName": "Tatra banka",
+    "termsOfService": "",
+    "customerFriendlyName": "Tatra banka (sandbox)",
+    "name": "Tatra banka",
+    "countries": ["SK"],
+    "website": "https://www.tatrabanka.sk/",
+    "weight": 0
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret"]
 }

@@ -1,67 +1,46 @@
 {
-    "obDirectoryConfig": {
-        "BaseApiDNSUri": null,
-        "MemberState": "GB",
-        "DeveloperPortalUri": null,
-        "RegistrationId": "12345",
-        "CustomerFriendlyDescription": "string",
-        "AutoRegistrationSupported": true,
-        "ClientRegistrationUri": null,
-        "AuthorityId": "FCA",
-        "BaseAISPApiUri": "https://sandbox.mtls.data.openbanking.vanquis.co.uk/open-banking/v3.1/aisp",
-        "TermsOfService": "string",
-        "OBOrganisationId": "0015800001ZEc2PAAT",
-        "BasePISPApiUri": "https://sandbox.mtls.data.openbanking.vanquis.co.uk/open-banking/v3.1/pisp",
-        "PayloadSigningCertLocation": "string",
-        "BaseCBPIIApiUri": "https://sandbox.mtls.data.openbanking.vanquis.co.uk/open-banking/v3.1/cbpii"
-    },
-    "id": "vanquis-sandbox",
-    "aspspId": "vanquis",
-    "openIdConfig": {
-        "token_endpoint": "https://sandbox.mtls.auth.openbanking.vanquis.co.uk/connect/token",
-        "scopes_supported": [
-            "openid",
-            "accounts",
-            "payments"
-        ],
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "issuer": "https://sandbox.auth.openbanking.vanquis.co.uk",
-        "authorization_endpoint": "https://sandbox.auth.openbanking.vanquis.co.uk/connect/authorize",
-        "token_endpoint_auth_methods_supported": [
-            "private_key_jwt"
-        ],
-        "grant_types_supported": [
-            "refresh_token",
-            "client_credentials",
-            "authorization_code"
-        ]
-    },
-    "identity": {
-        "memberState": "GB",
-        "developerPortalUri": "https://www.vanquis.co.uk/developer-portal",
-        "openIDConfigEndPointUri": "https://sandbox.auth.openbanking.vanquis.co.uk/.well-known/openid-configuration",
-        "customerFriendlyDescription": "string",
-        "customerFriendlyLogoUri": "assets/img/banks/vanquis.png",
-        "organisationCommonName": "Vanquis Bank PLC",
-        "termsOfService": "string",
-        "customerFriendlyName": "Vanquis Bank (sandbox)",
-        "name": "Vanquis Bank",
-        "website": "https://www.vanquis.co.uk/",
-        "countries": [
-            "GB"
-        ],
-        "weight": 0
-    },
-    "roles": [
-        "aisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId"
-    ]
+  "obDirectoryConfig": {
+    "BaseApiDNSUri": null,
+    "MemberState": "GB",
+    "DeveloperPortalUri": null,
+    "RegistrationId": "12345",
+    "CustomerFriendlyDescription": "string",
+    "AutoRegistrationSupported": true,
+    "ClientRegistrationUri": null,
+    "AuthorityId": "FCA",
+    "BaseAISPApiUri": "https://sandbox.mtls.data.openbanking.vanquis.co.uk/open-banking/v3.1/aisp",
+    "TermsOfService": "string",
+    "OBOrganisationId": "0015800001ZEc2PAAT",
+    "BasePISPApiUri": "https://sandbox.mtls.data.openbanking.vanquis.co.uk/open-banking/v3.1/pisp",
+    "PayloadSigningCertLocation": "string",
+    "BaseCBPIIApiUri": "https://sandbox.mtls.data.openbanking.vanquis.co.uk/open-banking/v3.1/cbpii"
+  },
+  "id": "vanquis-sandbox",
+  "aspspId": "vanquis",
+  "openIdConfig": {
+    "token_endpoint": "https://sandbox.mtls.auth.openbanking.vanquis.co.uk/connect/token",
+    "scopes_supported": ["openid", "accounts", "payments"],
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "issuer": "https://sandbox.auth.openbanking.vanquis.co.uk",
+    "authorization_endpoint": "https://sandbox.auth.openbanking.vanquis.co.uk/connect/authorize",
+    "token_endpoint_auth_methods_supported": ["private_key_jwt"],
+    "grant_types_supported": ["refresh_token", "client_credentials", "authorization_code"]
+  },
+  "identity": {
+    "memberState": "GB",
+    "developerPortalUri": "https://www.vanquis.co.uk/developer-portal",
+    "openIDConfigEndPointUri": "https://sandbox.auth.openbanking.vanquis.co.uk/.well-known/openid-configuration",
+    "customerFriendlyDescription": "string",
+    "customerFriendlyLogoUri": "assets/img/banks/vanquis.png",
+    "organisationCommonName": "Vanquis Bank PLC",
+    "termsOfService": "string",
+    "customerFriendlyName": "Vanquis Bank (sandbox)",
+    "name": "Vanquis Bank",
+    "website": "https://www.vanquis.co.uk/",
+    "countries": ["GB"],
+    "weight": 0
+  },
+  "roles": ["aisp", "cbpii"],
+  "clientCredentialsFields": ["clientId"]
 }

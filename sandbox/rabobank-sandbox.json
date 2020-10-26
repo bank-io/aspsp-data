@@ -1,65 +1,41 @@
 {
-    "openIdConfig": {
-        "authorization_endpoint": "https://api-sandbox.rabobank.nl/openapi/sandbox/oauth2/authorize",
-        "token_endpoint_auth_methods_supported": [
-            "client_secret_basic"
-        ],
-        "token_endpoint": "https://api-sandbox.rabobank.nl/openapi/sandbox/oauth2/token",
-        "scopes_supported": [
-            "ais.balances.read",
-            "ais.transactions.read-90days",
-            "ais.transactions.read-history",
-            "oauth2.consents.read"
-        ],
-        "scopes": {
-            "AIS": "oauth2.consents.read ais.balances.read ais.transactions.read-90days ais.transactions.read-history",
-            "PIS": "PIS"
-        },
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "grant_types_supported": [
-            "refresh_token",
-            "authorization_code"
-        ],
-        "code_challenge_methods_supported": []
+  "openIdConfig": {
+    "authorization_endpoint": "https://api-sandbox.rabobank.nl/openapi/sandbox/oauth2/authorize",
+    "token_endpoint_auth_methods_supported": ["client_secret_basic"],
+    "token_endpoint": "https://api-sandbox.rabobank.nl/openapi/sandbox/oauth2/token",
+    "scopes_supported": ["ais.balances.read", "ais.transactions.read-90days", "ais.transactions.read-history", "oauth2.consents.read"],
+    "scopes": {
+      "AIS": "oauth2.consents.read ais.balances.read ais.transactions.read-90days ais.transactions.read-history",
+      "PIS": "PIS"
     },
-    "psd2Config": {
-        "consentApiUri": "https://api-sandbox.rabobank.nl/openapi/sandbox/oauth2/consents",
-        "accountsApiUri": "https://api-sandbox.rabobank.nl/openapi/sandbox/payments/account-information/ais/v3/accounts",
-        "paymentInitiationApiUri": "https://api-sandbox.rabobank.nl/openapi/sandbox/payments/payment-initiation/pis/v1/{payment-service}/{payment-product}",
-        "paymentStatusApiUri": "https://api-sandbox.rabobank.nl/openapi/sandbox/payments/payment-initiation/pis/v1/{payment-service}/{payment-product}/{paymentId}/status",
-        "consentStatusApiUri": "https://api-sandbox.rabobank.nl/openapi/sandbox/oauth2/consents/{consentId}"
-    },
-    "id": "rabobank-sandbox",
-    "aspspId": "rabobank",
-    "identity": {
-        "memberState": "NL",
-        "developerPortalUri": "https://developer-sandbox.rabobank.nl/",
-        "openIDConfigEndPointUri": "",
-        "customerFriendlyDescription": "",
-        "customerFriendlyLogoUri": "assets/img/banks/rabobank.svg",
-        "organisationCommonName": "Rabobank",
-        "termsOfService": "",
-        "customerFriendlyName": "Rabobank (sandbox)",
-        "name": "Rabobank",
-        "countries": [
-            "NL"
-        ],
-        "website": "https://www.rabobank.nl/",
-        "weight": 0
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "clientSecret",
-        "signingKid"
-    ]
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "grant_types_supported": ["refresh_token", "authorization_code"],
+    "code_challenge_methods_supported": []
+  },
+  "psd2Config": {
+    "consentApiUri": "https://api-sandbox.rabobank.nl/openapi/sandbox/oauth2/consents",
+    "accountsApiUri": "https://api-sandbox.rabobank.nl/openapi/sandbox/payments/account-information/ais/v3/accounts",
+    "paymentInitiationApiUri": "https://api-sandbox.rabobank.nl/openapi/sandbox/payments/payment-initiation/pis/v1/{payment-service}/{payment-product}",
+    "paymentStatusApiUri": "https://api-sandbox.rabobank.nl/openapi/sandbox/payments/payment-initiation/pis/v1/{payment-service}/{payment-product}/{paymentId}/status",
+    "consentStatusApiUri": "https://api-sandbox.rabobank.nl/openapi/sandbox/oauth2/consents/{consentId}"
+  },
+  "id": "rabobank-sandbox",
+  "aspspId": "rabobank",
+  "identity": {
+    "memberState": "NL",
+    "developerPortalUri": "https://developer-sandbox.rabobank.nl/",
+    "openIDConfigEndPointUri": "",
+    "customerFriendlyDescription": "",
+    "customerFriendlyLogoUri": "assets/img/banks/rabobank.svg",
+    "organisationCommonName": "Rabobank",
+    "termsOfService": "",
+    "customerFriendlyName": "Rabobank (sandbox)",
+    "name": "Rabobank",
+    "countries": ["NL"],
+    "website": "https://www.rabobank.nl/",
+    "weight": 0
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret", "signingKid"]
 }

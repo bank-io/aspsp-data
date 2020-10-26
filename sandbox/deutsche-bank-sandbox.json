@@ -1,143 +1,119 @@
 {
-    "openIdConfig": {
-        "authorization_endpoint": null,
-        "token_endpoint_auth_methods_supported": [],
-        "token_endpoint": null,
-        "scopes_supported": [
-            "AIS",
-            "PIS"
-        ],
-        "scopes": {
-            "AIS": "openid read_accounts_list read_accounts",
-            "PIS": "openid instant_sepa_credit_transfers"
-        },
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "grant_types_supported": []
+  "openIdConfig": {
+    "authorization_endpoint": null,
+    "token_endpoint_auth_methods_supported": [],
+    "token_endpoint": null,
+    "scopes_supported": ["AIS", "PIS"],
+    "scopes": {
+      "AIS": "openid read_accounts_list read_accounts",
+      "PIS": "openid instant_sepa_credit_transfers"
     },
-    "psd2Config": {
-        "AISPConsentInputType": [
-            "psuID",
-            "ibanAccountList"
-        ],
-        "PISPInitiationInputType": [
-            "psuID",
-            "debtorAccountIBAN"
-        ],
-        "consentApiUri": "https://simulator-xs2a.db.com/ais/{country}/{businessEntityID}/v1/consents",
-        "accountsApiUri": "https://simulator-xs2a.db.com/ais/{country}/{businessEntityID}/v1/accounts",
-        "paymentInitiationApiUri": "https://simulator-xs2a.db.com/pis/{country}/{businessEntityID}/v1/{payment-service}/{payment-product}",
-        "paymentApiUri": "https://simulator-xs2a.db.com/pis/{country}/{businessEntityID}/v1/{payment-service}/{payment-product}/{paymentId}",
-        "paymentStatusApiUri": "https://simulator-xs2a.db.com/pis/{country}/{businessEntityID}/v1/{payment-service}/{payment-product}/{paymentId}/status",
-        "consentStatusApiUri": "https://simulator-xs2a.db.com/ais/{country}/{businessEntityID}/v1/consents/{consentId}/status"
-    },
-    "id": "deutsche-bank-sandbox",
-    "aspspId": "deutsche-bank",
-    "businessEntities": {
-      "DE/SB-DB": {
-        "customerFriendlyName": "Deutsche Bank Group",
-        "parameters": {
-          "businessEntityID": "SB-DB",
-          "psuIDType": "DE_ONLB_DB",
-          "country": "DE"
-        }
-      },
-      "DE/SB-PFB": {
-        "customerFriendlyName": "Deutsche Bank AG",
-        "parameters": {
-          "businessEntityID": "SB-PFB",
-          "psuIDType": "DE_ONLB_DB",
-          "country": "DE"
-        }
-      },
-      "DE/SB-Norris": {
-        "customerFriendlyName": "Norrisbank GmbH",
-        "parameters": {
-          "businessEntityID": "SB-Noris",
-          "psuIDType": "DE_ONLB_NORIS",
-          "country": "DE"
-        }
-      },
-      "DE/SB-Postbank": {
-        "customerFriendlyName": "Postbank eine Niederlassung der DB PFB AG",
-        "parameters": {
-          "businessEntityID": "SB-Postbank",
-          "psuIDType": "DE_ONLB_POBA",
-          "country": "DE"
-        }
-      },
-      "BE/SB-DB": {
-        "customerFriendlyName": "Deutsche Bank AG Belgium",
-        "parameters": {
-          "businessEntityID": "SB-DB",
-          "psuIDType": "BE_ONLB_DB",
-          "country": "BE"
-        }
-      },
-      "ES/SB-DB": {
-        "customerFriendlyName": "Deutsche Bank S.A.E. Spain",
-        "parameters": {
-          "businessEntityID": "SB-DB",
-          "psuIDType": "ES_ONLB_DB",
-          "country": "ES"
-        }
-      },
-      "ES/SB-Corporate": {
-        "customerFriendlyName": "Deutsche Bank S.A.E. Corporate Spain",
-        "parameters": {
-          "businessEntityID": "SB-Corporate",
-          "psuIDType": "ES_ONLB_CORPORATE",
-          "country": "ES",
-          "corporateIDType": "Corporate_Id"
-        }
-      },
-      "IT/SB-DB": {
-        "customerFriendlyName": "Deutsche Bank S.P.A. Italy",
-        "parameters": {
-          "businessEntityID": "SB-DB",
-          "psuIDType": "IT_ONLB_DB",
-          "country": "IT"
-        }
-      },
-      "EU/SB-Corporate": {
-        "customerFriendlyName": "Deutsche Bank AG Corporate",
-        "parameters": {
-          "businessEntityID": "SB-Corporate",
-          "psuIDType": "WebSSO",
-          "country": "EU",
-          "corporateIDType": "Mandate ID"
-        }
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "grant_types_supported": []
+  },
+  "psd2Config": {
+    "AISPConsentInputType": ["psuID", "ibanAccountList"],
+    "PISPInitiationInputType": ["psuID", "debtorAccountIBAN"],
+    "consentApiUri": "https://simulator-xs2a.db.com/ais/{country}/{businessEntityID}/v1/consents",
+    "accountsApiUri": "https://simulator-xs2a.db.com/ais/{country}/{businessEntityID}/v1/accounts",
+    "paymentInitiationApiUri": "https://simulator-xs2a.db.com/pis/{country}/{businessEntityID}/v1/{payment-service}/{payment-product}",
+    "paymentApiUri": "https://simulator-xs2a.db.com/pis/{country}/{businessEntityID}/v1/{payment-service}/{payment-product}/{paymentId}",
+    "paymentStatusApiUri": "https://simulator-xs2a.db.com/pis/{country}/{businessEntityID}/v1/{payment-service}/{payment-product}/{paymentId}/status",
+    "consentStatusApiUri": "https://simulator-xs2a.db.com/ais/{country}/{businessEntityID}/v1/consents/{consentId}/status"
+  },
+  "id": "deutsche-bank-sandbox",
+  "aspspId": "deutsche-bank",
+  "businessEntities": {
+    "DE/SB-DB": {
+      "customerFriendlyName": "Deutsche Bank Group",
+      "parameters": {
+        "businessEntityID": "SB-DB",
+        "psuIDType": "DE_ONLB_DB",
+        "country": "DE"
       }
     },
-    "identity": {
-        "memberState": "DE",
-        "developerPortalUri": "https://developer.db.com/",
-        "openIDConfigEndPointUri": "",
-        "customerFriendlyDescription": "",
-        "customerFriendlyLogoUri": "assets/img/banks/Deutsche_Bank-Logo.svg",
-        "organisationCommonName": "Deutsche Bank",
-        "termsOfService": "",
-        "customerFriendlyName": "Deutsche Bank (sandbox)",
-        "name": "Deutsche Bank",
-        "website": "https://www.db.com/",
-        "countries": [
-            "DE",
-            "IT",
-            "ES",
-            "BE"
-        ],
-        "weight": -1
+    "DE/SB-PFB": {
+      "customerFriendlyName": "Deutsche Bank AG",
+      "parameters": {
+        "businessEntityID": "SB-PFB",
+        "psuIDType": "DE_ONLB_DB",
+        "country": "DE"
+      }
     },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId"
-    ]
+    "DE/SB-Norris": {
+      "customerFriendlyName": "Norrisbank GmbH",
+      "parameters": {
+        "businessEntityID": "SB-Noris",
+        "psuIDType": "DE_ONLB_NORIS",
+        "country": "DE"
+      }
+    },
+    "DE/SB-Postbank": {
+      "customerFriendlyName": "Postbank eine Niederlassung der DB PFB AG",
+      "parameters": {
+        "businessEntityID": "SB-Postbank",
+        "psuIDType": "DE_ONLB_POBA",
+        "country": "DE"
+      }
+    },
+    "BE/SB-DB": {
+      "customerFriendlyName": "Deutsche Bank AG Belgium",
+      "parameters": {
+        "businessEntityID": "SB-DB",
+        "psuIDType": "BE_ONLB_DB",
+        "country": "BE"
+      }
+    },
+    "ES/SB-DB": {
+      "customerFriendlyName": "Deutsche Bank S.A.E. Spain",
+      "parameters": {
+        "businessEntityID": "SB-DB",
+        "psuIDType": "ES_ONLB_DB",
+        "country": "ES"
+      }
+    },
+    "ES/SB-Corporate": {
+      "customerFriendlyName": "Deutsche Bank S.A.E. Corporate Spain",
+      "parameters": {
+        "businessEntityID": "SB-Corporate",
+        "psuIDType": "ES_ONLB_CORPORATE",
+        "country": "ES",
+        "corporateIDType": "Corporate_Id"
+      }
+    },
+    "IT/SB-DB": {
+      "customerFriendlyName": "Deutsche Bank S.P.A. Italy",
+      "parameters": {
+        "businessEntityID": "SB-DB",
+        "psuIDType": "IT_ONLB_DB",
+        "country": "IT"
+      }
+    },
+    "EU/SB-Corporate": {
+      "customerFriendlyName": "Deutsche Bank AG Corporate",
+      "parameters": {
+        "businessEntityID": "SB-Corporate",
+        "psuIDType": "WebSSO",
+        "country": "EU",
+        "corporateIDType": "Mandate ID"
+      }
+    }
+  },
+  "identity": {
+    "memberState": "DE",
+    "developerPortalUri": "https://developer.db.com/",
+    "openIDConfigEndPointUri": "",
+    "customerFriendlyDescription": "",
+    "customerFriendlyLogoUri": "assets/img/banks/Deutsche_Bank-Logo.svg",
+    "organisationCommonName": "Deutsche Bank",
+    "termsOfService": "",
+    "customerFriendlyName": "Deutsche Bank (sandbox)",
+    "name": "Deutsche Bank",
+    "website": "https://www.db.com/",
+    "countries": ["DE", "IT", "ES", "BE"],
+    "weight": -1
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId"]
 }

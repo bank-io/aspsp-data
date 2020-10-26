@@ -1,74 +1,46 @@
 {
-    "openIdConfig": {
-        "authorization_endpoint": "https://apis-i.redsys.es:20443/psd2/xs2a/api-oauth-xs2a/services/rest/unicajabanco/authorize",
-        "token_endpoint_auth_methods_supported": [
-            "client_secret_post"
-        ],
-        "token_endpoint": "https://apis-i.redsys.es:20443/psd2/xs2a/api-oauth-xs2a/services/rest/unicajabanco/token",
-        "scopes_supported": [
-            "AIS",
-            "PIS",
-            "SVA"
-        ],
-        "scopes": {
-            "AIS": "AIS",
-            "PIS": "PIS",
-            "SVA": "SVA"
-        },
-        "id_token_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "request_object_signing_alg_values_supported": [
-            "PS256"
-        ],
-        "grant_types_supported": [
-            "refresh_token",
-            "authorization_code"
-        ],
-        "code_challenge_methods_supported": [
-            "S256"
-        ]
+  "openIdConfig": {
+    "authorization_endpoint": "https://apis-i.redsys.es:20443/psd2/xs2a/api-oauth-xs2a/services/rest/unicajabanco/authorize",
+    "token_endpoint_auth_methods_supported": ["client_secret_post"],
+    "token_endpoint": "https://apis-i.redsys.es:20443/psd2/xs2a/api-oauth-xs2a/services/rest/unicajabanco/token",
+    "scopes_supported": ["AIS", "PIS", "SVA"],
+    "scopes": {
+      "AIS": "AIS",
+      "PIS": "PIS",
+      "SVA": "SVA"
     },
-    "psd2Config": {
-        "AISPCreateConsentAfterAuthentication": true,
-        "AISPSCARequiredAfterCreateConsent": true,
-        "AISPConsentInputType": [
-            "ibanAccountList"
-        ],
-        "consentApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/unicajabanco/v1/consents",
-        "accountsApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/unicajabanco/v1/accounts",
-        "paymentInitiationApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/unicajabanco/v1/{payment-service}/{payment-product}",
-        "paymentApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/unicajabanco/v1/{payment-service}/{payment-product}/{paymentId}",
-        "paymentStatusApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/unicajabanco/v1/{payment-service}/{payment-product}/{paymentId}/status",
-        "consentStatusApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/unicajabanco/v1/consents/{consentId}/status"
-    },
-    "id": "unicajabanco-sandbox",
-    "aspspId": "unicajabanco",
-    "identity": {
-        "memberState": "ES",
-        "developerPortalUri": "https://market.apis-i.redsys.es/psd2/xs2a/nodos/unicajabanco",
-        "openIDConfigEndPointUri": "",
-        "customerFriendlyDescription": "",
-        "customerFriendlyLogoUri": "assets/img/banks/logounicaja_pc_svg.svg",
-        "organisationCommonName": "Unicaja Banco, S.A.",
-        "termsOfService": "",
-        "customerFriendlyName": "Unicaja Banco (sandbox)",
-        "name": "Unicaja Banco",
-        "countries": [
-            "ES"
-        ],
-        "website": "https://www.unicajabanco.es/",
-        "weight": -4
-    },
-    "roles": [
-        "aisp",
-        "pisp",
-        "cbpii"
-    ],
-    "clientCredentialsFields": [
-        "clientId",
-        "clientSecret",
-        "organisationId",
-        "signingKid"
-    ]
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "grant_types_supported": ["refresh_token", "authorization_code"],
+    "code_challenge_methods_supported": ["S256"]
+  },
+  "psd2Config": {
+    "AISPCreateConsentAfterAuthentication": true,
+    "AISPSCARequiredAfterCreateConsent": true,
+    "AISPConsentInputType": ["ibanAccountList"],
+    "consentApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/unicajabanco/v1/consents",
+    "accountsApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/unicajabanco/v1/accounts",
+    "paymentInitiationApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/unicajabanco/v1/{payment-service}/{payment-product}",
+    "paymentApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/unicajabanco/v1/{payment-service}/{payment-product}/{paymentId}",
+    "paymentStatusApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/unicajabanco/v1/{payment-service}/{payment-product}/{paymentId}/status",
+    "consentStatusApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/unicajabanco/v1/consents/{consentId}/status"
+  },
+  "id": "unicajabanco-sandbox",
+  "aspspId": "unicajabanco",
+  "identity": {
+    "memberState": "ES",
+    "developerPortalUri": "https://market.apis-i.redsys.es/psd2/xs2a/nodos/unicajabanco",
+    "openIDConfigEndPointUri": "",
+    "customerFriendlyDescription": "",
+    "customerFriendlyLogoUri": "assets/img/banks/logounicaja_pc_svg.svg",
+    "organisationCommonName": "Unicaja Banco, S.A.",
+    "termsOfService": "",
+    "customerFriendlyName": "Unicaja Banco (sandbox)",
+    "name": "Unicaja Banco",
+    "countries": ["ES"],
+    "website": "https://www.unicajabanco.es/",
+    "weight": -4
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret", "organisationId", "signingKid"]
 }
