@@ -10,7 +10,7 @@
     "AuthorityId": "FCA",
     "BaseAISPApiUri": "https://medici-dev.demo.axway.com:8065/open-banking/v3.1/aisp",
     "TermsOfService": "string",
-    "OBOrganisationId": "0015800000jf9GgAAI",
+    "OBOrganisationId": "-",
     "BasePISPApiUri": "https://medici-dev.demo.axway.com:8065/open-banking/v3.1/pisp",
     "PayloadSigningCertLocation": "string",
     "BaseCBPIIApiUri": "https://medici-dev.demo.axway.com:8065/open-banking/v3.1/cbpii"
