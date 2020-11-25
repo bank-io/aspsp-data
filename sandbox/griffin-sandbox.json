@@ -30,7 +30,7 @@
   "identity": {
     "memberState": "GB",
     "developerPortalUri": "https://developer.griffinbank.com/",
-    "openIDConfigEndPointUri": "https://as.aspsp.sandbox.griffinbanking.com/oauth2/.well-known/openid-configuration",
+    "openIDConfigEndPointUri": "https://acp.axway.cloudentity-se.com:8443/axway/consumers/.well-known/openid-configuration",
     "customerFriendlyDescription": "string",
     "customerFriendlyLogoUri": "assets/img/banks/griffin.png",
     "organisationCommonName": "Griffin Bank",
