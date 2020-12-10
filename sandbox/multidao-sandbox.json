@@ -15,8 +15,8 @@
     "PayloadSigningCertLocation": "string",
     "BaseCBPIIApiUri": "https://medici-dev.demo.axway.com:8065/open-banking/v3.1/cbpii"
   },
-  "id": "griffin-sandbox",
-  "aspspId": "griffin",
+  "id": "multidao-sandbox",
+  "aspspId": "multidao",
   "openIdConfig": {
     "token_endpoint": "https://acp.axway.cloudentity-se.com:8443/axway/openbanking/oauth2/token",
     "scopes_supported": ["openid", "accounts", "payments"],
@@ -30,15 +30,15 @@
   },
   "identity": {
     "memberState": "BR",
-    "developerPortalUri": "https://developer.griffinbank.com/",
+    "developerPortalUri": "https://developer.multidaobank.com/",
     "openIDConfigEndPointUri": "https://acp.axway.cloudentity-se.com:8443/axway/openbanking/.well-known/openid-configuration",
     "customerFriendlyDescription": "string",
-    "customerFriendlyLogoUri": "assets/img/banks/griffinbank-new-logo.svg",
-    "organisationCommonName": "Griffin Bank",
+    "customerFriendlyLogoUri": "assets/img/banks/multidaobank-new-logo.svg",
+    "organisationCommonName": "Multidao Bank",
     "termsOfService": "string",
-    "customerFriendlyName": "Griffin Bank (sandbox)",
-    "name": "Griffin Bank",
-    "website": "https://www.griffinbank.com/",
+    "customerFriendlyName": "Multidao Bank (sandbox)",
+    "name": "Multidao Bank",
+    "website": "https://www.multidaobank.com/",
     "countries": ["BR"],
     "weight": -8
   },
