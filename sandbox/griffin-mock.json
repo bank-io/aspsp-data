@@ -8,22 +8,22 @@
     "AutoRegistrationSupported": true,
     "ClientRegistrationUri": null,
     "AuthorityId": "FCA",
-    "BaseAISPApiUri": "https://dev.bankio.ro:4443/open-banking/v3.1/aisp",
+    "BaseAISPApiUri": "https://griffin.bankio.ro/open-banking/v3.1/aisp",
     "TermsOfService": "string",
     "OBOrganisationId": "-",
-    "BasePISPApiUri": "https://dev.bankio.ro:4443/open-banking/v3.1/pisp",
+    "BasePISPApiUri": "https://griffin.bankio.ro/open-banking/v3.1/pisp",
     "PayloadSigningCertLocation": "string",
-    "BaseCBPIIApiUri": "https://dev.bankio.ro:4443/open-banking/v3.1/cbpii"
+    "BaseCBPIIApiUri": "https://griffin.bankio.ro/open-banking/v3.1/cbpii"
   },
   "id": "griffin-mock",
   "aspspId": "griffin",
   "openIdConfig": {
-    "token_endpoint": "https://dev.bankio.ro:4443/oauth2/token",
+    "token_endpoint": "https://griffin.bankio.ro/oauth2/token",
     "scopes_supported": ["openid", "accounts", "payments"],
     "id_token_signing_alg_values_supported": ["RS256"],
     "request_object_signing_alg_values_supported": ["RS256"],
-    "issuer": "https://dev.bankio.ro:4443/oauth2/token",
-    "authorization_endpoint": "https://dev.bankio.ro:4443/oauth2/authorize",
+    "issuer": "https://griffin.bankio.ro/oauth2/token",
+    "authorization_endpoint": "https://griffin.bankio.ro/oauth2/authorize",
     "token_endpoint_auth_methods_supported": ["tls_client_auth"],
     "grant_types_supported": ["refresh_token", "client_credentials", "authorization_code"],
     "code_challenge_methods_supported": ["S256"]
@@ -31,7 +31,7 @@
   "identity": {
     "memberState": "BR",
     "developerPortalUri": "https://developer.griffinbank.com/",
-    "openIDConfigEndPointUri": "https://dev.bankio.ro:4443/.well-known/openid-configuration",
+    "openIDConfigEndPointUri": "https://griffin.bankio.ro/.well-known/openid-configuration",
     "customerFriendlyDescription": "string",
     "customerFriendlyLogoUri": "assets/img/banks/griffinbank-new-logo.svg",
     "organisationCommonName": "Griffin Bank mock",
