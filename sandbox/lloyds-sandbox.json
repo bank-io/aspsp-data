@@ -8,12 +8,12 @@
     "AutoRegistrationSupported": true,
     "ClientRegistrationUri": null,
     "AuthorityId": "FCA",
-    "BaseAISPApiUri": "https://matls.rs.aspsp.sandbox.lloydsbanking.com/open-banking/v3.1/aisp",
+    "BaseAISPApiUri": "https://matls.rs.aspsp.sandbox.lloydsbanking.com/open-banking/v3.1.6/aisp",
     "TermsOfService": "string",
     "OBOrganisationId": "0015800000jf9GgAAI",
-    "BasePISPApiUri": "https://matls.rs.aspsp.sandbox.lloydsbanking.com/open-banking/v3.1/pisp",
+    "BasePISPApiUri": "https://matls.rs.aspsp.sandbox.lloydsbanking.com/open-banking/v3.1.6/pisp",
     "PayloadSigningCertLocation": "string",
-    "BaseCBPIIApiUri": "https://matls.rs.aspsp.sandbox.lloydsbanking.com/open-banking/v3.1/cbpii"
+    "BaseCBPIIApiUri": "https://matls.rs.aspsp.sandbox.lloydsbanking.com/open-banking/v3.1.6/cbpii"
   },
   "id": "lloyds-sandbox",
   "aspspId": "lloyds",
