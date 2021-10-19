@@ -20,6 +20,10 @@
   "openIdConfig": {
     "token_endpoint": "https://acp.int-openbanking.demoaxway.com/default/openbanking_brasil/oauth2/token",
     "scopes_supported": ["openid", "accounts", "payments", "consents"],
+    "scopes": {
+      "AIS": "consents",
+      "PIS": "payments"
+    },
     "id_token_signing_alg_values_supported": ["RS256"],
     "request_object_signing_alg_values_supported": ["RS256"],
     "issuer": "https://acp.axway.cloudentity-se.com:8443/axway/openbanking_demo/oauth2/token",
@@ -34,10 +38,10 @@
     "openIDConfigEndPointUri": "https://acp.axway.cloudentity-se.com:8443/axway/openbanking_demo/.well-known/openid-configuration",
     "customerFriendlyDescription": "string",
     "customerFriendlyLogoUri": "assets/img/banks/griffinbank-new-logo.svg",
-    "organisationCommonName": "Griffin Bank",
+    "organisationCommonName": "Griffin Bank Brazil",
     "termsOfService": "string",
-    "customerFriendlyName": "Griffin Bank (sandbox)",
-    "name": "Griffin Bank",
+    "customerFriendlyName": "Griffin Bank Brazil (sandbox)",
+    "name": "Griffin Bank Brazil",
     "website": "https://www.griffinbank.com/",
     "countries": ["BR"],
     "weight": -8
