@@ -1,19 +1,8 @@
 {
-  "obDirectoryConfig": {
-    "BaseApiDNSUri": null,
-    "MemberState": "GB",
-    "DeveloperPortalUri": null,
-    "RegistrationId": "12345",
-    "CustomerFriendlyDescription": "string",
-    "AutoRegistrationSupported": true,
-    "ClientRegistrationUri": null,
-    "AuthorityId": "FCA",
-    "BaseAISPApiUri": "https://mtls-api-proxy.int-openbanking.demoaxway.com/open-banking/consents/v1",
-    "TermsOfService": "string",
-    "OBOrganisationId": "-",
-    "BasePISPApiUri": "https://medici1.demo.axway.com:8065/open-banking/v3.1/pisp",
-    "PayloadSigningCertLocation": "string",
-    "BaseCBPIIApiUri": "https://medici1.demo.axway.com:8065/open-banking/v3.1/cbpii",
+  "obBrazilConfig": {
+    "consentApiUri": "https://mtls-api-proxy.int-openbanking.demoaxway.com/open-banking/consents/v1",
+    "accountsApiUri": "https://mtls-api-proxy.int-openbanking.demoaxway.com/open-banking/accounts/v1",
+    "paymentApiUri": "https://mtls-api-proxy.int-openbanking.demoaxway.com/open-banking/payments/v1",
     "jwkURL": "https://acp.int-openbanking.demoaxway.com/default/openbanking_brasil/.well-known/jwks.json"
   },
   "id": "griffin-br-sandbox",
