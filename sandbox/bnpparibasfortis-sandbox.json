@@ -16,12 +16,32 @@
     "code_challenge_methods_supported": []
   },
   "psd2Config": {
-    "accountsApiUri": "https://sandbox.api.bnpparibasfortis.com/v1/accounts",
-    "paymentInitiationApiUri": "https://sandbox.api.bnpparibasfortis.com/v1/payment-requests",
-    "paymentApiUri": "https://sandbox.api.bnpparibasfortis.com/v1/payment-requests/{paymentId}"
+    "accountsApiUri": "https://sandbox.api.bnpparibasfortis.com/psd2/v2/accounts",
+    "paymentInitiationApiUri": "https://sandbox.api.bnpparibasfortis.com/psd2/v2/payment-requests",
+    "paymentApiUri": "https://sandbox.api.bnpparibasfortis.com/psd2/v2/payment-requests/{paymentId}"
   },
   "id": "bnpparibasfortis-sandbox",
   "aspspId": "bnpparibasfortis",
+  "businessEntities": {
+    "bnppf": {
+      "customerFriendlyName": "BNP Paribas Fortis",
+      "parameters": {
+        "brand": "bnppf"
+      }
+    },
+    "hb": {
+      "customerFriendlyName": "Hello Bank",
+      "parameters": {
+        "brand": "hb"
+      }
+    },
+    "fintro": {
+      "customerFriendlyName": "Fintro",
+      "parameters": {
+        "brand": "fintro"
+      }
+    }
+  },
   "identity": {
     "memberState": "BE",
     "developerPortalUri": "https://developer.bnpparibasfortis.com/",
