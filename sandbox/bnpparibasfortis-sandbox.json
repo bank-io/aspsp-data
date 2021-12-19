@@ -16,6 +16,7 @@
     "code_challenge_methods_supported": []
   },
   "psd2Config": {
+    "AISPConsentNotRequired": true,
     "accountsApiUri": "https://sandbox.api.bnpparibasfortis.com/psd2/v2/accounts",
     "paymentInitiationApiUri": "https://sandbox.api.bnpparibasfortis.com/psd2/v2/payment-requests",
     "paymentApiUri": "https://sandbox.api.bnpparibasfortis.com/psd2/v2/payment-requests/{paymentId}"
