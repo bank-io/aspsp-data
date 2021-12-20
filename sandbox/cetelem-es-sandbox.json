@@ -6,7 +6,7 @@
     "scopes_supported": ["AIS", "PIS", "SVA"],
     "scopes": {
       "AIS": "AIS",
-      "PIS": "PIS",
+      "PIS": "PIS SVA",
       "SVA": "SVA"
     },
     "id_token_signing_alg_values_supported": ["PS256"],
@@ -17,11 +17,12 @@
   "psd2Config": {
     "AISPCreateConsentAfterAuthentication": true,
     "AISPSCARequiredAfterCreateConsent": true,
+    "PISPCreateConsentAfterAuthentication": true,
     "consentApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/CETELEM/v1/consents",
     "accountsApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/CETELEM/v1/accounts",
-    "paymentInitiationApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/CETELEM/v1/{payment-service}/{payment-product}",
-    "paymentApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/CETELEM/v1/{payment-service}/{payment-product}/{paymentId}",
-    "paymentStatusApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/CETELEM/v1/{payment-service}/{payment-product}/{paymentId}/status",
+    "paymentInitiationApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/CETELEM/v1/sva/{payment-service}/{payment-product}",
+    "paymentApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/CETELEM/v1/sva/{payment-service}/{payment-product}/{paymentId}",
+    "paymentStatusApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/CETELEM/v1/sva/{payment-service}/{payment-product}/{paymentId}/status",
     "consentStatusApiUri": "https://apis-i.redsys.es:20443/psd2/xs2a/api-entrada-xs2a/services/CETELEM/v1/consents/{consentId}/status"
   },
   "id": "cetelem-es-sandbox",
