@@ -29,7 +29,7 @@
   "aspspId": "cetelem-es",
   "identity": {
     "memberState": "ES",
-    "developerPortalUri": "https://market.apis-i.redsys.es/psd2/xs2a/nodos/cajaarquitectos",
+    "developerPortalUri": "https://market.apis-i.redsys.es/psd2/xs2a/nodos/cetelem",
     "openIDConfigEndPointUri": "",
     "customerFriendlyDescription": "",
     "customerFriendlyLogoUri": "assets/img/banks/Cetelembe_amplogo-fr.png",
