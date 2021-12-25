@@ -1,6 +1,6 @@
 {
   "openIdConfig": {
-    "authorization_endpoint": "https://auth-sandbox.connect.abnamro.com/as/authorization.oauth2",
+    "authorization_endpoint": "https://auth-mtls-sandbox.abnamro.com/as/authorization.oauth2",
     "token_endpoint_auth_methods_supported": ["tls_client_auth"],
     "grant_types_supported": ["refresh_token", "authorization_code"],
     "token_endpoint": "https://auth-mtls-sandbox.abnamro.com/as/token.oauth2",
@@ -30,6 +30,26 @@
   },
   "id": "abnamro-sandbox",
   "aspspId": "abnamro",
+  "businessEntities": {
+    "NLAA01": {
+      "customerFriendlyName": "NL or commercial",
+      "parameters": {
+        "bank": "NLAA01"
+      }
+    },
+    "BEPB01": {
+      "customerFriendlyName": "Belgium Private Banking",
+      "parameters": {
+        "bank": "BEPB01"
+      }
+    },
+    "BEPB02": {
+      "customerFriendlyName": "Belgium Independent Asset Manager",
+      "parameters": {
+        "bank": "BEPB02"
+      }
+    }
+  },
   "identity": {
     "memberState": "NL",
     "developerPortalUri": "https://developer.abnamro.com/",
