@@ -1,9 +1,9 @@
 {
   "openIdConfig": {
     "authorization_endpoint": "https://auth-sandbox.connect.abnamro.com/as/authorization.oauth2",
-    "token_endpoint_auth_methods_supported": [],
+    "token_endpoint_auth_methods_supported": ["tls_client_auth"],
     "grant_types_supported": ["refresh_token", "authorization_code"],
-    "token_endpoint": "https://auth-sandbox.connect.abnamro.com/as/token.oauth2",
+    "token_endpoint": "https://auth-mtls-sandbox.abnamro.com/as/token.oauth2",
     "scopes_supported": [
       "psd2:account:balance:read",
       "psd2:account:transaction:read",
@@ -45,5 +45,5 @@
     "weight": -8
   },
   "roles": ["aisp", "pisp"],
-  "clientCredentialsFields": ["apiKey"]
+  "clientCredentialsFields": ["clientId", "apiKey"]
 }
