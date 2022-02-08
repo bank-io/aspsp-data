@@ -20,11 +20,11 @@
     "CustomerFriendlyLogoUri": "assets/img/banks/NatWest-logo.svg",
     "BaseAISPApiUri": "https://ob.sandbox.natwest.com/open-banking/v3.1/aisp"
   },
-  "id": "rbs-sandbox",
-  "aspspId": "rbs",
+  "id": "natwest-sandbox",
+  "aspspId": "natwest",
   "openIdConfig": {
     "request_object_signing_alg_values_supported": ["PS256"],
-    "issuer": "rbs.useinfinite.io",
+    "issuer": "https://api.sandbox.natwest.com",
     "authorization_endpoint": "https://api.sandbox.natwest.com/authorize",
     "token_endpoint_auth_methods_supported": ["client_secret_post"],
     "token_endpoint": "https://ob.sandbox.natwest.com/token",
@@ -42,7 +42,7 @@
     "termsOfService": "string",
     "customerFriendlyName": "NatWest Westminster Bank (sandbox)",
     "name": "NatWest Westminster Bank",
-    "website": "https://personal.rbs.co.uk/",
+    "website": "https://www.natwest.com/",
     "countries": ["GB"],
     "weight": -7
   },
