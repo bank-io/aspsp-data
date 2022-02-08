@@ -1,0 +1,51 @@
+{
+  "obDirectoryConfig": {
+    "OrganisationCommonName": "NatWest Bank PLC",
+    "TermsOfService": "string",
+    "OBOrganisationId": "0015800000jfwxXAAQ",
+    "customerFriendlyName": "NatWest Westminster Bank (sandbox)",
+    "name": "NatWest Westminster Bank",
+    "BasePISPApiUri": "https://ob.sandbox.natwest.com/open-banking/v3.1/pisp",
+    "PayloadSigningCertLocation": "string",
+    "BaseCBPIIApiUri": "https://ob.sandbox.natwest.com/open-banking/v3.1/cbpii",
+    "BaseApiDNSUri": null,
+    "MemberState": "GB",
+    "DeveloperPortalUri": null,
+    "RegistrationId": "1234",
+    "OpenIDConfigEndPointUri": null,
+    "CustomerFriendlyDescription": "string",
+    "AutoRegistrationSupported": true,
+    "ClientRegistrationUri": null,
+    "AuthorityId": "FCA",
+    "CustomerFriendlyLogoUri": "assets/img/banks/NatWest-logo.svg",
+    "BaseAISPApiUri": "https://ob.sandbox.natwest.com/open-banking/v3.1/aisp"
+  },
+  "id": "rbs-sandbox",
+  "aspspId": "rbs",
+  "openIdConfig": {
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "issuer": "rbs.useinfinite.io",
+    "authorization_endpoint": "https://api.sandbox.natwest.com/authorize",
+    "token_endpoint_auth_methods_supported": ["client_secret_post"],
+    "token_endpoint": "https://ob.sandbox.natwest.com/token",
+    "scopes_supported": ["openid", "accounts", "payments"],
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "grant_types_supported": ["refresh_token", "client_credentials", "authorization_code"]
+  },
+  "identity": {
+    "memberState": "GB",
+    "developerPortalUri": "https://developer.sandbox.natwest.com/",
+    "openIDConfigEndPointUri": "https://api.sandbox.natwest.com/.well-known/openid-configuration",
+    "customerFriendlyDescription": "string",
+    "customerFriendlyLogoUri": "assets/img/banks/NatWest-logo.svg",
+    "organisationCommonName": "NatWest Westminster Bank PLC",
+    "termsOfService": "string",
+    "customerFriendlyName": "NatWest Westminster Bank (sandbox)",
+    "name": "NatWest Westminster Bank",
+    "website": "https://personal.rbs.co.uk/",
+    "countries": ["GB"],
+    "weight": -7
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientSecret", "clientId"]
+}
