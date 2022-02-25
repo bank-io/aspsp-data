@@ -42,5 +42,5 @@
     "weight": 0
   },
   "roles": ["aisp", "pisp", "cbpii"],
-  "clientCredentialsFields": ["clientId", "clientSecret"]
+  "clientCredentialsFields": ["clientId"]
 }
