@@ -1,48 +1,31 @@
 {
   "obBrazilConfig": {
-    "consentApiUri": "https://mtls-api-proxy.int-openbanking.demoaxway.com/open-banking/consents/v1",
-    "accountsApiUri": "https://mtls-api-proxy.int-openbanking.demoaxway.com/open-banking/accounts/v1",
-    "paymentApiUri": "https://mtls-api-proxy.int-openbanking.demoaxway.com/open-banking/payments/v1",
-    "jwkURL": "https://acp.int-openbanking.demoaxway.com/default/openbanking_brasil/.well-known/jwks.json"
+    "consentApiUri": "https://mtls-api-proxy.openbanking.demo.axway.com/open-banking/consents/v1",
+    "accountsApiUri": "https://mtls-api-proxy.openbanking.demo.axway.com/open-banking/accounts/v1",
+    "paymentApiUri": "https://mtls-api-proxy.openbanking.demo.axway.com/open-banking/payments/v1",
+    "jwkURL": "https://acp.openbanking.demo.axway.com/default/openbanking_brasil/.well-known/jwks.json"
   },
   "id": "griffin-br-sandbox",
   "aspspId": "griffin-br",
   "openIdConfig": {
-    "token_endpoint": "https://acp.int-openbanking.demoaxway.com/default/openbanking_brasil/oauth2/token",
-    "scopes_supported": [
-      "openid",
-      "accounts",
-      "payments",
-      "consents"
-    ],
+    "token_endpoint": "https://acp.openbanking.demo.axway.com/default/openbanking_brasil/oauth2/token",
+    "scopes_supported": ["openid", "accounts", "payments", "consents"],
     "scopes": {
       "AIS": "consents",
       "PIS": "payments"
     },
-    "id_token_signing_alg_values_supported": [
-      "PS256"
-    ],
-    "request_object_signing_alg_values_supported": [
-      "PS256"
-    ],
-    "issuer": "https://acp.int-openbanking.demoaxway.com/default/openbanking_brasil",
-    "authorization_endpoint": "https://acp.int-openbanking.demoaxway.com/default/openbanking_brasil/oauth2/authorize",
-    "token_endpoint_auth_methods_supported": [
-      "tls_client_auth"
-    ],
-    "grant_types_supported": [
-      "refresh_token",
-      "client_credentials",
-      "authorization_code"
-    ],
-    "code_challenge_methods_supported": [
-      "S256"
-    ]
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "issuer": "https://acp.openbanking.demo.axway.com/default/openbanking_brasil",
+    "authorization_endpoint": "https://acp.openbanking.demo.axway.com/default/openbanking_brasil/oauth2/authorize",
+    "token_endpoint_auth_methods_supported": ["tls_client_auth"],
+    "grant_types_supported": ["refresh_token", "client_credentials", "authorization_code"],
+    "code_challenge_methods_supported": ["S256"]
   },
   "identity": {
     "memberState": "BR",
     "developerPortalUri": "https://developer.griffinbank.com/",
-    "openIDConfigEndPointUri": "https://acp.int-openbanking.demoaxway.com/default/openbanking_brasil/.well-known/openid-configuration",
+    "openIDConfigEndPointUri": "https://acp.openbanking.demo.axway.com/default/openbanking_brasil/.well-known/openid-configuration",
     "customerFriendlyDescription": "string",
     "customerFriendlyLogoUri": "assets/img/banks/griffinbank-new-logo.svg",
     "organisationCommonName": "Griffin Bank Brazil",
@@ -50,18 +33,9 @@
     "customerFriendlyName": "Griffin Bank Brazil (sandbox)",
     "name": "Griffin Bank Brazil",
     "website": "https://www.griffinbank.com/",
-    "countries": [
-      "BR"
-    ],
+    "countries": ["BR"],
     "weight": -8
   },
-  "roles": [
-    "aisp",
-    "pisp",
-    "cbpii"
-  ],
-  "clientCredentialsFields": [
-    "clientId",
-    "clientSecret"
-  ]
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret"]
 }
