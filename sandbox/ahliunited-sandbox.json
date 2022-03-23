@@ -34,7 +34,7 @@
   },
   "identity": {
     "memberState": "KW",
-    "developerPortalUri": "https://www.bankofapis.com/",
+    "developerPortalUri": "https://developeruk.sb.ahliunited.com/",
     "openIDConfigEndPointUri": "https://api.sandbox.ahliunited.co.uk/.well-known/openid-configuration",
     "customerFriendlyDescription": "string",
     "customerFriendlyLogoUri": "assets/img/banks/AUB-Logo.png",
