@@ -24,7 +24,7 @@
   "aspspId": "ahliunited",
   "openIdConfig": {
     "request_object_signing_alg_values_supported": ["PS256"],
-    "issuer": "ahliunited.useinfinite.io",
+    "issuer": "https://ssouk.sb.ahliunited.com",
     "authorization_endpoint": "https://ssouk.sb.ahliunited.com/as/authorization.oauth2",
     "token_endpoint_auth_methods_supported": ["client_secret_post"],
     "token_endpoint": "https://ssouk.sb.ahliunited.com/as/token.oauth2",
