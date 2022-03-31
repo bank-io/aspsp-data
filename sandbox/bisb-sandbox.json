@@ -25,9 +25,9 @@
   "openIdConfig": {
     "request_object_signing_alg_values_supported": ["PS256"],
     "issuer": "https://auth1.bibb.sandbox.tarabutgateway.io",
-    "authorization_endpoint": "https://ssouk.sb.bisb.com/as/authorization.oauth2",
+    "authorization_endpoint": "https://auth1.bibb.sandbox.tarabutgateway.io/auth",
     "token_endpoint_auth_methods_supported": ["client_secret_basic"],
-    "token_endpoint": "https://ssouk.sb.bisb.com/as/token.oauth2",
+    "token_endpoint": "https://as1.bibb.sandbox.tarabutgateway.io/token",
     "scopes_supported": ["openid", "accounts", "payments"],
     "id_token_signing_alg_values_supported": ["PS256"],
     "grant_types_supported": ["refresh_token", "client_credentials", "authorization_code"]
