@@ -9,7 +9,7 @@
     "PayloadSigningCertLocation": "string",
     "BaseCBPIIApiUri": "https://rs1.bibb.sandbox.tarabutgateway.io/open-banking/v3.1/cbpii",
     "BaseApiDNSUri": null,
-    "MemberState": "KW",
+    "MemberState": "BH",
     "DeveloperPortalUri": null,
     "RegistrationId": "1234",
     "OpenIDConfigEndPointUri": null,
