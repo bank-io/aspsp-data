@@ -20,8 +20,8 @@
     "CustomerFriendlyLogoUri": "assets/img/banks/ubl-logo-v2.png",
     "BaseAISPApiUri": "https://obuk-api.ubluk.com/sandbox/open-banking/v3.1/aisp"
   },
-  "id": "bisb-sandbox",
-  "aspspId": "bisb",
+  "id": "ubluk-sandbox",
+  "aspspId": "ubluk",
   "openIdConfig": {
     "request_object_signing_alg_values_supported": ["PS256"],
     "issuer": "https://obuk-api.ubluk.com/sandbox/oauth",
