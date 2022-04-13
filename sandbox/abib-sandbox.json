@@ -1,0 +1,51 @@
+{
+  "obDirectoryConfig": {
+    "OrganisationCommonName": "Al Baraka Islamic Bank B.S.C.",
+    "TermsOfService": "string",
+    "OBOrganisationId": "-",
+    "customerFriendlyName": "Al Baraka Islamic Bank B.S.C. (sandbox)",
+    "name": "Al Baraka Islamic Bank B.S.C.",
+    "BasePISPApiUri": "https://rs1.abib.sandbox.tarabutgateway.io/open-banking/v3.1/pisp",
+    "PayloadSigningCertLocation": "string",
+    "BaseCBPIIApiUri": "https://rs1.abib.sandbox.tarabutgateway.io/open-banking/v3.1/cbpii",
+    "BaseApiDNSUri": null,
+    "MemberState": "BH",
+    "DeveloperPortalUri": null,
+    "RegistrationId": "1234",
+    "OpenIDConfigEndPointUri": null,
+    "CustomerFriendlyDescription": "string",
+    "AutoRegistrationSupported": true,
+    "ClientRegistrationUri": null,
+    "AuthorityId": "FCA",
+    "CustomerFriendlyLogoUri": "assets/img/banks/Al_Baraka_Banking_Group_Logo.svg",
+    "BaseAISPApiUri": "https://rs1.abib.sandbox.tarabutgateway.io/open-banking/v3.1/aisp"
+  },
+  "id": "abib-sandbox",
+  "aspspId": "abib",
+  "openIdConfig": {
+    "request_object_signing_alg_values_supported": ["PS256"],
+    "issuer": "https://auth1.abib.sandbox.tarabutgateway.io",
+    "authorization_endpoint": "https://auth1.abib.sandbox.tarabutgateway.io/auth",
+    "token_endpoint_auth_methods_supported": ["client_secret_basic"],
+    "token_endpoint": "https://as1.abib.sandbox.tarabutgateway.io/token",
+    "scopes_supported": ["openid", "accounts", "payments"],
+    "id_token_signing_alg_values_supported": ["PS256"],
+    "grant_types_supported": ["refresh_token", "client_credentials", "authorization_code"]
+  },
+  "identity": {
+    "memberState": "BH",
+    "developerPortalUri": "https://developer.abib.sandbox.tarabutgateway.io/perry/developer/welcome",
+    "openIDConfigEndPointUri": "https://auth1.abib.sandbox.tarabutgateway.io/.well-known/openid-configuration",
+    "customerFriendlyDescription": "string",
+    "customerFriendlyLogoUri": "assets/img/banks/Al_Baraka_Banking_Group_Logo.svg",
+    "organisationCommonName": "Al Baraka Islamic Bank B.S.C.",
+    "termsOfService": "string",
+    "customerFriendlyName": "Al Baraka Islamic Bank B.S.C. (sandbox)",
+    "name": "Al Baraka Islamic Bank B.S.C.",
+    "website": "https://albaraka.bh/",
+    "countries": ["BH"],
+    "weight": -7
+  },
+  "roles": ["aisp", "pisp", "cbpii"],
+  "clientCredentialsFields": ["clientId", "clientSecret"]
+}
