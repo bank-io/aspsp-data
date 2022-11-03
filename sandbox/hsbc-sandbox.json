@@ -8,12 +8,12 @@
     "AutoRegistrationSupported": true,
     "ClientRegistrationUri": null,
     "AuthorityId": "FCA",
-    "BaseAISPApiUri": "https://secure.sandbox.ob.hsbc.co.uk/obie/open-banking/v3.1",
+    "BaseAISPApiUri": "https://secure.sandbox.ob.hsbc.co.uk/obie/open-banking/v3.1/aisp",
     "TermsOfService": "string",
     "OBOrganisationId": "0015800000jeox1AAA",
-    "BasePISPApiUri": "https://secure.sandbox.ob.hsbc.co.uk/obie/open-banking/v3.1",
+    "BasePISPApiUri": "https://secure.sandbox.ob.hsbc.co.uk/obie/open-banking/v3.1/pisp",
     "PayloadSigningCertLocation": "string",
-    "BaseCBPIIApiUri": "https://secure.sandbox.ob.hsbc.co.uk/obie/open-banking/v3.1"
+    "BaseCBPIIApiUri": "https://secure.sandbox.ob.hsbc.co.uk/obie/open-banking/v3.1/cbpii"
   },
   "id": "hsbc-sandbox",
   "aspspId": "hsbc",
