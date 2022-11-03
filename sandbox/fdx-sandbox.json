@@ -1,10 +1,10 @@
 {
   "openIdConfig": {
-    "authorization_endpoint": "https://axway-test.us.authz.cloudentity.io/axway-test/fdx-dev/oauth2/authorize",
-    "pushed_authorization_request_endpoint": "https://axway-test.us.authz.cloudentity.io/axway-test/fdx-dev/par",
-    "token_endpoint_auth_methods_supported": ["http_signatures"],
-    "grant_types_supported": ["refresh_token", "authorization_code", "client_credentials"],
-    "token_endpoint": "https://axway-test.us.authz.cloudentity.io/axway-test/fdx-dev/oauth2/token",
+    "authorization_endpoint": "https://axway-test.mtls.us.authz.cloudentity.io/axway-test/fapi-fdx-dev/oauth2/authorize",
+    "pushed_authorization_request_endpoint": "https://axway-test.mtls.us.authz.cloudentity.io/axway-test/fapi-fdx-dev/par",
+    "token_endpoint_auth_methods_supported": ["tls_client_auth"],
+    "grant_types_supported": ["refresh_token", "authorization_code"],
+    "token_endpoint": "https://axway-test.mtls.us.authz.cloudentity.io/axway-test/fapi-fdx-dev/oauth2/token",
     "scopes_supported": ["payment-accounts:balances:view", "payment-accounts:transactions:view", "payment-accounts:orders:create"],
     "scopes": {
       "AIS": "payment-accounts:balances:view payment-accounts:transactions:view",
@@ -17,12 +17,9 @@
   "psd2Config": {
     "AISPConsentNotRequired": true,
     "consentApiUri": null,
-    "accountsApiUri": "https://api.sandbox.fdx.com/v3/accounts",
-    "transactionsApiUri": "https://api.sandbox.fdx.com/v2/accounts/{accountId}/transactions",
-    "paymentInitiationApiUri": "https://api.sandbox.fdx.com/v1/{payment-service}/{payment-product}",
-    "paymentApiUri": "https://api.sandbox.fdx.com/v1/{payment-service}/{payment-product}/{paymentId}",
-    "paymentStatusApiUri": "https://api.sandbox.fdx.com/v1/{payment-service}/{payment-product}/{paymentId}/status",
-    "consentStatusApiUri": null
+    "accountsApiUri": "https://mtls-api-proxy.dev-fdx.open-financing.demoaxway.com/open-banking/fdx/v5/core/accounts",
+    "transactionsApiUri": "https://mtls-api-proxy.dev-fdx.open-financing.demoaxway.com/open-banking/fdx/v5/core/accounts/{accountId}/transactions",
+    "consentStatusApiUri": "https://mtls-api-proxy.dev-fdx.open-financing.demoaxway.com/open-banking/fdx/v5/core/consents/{consentId}"
   },
   "id": "fdx-sandbox",
   "aspspId": "fdx",
