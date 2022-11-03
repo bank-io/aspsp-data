@@ -15,8 +15,8 @@
     "PayloadSigningCertLocation": "string",
     "BaseCBPIIApiUri": "https://secure.sandbox.ob.mandsbank.com/obie/open-banking/v3.1"
   },
-  "id": "hsbc-sandbox",
-  "aspspId": "hsbc",
+  "id": "mandsbank-sandbox",
+  "aspspId": "mandsbank",
   "openIdConfig": {
     "token_endpoint": "https://secure.sandbox.ob.mandsbank.com/obie/open-banking/v1.1/oauth2/token",
     "scopes_supported": ["accounts", "payments", "openid", "fundsconfirmations"],
@@ -29,7 +29,7 @@
   },
   "identity": {
     "memberState": "GB",
-    "developerPortalUri": "https://developer.hsbc.com/",
+    "developerPortalUri": "https://developer.mandsbank.com/",
     "openIDConfigEndPointUri": "https://sandbox.ob.mandsbank.com/.well-known/openid-configuration",
     "customerFriendlyDescription": "string",
     "customerFriendlyLogoUri": "assets/img/banks/M&S BANK Linear Black.svg",
